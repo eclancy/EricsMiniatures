@@ -7,6 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import BigLogoColor from '../Logos/BigLogoColor.png';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -32,7 +33,9 @@ export default function Header(props) {
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
-        <Button size="small">Subscribe</Button>
+      <div className="HomeNav">
+        <img src={BigLogoColor} alt="Eric's Miniatures Home" height={50} width={121}></img>
+      </div>
         <Typography
           component="h2"
           variant="h5"
