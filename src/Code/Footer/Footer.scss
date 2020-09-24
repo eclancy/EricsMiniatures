@@ -5,4 +5,11 @@
     width: 100%;
     padding: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+
+    .footerLink{
+        font-size: small;
+        text-align: center;
+    }
 }

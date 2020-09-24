@@ -9,8 +9,8 @@ import './Footer.scss';
 
 const socials = {
   social: [
-    { name: "Check out this website's code on GitHub", icon: GitHubIcon, link: "https://github.com/eclancy" },
-    { name: "I'm a developer, reach out to me on LinkedIn!", icon: LinkedInIcon, link: "https://www.linkedin.com/in/ericclancy/" },
+    { label: "Check out this website's code on GitHub", icon: GitHubIcon, link: "https://github.com/eclancy" },
+    { label: "I'm a developer - reach out to me on LinkedIn!", icon: LinkedInIcon, link: "https://www.linkedin.com/in/ericclancy/" },
   ],
 };
 
@@ -19,14 +19,14 @@ export default function Footer(props) {
   return (
     <footer class="footer">
       <Container maxWidth="lg">
-        <Grid item xs={12} md={4}>
-          {socials.social.map((network) => (
-            <Link variant="body1" href="#" key={network}>
-              <Grid container direction="row" spacing={1} alignItems="center">
-                <Grid item>
-                  <network.icon />
+        <Grid item xs={12} sm={12} direction="row">
+          {socials.social.map((links) => (
+            <Link variant="body1" href="#" key={links}>
+              <Grid container spacing={1} xs={6} sm={4} alignItems="center" justify="center" className={"footerLink"}>
+                <Grid item className={"icon"}>
+                  <links.icon />
                 </Grid>
-                <Grid item>{network.name}</Grid>
+                <Grid item className={"text"}>{links.label}</Grid>
               </Grid>
             </Link>
           ))}
