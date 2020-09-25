@@ -3,13 +3,15 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import './Home.scss';
-import Header from '../Header';
+import Header from '../Header/Header';
 import Banner from '../Banner';
 import FeaturedPost from '../FeaturedPost/FeaturedPost';
 import Footer from '../Footer/Footer';
 import ZoomedWormBanner from "../../Images/Miniatures/PurpleWorm/ZoomedBannerPurpleWorm3.jpg";
 import Waystone from "../../Images/Terrain/Waystone/Waystone1.jpg";
-import GirlOnBeach from "../../Images/Miniatures/GirlOnBeach.jpg";
+import River from "../../Images/Terrain/TempleInterior/Temple6.jpg";
+import GirlOnBeach from "../../Images/Miniatures/GirlOnBeach/GirlOnBeach.jpg";
+import * as Constants from "../Shared/Constants.js";
 
 //for importing a folder
 // function importAll(r) {
@@ -19,12 +21,6 @@ import GirlOnBeach from "../../Images/Miniatures/GirlOnBeach.jpg";
 // }
 
 // const images = importAll(require.context('../Miniatures/PurpleWorm', false, /\.(png|jpe?g|svg)$/));
-
-const sections = [
-  { title: 'Miniatures', url: '#' },
-  { title: 'Terrain', url: '#' },
-  { title: 'Other Projects', url: '#' },
-];
 
 const banner = {
   title: 'Art That Escapes Reality',
@@ -45,7 +41,7 @@ const featuredLinks = [
     date: 'Aug 4',
     description:
       'Sculpted from clay, foam, or even trash! Realistic landscaps crafted and painted from basic every day items.',
-    image: Waystone
+    image: River
   },
 ];
 
@@ -56,7 +52,7 @@ export default function Home() {
       <CssBaseline />
         <div id="main-wrapper">
           <Container maxWidth="lg">
-            <Header sections={sections} />
+            <Header sections={Constants.sections} />
             <main>
               <Banner post={banner} />
               <Grid container spacing={4}>
