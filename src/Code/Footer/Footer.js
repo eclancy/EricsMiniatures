@@ -17,12 +17,12 @@ const socials = {
 export default function Footer(props) {
 
   return (
-    <footer class="footer">
-      <Container maxWidth="lg">
-        <Grid item xs={12} sm={12} direction="row">
+    <footer className="footer">
+      <Container >
+        <Grid item >
           {socials.social.map((links) => (
-            <Link variant="body1" href="#" key={links}>
-              <Grid container spacing={1} xs={6} sm={4} alignItems="center" justify="center" className={"footerLink"}>
+            <Link variant="body1" href="#" key={links.label}>
+              <Grid container  alignItems="center" justify="center" className={"footerLink"}>
                 <Grid item className={"icon"}>
                   <links.icon />
                 </Grid>

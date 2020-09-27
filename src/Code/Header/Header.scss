@@ -1,0 +1,13 @@
+.navbar {
+    border-bottom: 1px solid gray;
+
+    .menuIcon {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+}
+
+.dropdownMenu {
+    transform: translateY(-5px);
+}
