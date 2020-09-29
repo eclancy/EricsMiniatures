@@ -1,16 +1,10 @@
 import * as React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
 import './Home.scss';
-import Header from '../Header/Header';
-import Banner from '../Banner';
-import FeaturedPost from '../FeaturedPost/FeaturedPost';
-import Footer from '../Footer/Footer';
+import Banner from './Banner/Banner';
+import FeaturedPost from './FeaturedPost/FeaturedPost';
 import ZoomedWormBanner from "../../Images/Miniatures/PurpleWorm/ZoomedBannerPurpleWorm3.jpg";
-import Waystone from "../../Images/Terrain/Waystone/Waystone1.jpg";
-import River from "../../Images/Terrain/TempleInterior/Temple6.jpg";
-import GirlOnBeach from "../../Images/Miniatures/GirlOnBeach/GirlOnBeach.jpg";
+import { Link } from 'react-router-dom';
 import * as Constants from "../Shared/Constants.js";
 
 //for importing a folder
@@ -28,43 +22,19 @@ const banner = {
   image: ZoomedWormBanner
 };
 
-const featuredLinks = [
-  {
-    title: 'Miniatures',
-    date: 'Aug 4',
-    description:
-      'Hand painted miniature creatures, characters, and props. ',
-    image: GirlOnBeach
-  },
-  {
-    title: 'Terrain',
-    date: 'Aug 4',
-    description:
-      'Sculpted from clay, foam, or even trash! Realistic landscaps crafted and painted from basic every day items.',
-    image: River
-  },
-];
 
 export default function Home() {
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-        <div id="main-wrapper">
-          <Container maxWidth="lg">
-            <Header sections={Constants.sections} />
-            <main>
-              <Banner post={banner} />
-              <Grid container spacing={4}>
-                {featuredLinks.map((post) => (
-                  <FeaturedPost key={post.title} post={post} />
-                ))}
-              </Grid>
+    <main>
+      <Banner post={banner} />
+      <Grid container spacing={4}>
+        {Constants.sections.map((section) => (
 
-            </main>
-          </Container>
-          <Footer />
-        </div>
-    </React.Fragment>
-  );
+          section.title !== 'Home' && (<FeaturedPost key={section.title} post={section} component={Link} to={section.url} />) 
+        
+        ))}
+      </Grid>
+    </main>
+  )
 }
