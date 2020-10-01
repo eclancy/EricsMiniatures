@@ -9,7 +9,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import * as Constants from "../../Shared/Constants.js";
 import './Header.scss';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 export default function Header(props) {
@@ -23,35 +23,39 @@ export default function Header(props) {
     setAnchorEl(null);
   };
 
+
   return (
     <React.Fragment>
-      <Toolbar className="navbar" disableGutters>
-        <div className="HomeNav">
-          <img src={BigLogoColor} alt="Eric's Miniatures Home" height={50} width={121} ></img>
-        </div>
+        <Toolbar className="navbar" disableGutters>
+          <Link className="HomeNav" to={"/"}>
+            <img src={BigLogoColor} alt="Eric's Miniatures Home" width={160}></img>
+          </Link>
 
-        <IconButton className={'menuIcon'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-          <MenuIcon />
-        </IconButton>
+          <IconButton className={'menuIcon'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+            <MenuIcon />
+          </IconButton>
 
-        <Menu
-          className="dropdownMenu"
-          anchorEl={anchorEl}
-          keepMounted
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-          anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-          transformOrigin={{ vertical: "top", horizontal: "right" }}
-          getContentAnchorEl={null}
-        >
-          {Constants.sections.map((section) => (
-            <MenuItem key={section.title} component={Link} to={section.url} onClick={handleClose}>
-              <Typography>{section.title}</Typography>
+          <Menu
+            className="dropdownMenu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+            transformOrigin={{ vertical: "top", horizontal: "right" }}
+            getContentAnchorEl={null}
+          >
+            <MenuItem component={Link} to={"/"} onClick={handleClose} >
+              <Typography>{"Home"}</Typography>
             </MenuItem>
-          ))}
-        </Menu>
+            {Constants.sections.map((section, index) => (
+              <MenuItem key={section.title} component={Link} to={section.url} onClick={handleClose}>
+                <Typography>{section.title}</Typography>
+              </MenuItem>
+            ))}
+          </Menu>
 
-      </Toolbar>
+        </Toolbar>
     </React.Fragment>
   );
 }

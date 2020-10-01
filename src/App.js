@@ -9,7 +9,6 @@ import Home from './Code/Home/Home';
 import Gallery from './Code/Gallery/Gallery';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Container from '@material-ui/core/Container';
 
 function App() {
   return (
@@ -18,21 +17,17 @@ function App() {
       <React.Fragment>
         <CssBaseline />
         <div id="main-wrapper">
-          <Container maxWidth="lg">
-            
-          <Header sections={Constants.sections} />
-            <main>
+            <Header sections={Constants.sections} />
 
-              <Route default exact path="/" component={Home} />
+            {/* Routing for the various pages rendered inside the header and footer */}
+            <Route default exact path="/" component={Home} />
 
-              <Route path="/gallery" component={Gallery} />
+            <Route path="/Gallery" component={Gallery} />
 
-            </main>
-          </Container>
+            {/* End of routing */}
           <Footer />
         </div>
       </React.Fragment>
-
     </BrowserRouter>
   );
 }

@@ -1,18 +1,40 @@
+$breakpoint-tablet: 960px;
+
 .footer {
     background-color: rgb(235, 235, 235);
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 5px;
     text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    padding: 7px 0px 7px 0px !important;
 
-    .footerLink{
-        font-size: small;
-        text-align: center;
-        .icon{
-            margin-right: 3px;
+    @media (max-width: $breakpoint-tablet) {
+        flex-direction: column;
+    }
+
+
+    .footerLinkContainer {
+
+
+        .footerLink {
+            font-size: large;
+            text-align: center;
+            margin-right: 20px;
+
+            .icon {
+                margin-right: 4px;
+            }
+
+            .text {
+                margin: 0px;
+            }
+
+            .githubLinkFix {
+                padding: 0px 2px 4px 2px;
+            }
         }
     }
 }

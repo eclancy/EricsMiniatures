@@ -10,6 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import './FeaturedPost.scss';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   card: {
@@ -34,8 +35,8 @@ export default function FeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Grid item xs={12} md={6}>
-      <CardActionArea >
+    <Grid item xs={12} md={6} className={props.className}>
+      <CardActionArea component={Link} to={post.url}>
           <Card className={classes.card} >
             <div className={classes.cardDetails}>
               <CardContent>

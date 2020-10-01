@@ -3,38 +3,44 @@ import Grid from '@material-ui/core/Grid';
 import './Home.scss';
 import Banner from './Banner/Banner';
 import FeaturedPost from './FeaturedPost/FeaturedPost';
-import ZoomedWormBanner from "../../Images/Miniatures/PurpleWorm/ZoomedBannerPurpleWorm3.jpg";
-import { Link } from 'react-router-dom';
 import * as Constants from "../Shared/Constants.js";
+import { makeStyles } from '@material-ui/core/styles';
 
-//for importing a folder
-// function importAll(r) {
-//   let images = {};
-//   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-//   return images;
-// }
-
-// const images = importAll(require.context('../Miniatures/PurpleWorm', false, /\.(png|jpe?g|svg)$/));
+import LongBanner from '../../Images/BannerImages/ZoomedBannerPurpleWorm4.jpg';
+import SlimBanner from '../../Images/BannerImages/FullBannerPurpleWormSlim.jpg'
 
 const banner = {
   title: 'Art That Escapes Reality',
   description: "Need a break from the real world? Come explore some weird places and even weirder creatures.",
-  image: ZoomedWormBanner
 };
 
+const useStyles = makeStyles((theme) => ({
+  homeBackgroundImage: {
+    ['@media (min-width:990px)']: {// eslint-disable-line no-useless-computed-key
+      backgroundImage: `url(${LongBanner})`,
+    },
+    ['@media (max-width:990px)']: {// eslint-disable-line no-useless-computed-key
+      backgroundImage: `url(${SlimBanner})`,
+    },
+  },
+}));
 
 export default function Home() {
+  const classes = useStyles();
 
   return (
-    <main>
-      <Banner post={banner} />
-      <Grid container spacing={4}>
-        {Constants.sections.map((section) => (
+    <main className='main'>
+      <Banner post={banner} className={classes.homeBackgroundImage} />
+      <Grid className='linkCardContainer' container spacing={4}>
 
-          section.title !== 'Home' && (<FeaturedPost key={section.title} post={section} component={Link} to={section.url} />) 
-        
+        {Constants.sections.map((section, index) => (
+
+          /*Determine if this is there is an open space next to the last card (odd number of cards). 
+            If there is, expand the final card to fill in the empty space. */
+          <FeaturedPost className={(index === Constants.sections.length - 1 && Constants.sections.length % 2) ? 'expand' : ''} key={section.title} post={section} />
         ))}
       </Grid>
     </main>
   )
 }
+
