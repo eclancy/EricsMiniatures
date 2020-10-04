@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import BigLogoColor from '../../../Images/Logos/BigLogoColor.png';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import * as Constants from "../../Shared/Constants.js";
+import * as Constants from "../Constants.js";
 import './Header.scss';
 import { Link } from 'react-router-dom';
 

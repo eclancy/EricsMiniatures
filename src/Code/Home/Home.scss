@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 0;
 
+    main {
+        min-height: 100%;
+    }
+
     #main-wrapper {
         /* will cover the 100% of viewport */
         min-height: 100vh;
@@ -14,28 +18,35 @@ body {
         position: relative;
         /*footer height*/
         padding-bottom: 41px;
+        background-color: rgb(234, 237, 237);
 
-      
+        .linkCardsContainer {
+            width: 100%;
+            min-height: 100%;
 
-        .linkCardContainer {
-            max-width: 1500px;
-            padding: 5px;
-            height: 100%;
+            .linksGrid {
+                max-width: 1500px;
+                padding: 5px;
+                padding-top: 20px;
+                height: 100%;
 
-            @media (min-width: 1500px){
-                margin: auto;
-                
-            }
 
-            .expand {
-                max-width: 100%;
-                flex-basis: 100%;
+
+                @media (min-width: 1500px) {
+                    margin: auto;
+
+                }
+
+                .expand {
+                    max-width: 100%;
+                    flex-basis: 100%;
+                }
             }
         }
     }
 
     @media (max-width: $breakpoint-tablet) {
-        #main-wrapper{
+        #main-wrapper {
             padding-bottom: 68px;
         }
     }

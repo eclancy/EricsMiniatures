@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import './Banner.scss';
 
 export default function Banner(props) {
-  const { post } = props;
+  const { bannerInfo } = props;
 
   return (
     <Paper id='banner' className={props.className} >
@@ -19,10 +19,10 @@ export default function Banner(props) {
             gutterBottom
             className={'title'}
           >
-            {post.title}
+            {bannerInfo.title}
           </Typography>
           <Typography variant="h5" color="inherit" paragraph className="flavorText">
-            {post.description}
+            {bannerInfo.description}
           </Typography>
 
         </Grid>

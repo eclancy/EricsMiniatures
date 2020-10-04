@@ -1,7 +1,8 @@
 $breakpoint-tablet: 960px;
 
 .footer {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(59,64,69);
+
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -26,10 +27,12 @@ $breakpoint-tablet: 960px;
 
             .icon {
                 margin-right: 4px;
+                color: white;
             }
 
             .text {
-                margin: 0px;
+                margin: 0px;    
+                color: white;
             }
 
             .githubLinkFix {

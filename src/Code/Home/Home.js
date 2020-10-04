@@ -30,16 +30,17 @@ export default function Home() {
 
   return (
     <main className='main'>
-      <Banner post={banner} className={classes.homeBackgroundImage} />
-      <Grid className='linkCardContainer' container spacing={4}>
+      <Banner bannerInfo={banner} className={classes.homeBackgroundImage} />
+      <div className="linkCardsContainer">
+        <Grid className='linksGrid' container spacing={4}>
 
-        {Constants.sections.map((section, index) => (
-
-          /*Determine if this is there is an open space next to the last card (odd number of cards). 
-            If there is, expand the final card to fill in the empty space. */
-          <FeaturedPost className={(index === Constants.sections.length - 1 && Constants.sections.length % 2) ? 'expand' : ''} key={section.title} post={section} />
-        ))}
-      </Grid>
+          {Constants.sections.map((section, index) => (
+            /*Determine if this is there is an open space next to the last card (odd number of cards). 
+              If there is, expand the final card to fill in the empty space. */
+            <FeaturedPost className={(index === Constants.sections.length - 1 && Constants.sections.length % 2) ? 'expand' : ''} key={section.title} post={section} />
+          ))}
+        </Grid>
+      </div>
     </main>
   )
 }

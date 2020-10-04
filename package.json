@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.2.1",
     "history": "^5.0.0",
     "jshint": "^2.12.0",
+    "list-react-files": "^0.2.0",
     "markdown-to-jsx": "^6.11.4",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --config prod.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "url-loader": "^4.1.0"
   }
 }
