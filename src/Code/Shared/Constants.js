@@ -9,7 +9,7 @@ export const sections = [
     description:
       "Hand painted miniature creatures, characters, and props. Monsters that can fit in the palm of your hand!",
     image: GirlOnBeach,
-    url: '/Gallery/Miniatures',
+    url: '/gallery/miniatures',
   },
   {
     title: 'Terrain',
@@ -17,7 +17,7 @@ export const sections = [
     description:
       "Sculpted from a wide variety of items including clay, foam, or even trash! Realistic landscaps crafted and painted from basic every day items.",
     image: Temple6,
-    url: '/Gallery/Terrain',
+    url: '/gallery/terrain',
   },
   {
     title: 'Other Projects',
@@ -25,6 +25,20 @@ export const sections = [
     description:
       "Other projects I've worked on, including 3d printing, creating games, and anything else I think is cool enough to share.",
     image: GameAnimation, 
-    url: '/Gallery/Other'
+    url: '/gallery/other'
   },
 ];
+
+export function getSection() {
+  if (window.location.href.includes('miniatures')) {
+    return 'miniatures'
+  }
+  else if (window.location.href.includes('terrain')) {
+    return 'terrain'
+  }
+  else if (window.location.href.includes('other')) {
+    return 'other'
+  }
+}
+
+export default sections;

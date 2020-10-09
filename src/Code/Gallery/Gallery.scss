@@ -1,4 +1,6 @@
 $breakpoint-tablet: 960px;
+$SlimBanner: url('../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg');
+$LongBanner: url('../../Images/BannerImages/SludgeMonstrosity.jpg');
 
 main {
     background-color: rgb(234, 237, 237);
@@ -8,16 +10,17 @@ main {
         min-height: 100%;
         margin: 0;
         width: 100%;
-        padding: 20px 15px 20px 15px;
+        padding: 20px 10% 20px 10%;
 
         justify-content: center;
-        
+
         .imageContainer {
-            margin: 10px 10px 10px 10px;
+            margin: 20px;
 
             .previewLink {
                 //Sizes the images to fit on screen properly, and then adjusts the size ratio to fix stretching
                 display: block;
+                //ratio is 2.42105263158
                 max-width: 690px;
                 max-height: 285px;
                 width: auto;
@@ -26,7 +29,7 @@ main {
 
                 cursor: pointer;
                 margin: auto;
-              
+
 
                 &:hover {
                     transition: .3s ease-in-out;
@@ -37,10 +40,23 @@ main {
         }
     }
 
+    @media (min-width:990px) {
+        .galleryBackgroundImage {
+            background-image: $LongBanner;
+        }
+    }
+
+    @media (max-width:990px) {
+        .galleryBackgroundImage {
+            background-image: $SlimBanner;
+        }
+    }
+
     @media (max-width: $breakpoint-tablet) {
         .gridContainer {
             .imageContainer {
                 width: 100%;
+
                 .previewLink {
                     //Sizes the images to fit on screen properly, and then adjusts the size ratio to fix stretching
                     max-width: 100%;

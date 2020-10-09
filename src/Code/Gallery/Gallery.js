@@ -1,10 +1,8 @@
 import * as React from 'react';
 import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
-import { makeStyles } from '@material-ui/core/styles';
-import SlimBanner from '../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg';
-import LongBanner from '../../Images/BannerImages/SludgeMonstrosity.jpg';
 import Grid from '@material-ui/core/Grid';
+import {getSection} from '../Shared/Constants';
 
 
 const MinisBanner = {
@@ -12,88 +10,84 @@ const MinisBanner = {
   description: "Creatures of all shapes and sizes - some are nice, some are not...",
 };
 const TerrainBanner = {
-  title: 'CHANGE THIS TERRAIN',
-  description: "CHANGE THIS. Sculpted from clay, foam, or even trash! Realistic landscaps crafted and painted from basic every day items.",
+  title: 'Custom Built Terrain',
+  description: "Every journey begins somewhere",
 };
 const OtherBanner = {
-  title: 'CHANGE THIS OTHER',
-  description: "CHANGE THIS. Other projects I've worked on, including 3d printing, creating games, and anything else I think is cool enough to share.",
+  title: 'Other Projects',
+  description: "Check out some of the other things I spend time on",
 };
-let bannerInfo = {};
 
-const useStyles = makeStyles((theme) => ({
-  homeBackgroundImage: {
-    ['@media (min-width:990px)']: {// eslint-disable-line no-useless-computed-key
-      backgroundImage: `url(${LongBanner})`,
-    },
-    ['@media (max-width:990px)']: {// eslint-disable-line no-useless-computed-key
-      backgroundImage: `url(${SlimBanner})`,
-    },
-  },
-}));
-
-function getSection() {
-  if (window.location.href.includes('Miniatures')) {
-    bannerInfo = MinisBanner;
-    return 'Miniatures'
-  }
-  else if (window.location.href.includes('Terrain')) {
-    bannerInfo = TerrainBanner;
-    return 'Terrain'
-  }
-  else if (window.location.href.includes('Other')) {
-    bannerInfo = OtherBanner;
-    return 'Other'
-  }
-}
-
+//import all pictures for the given page
 function importAll(r) {
   return r.keys().map(r);
 }
 
+//If user clicks an image, look at all the pictures from a particular set
+function visitExhibit(props, image) {
+console.log(image.substring(14, image.indexOf('1')))
 
-let images = [];
+  props.history.push({
+    pathname: '/gallery/' + sectionLabel + '/exhibit/',
+    state: {
+      exhibitName: (image.substring(14, image.indexOf('1'))),
+      sectionLabel: sectionLabel,
+    }
+  });
+}
+
+//fisher-yates shuffle algorithm for randomizing images on the page
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
+  }
+  return a;
+}
+
+//load all the images for the given gallery
+let images = [], sectionLabel, bannerInfo = {};
 function loadImages(e) {
-  //have to make this a switch because "require.context()" cannot take a variable - needs to be statically analyzed
-  switch (getSection()) {
-    case 'Miniatures':
-      // images = importAll(require.context('../../Images/Miniatures/', false, /\.(png|jpe?g|svg)$/));
-      images = importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
+  sectionLabel = getSection();
+  //this a switch because "require.context()" cannot take a variable - it needs to be statically analyzed
+  switch (sectionLabel) {
+    case 'miniatures':
+      bannerInfo = MinisBanner;
+      images = shuffle(importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/)));
       break;
-    case 'Terrain':
-      images = importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
+    case 'terrain':
+      bannerInfo = TerrainBanner;
+      images = shuffle(importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/)));
+      break;
+    case 'other':
+      bannerInfo = OtherBanner;
+      images = shuffle(importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/)));
       break;
     default: //default to other if they've somehow ended up with a random url in the gallery
-      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
+      bannerInfo = OtherBanner;
+      images = shuffle(importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/)));
       break;
   }
 }
 
-export default function Gallery() {
-  const classes = useStyles();
+export default function Gallery(props) {
   loadImages();
 
   return (
-
-
     <main>
-      <Banner bannerInfo={bannerInfo} className={"short " + classes.homeBackgroundImage} />
+      <Banner bannerInfo={bannerInfo} className="short galleryBackgroundImage" />
 
       <Grid className='gridContainer' container spacing={4}>
-
-
         {images.map((image, index) => (
-          <div className="imageContainer">
-            <img className="previewLink" alt={image.key} key={index} src={image} onClick={loadImages} ></img>
+          <div className="imageContainer" key={image} >
+            <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, image)}></img>
           </div>
         ))}
-
-
       </Grid>
-
-
     </main>
-
-
   );
 }
+

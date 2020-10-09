@@ -4,33 +4,17 @@ import './Home.scss';
 import Banner from './Banner/Banner';
 import FeaturedPost from './FeaturedPost/FeaturedPost';
 import * as Constants from "../Shared/Constants.js";
-import { makeStyles } from '@material-ui/core/styles';
-
-import LongBanner from '../../Images/BannerImages/ZoomedBannerPurpleWorm4.jpg';
-import SlimBanner from '../../Images/BannerImages/FullBannerPurpleWormSlim.jpg'
 
 const banner = {
   title: 'Art That Escapes Reality',
   description: "Need a break from the real world? Come explore some weird places and even weirder creatures.",
 };
 
-const useStyles = makeStyles((theme) => ({
-  homeBackgroundImage: {
-    ['@media (min-width:990px)']: {// eslint-disable-line no-useless-computed-key
-      backgroundImage: `url(${LongBanner})`,
-    },
-    ['@media (max-width:990px)']: {// eslint-disable-line no-useless-computed-key
-      backgroundImage: `url(${SlimBanner})`,
-    },
-  },
-}));
 
 export default function Home() {
-  const classes = useStyles();
-
   return (
     <main className='main'>
-      <Banner bannerInfo={banner} className={classes.homeBackgroundImage} />
+      <Banner bannerInfo={banner} className="homeBackgroundImage"/>
       <div className="linkCardsContainer">
         <Grid className='linksGrid' container spacing={4}>
 
@@ -44,4 +28,3 @@ export default function Home() {
     </main>
   )
 }
-

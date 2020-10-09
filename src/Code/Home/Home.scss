@@ -1,3 +1,5 @@
+$LongBanner: url('../../Images/BannerImages/ZoomedBannerPurpleWorm4.jpg');
+$SlimBanner: url('../../Images/BannerImages/FullBannerPurpleWormSlim.jpg');
 $breakpoint-tablet: 960px;
 
 html,
@@ -34,7 +36,6 @@ body {
 
                 @media (min-width: 1500px) {
                     margin: auto;
-
                 }
 
                 .expand {
@@ -45,10 +46,24 @@ body {
         }
     }
 
+    @media (min-width:990px) {
+        .homeBackgroundImage {
+            background-image: $LongBanner;
+        }
+    }
+
+    @media (max-width:990px) {
+        .homeBackgroundImage {
+            background-image: $SlimBanner;
+        }
+    }
+
     @media (max-width: $breakpoint-tablet) {
         #main-wrapper {
             padding-bottom: 68px;
         }
     }
+
+
 
 }
