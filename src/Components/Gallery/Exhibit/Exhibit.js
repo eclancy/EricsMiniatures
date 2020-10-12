@@ -28,35 +28,24 @@ function loadImages(exhibitName) {
       break;
   }
 
-  console.log(exhibitName)
-  console.log( images.filter(image => image.indexOf(exhibitName)));
+  images = images.filter(image => image.includes(exhibitName));
 
 }
 
 export default function Exhibit(props) {
 
   //load the data for the image they selected/image in the url. 
-  let exhibitData = window.location.href.substring( window.location.href.lastIndexOf('exhibit/')+8, window.location.href.length );
+  let exhibitData = window.location.href.substring(window.location.href.lastIndexOf('exhibit/') + 8, window.location.href.length);
   loadImages(exhibitData);
 
   return (
     <main id="dark-background">
-      <Grid className='gridContainer' container spacing={4}>
-        {images.map((image, index) => (
-          <div className="imageContainer" key={image} >
-            <img className="previewLink" alt={image.key} src={image} ></img>
-          </div>
-        ))}
-      </Grid>
 
-
-
-      {/* <div className="previewLink">
         <Carousel images={images}
           thumb={true}
           loop={true}
-          autoplay={3000} />
-      </div> */}
+          // autoplay={3000} 
+          />
 
     </main>
   );

@@ -1,6 +1,7 @@
 $primary-color: white;
 $background-color: rgb(234, 237, 237);
 $dark-mode-background-color: #3b4045;
+$black: rgb(45,45,45);
 $breakpoint-tablet: 960px;
 $header-height: 72px;
 
@@ -25,7 +26,7 @@ body,
   #main-wrapper {
     background-color: rgb(234, 237, 237);
 
-    /* will cover the rest of the screen minus the header and footer */
+    /* will at least cover the rest of the screen minus the header and footer */
     min-height: calc(100% - #{$header-height} - 41px);
 
     @media (max-width: $breakpoint-tablet) {

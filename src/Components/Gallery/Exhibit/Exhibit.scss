@@ -3,57 +3,45 @@
 #dark-background {
     animation: fadeToBlack 1s ease-in-out forwards;
     background-color: $dark-mode-background-color;
-    // min-height: 100%;
+    min-height: 0;
 
-    .gridContainer {
-        min-height: 100%;
-        margin: 0;
+    /* will cover the screen minus the header and footer and keep the pictures within that size */
+    height: calc(100vh - #{$header-height} - 41px);
+
+    @media (max-width: $breakpoint-tablet) {
+        height: calc(100vh - $header-height - 68px);
+    }
+
+    .carousel,
+    .carousel-main {
+        height: 100%;
         width: 100%;
-        padding: 20px 10% 20px 10%;
-        justify-content: center;
 
+        div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-
-        .imageContainer {
-            margin: 20px;
-
-            .previewLink {
-                //Sizes the images to fit on screen properly, and then adjusts the size ratio to fix stretching
-                display: block;
-                //ratio is 2.42105263158
-                max-width: 900px;
-                max-height: 372px;
+            img {
+                //size the image within the screen regardless of resolution
+                max-width: 90%;
+                max-height: 90%;
                 width: auto;
                 height: auto;
-                border-radius: 5px;
-
-                cursor: pointer;
-                margin: auto;
-
-
-                // &:hover {
-                //     transition: .3s ease-in-out;
-                //     transform: scale(1.5);
-                //     /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-                // }
-            }
-        }
-    }
-}
-
-@media (max-width: $breakpoint-tablet) {
-    .gridContainer {
-        .imageContainer {
-            width: 100%;
-
-            .previewLink {
-                //Sizes the images to fit on screen properly, and then adjusts the size ratio to fix stretching
-                max-width: 100%;
 
             }
         }
     }
 }
+
+.navbar, .footer {
+    background-color: $black;
+   svg{ fill: white; }
+}
+
+@media (max-width: $breakpoint-tablet) {}
 
 @keyframes fadeToBlack {
     0% {
