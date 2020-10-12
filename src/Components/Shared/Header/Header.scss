@@ -1,12 +1,14 @@
+@import '../../Shared/Theme.scss';
+
 .navbar {
     padding: 0px 20px 0px 20px;
     background-color: white;
+    height: $header-height;
     
     .menuIcon {
         position: absolute;
         right: 10px;
         top: 10px;
-        
     }
 }
 

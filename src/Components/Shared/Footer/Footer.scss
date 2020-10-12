@@ -1,10 +1,8 @@
-$breakpoint-tablet: 960px;
+@import './../Theme.scss';
 
 .footer {
-    background-color: rgb(59,64,69);
-
-    position: absolute;
-    bottom: 0;
+    //will always be on bottom because main wrapper fills in all available space
+    background-color: rgb(59, 64, 69);
     width: 100%;
     text-align: center;
     display: flex;
@@ -16,10 +14,7 @@ $breakpoint-tablet: 960px;
         flex-direction: column;
     }
 
-
     .footerLinkContainer {
-
-
         .footerLink {
             font-size: large;
             text-align: center;
@@ -31,7 +26,7 @@ $breakpoint-tablet: 960px;
             }
 
             .text {
-                margin: 0px;    
+                margin: 0px;
                 color: white;
             }
 

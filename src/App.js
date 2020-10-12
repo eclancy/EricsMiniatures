@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './Code/Shared/Header/Header';
-import Footer from './Code/Shared/Footer/Footer';
-import * as Constants from './Code/Shared/Constants'
+import Header from './Components/Shared/Header/Header';
+import Footer from './Components/Shared/Footer/Footer';
+import * as Constants from './Components/Shared/Constants'
 
 // Pages
-import Home from './Code/Home/Home';
-import Gallery from './Code/Gallery/Gallery';
+import Home from './Components/Home/Home';
+import Gallery from './Components/Gallery/Gallery';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Exhibit from './Code/Gallery/Exhibit/Exhibit';
+import Exhibit from './Components/Gallery/Exhibit/Exhibit';
 
 function App() {
   return (

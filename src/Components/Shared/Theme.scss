@@ -1,0 +1,44 @@
+$primary-color: white;
+$background-color: rgb(234, 237, 237);
+$dark-mode-background-color: #3b4045;
+$breakpoint-tablet: 960px;
+$header-height: 72px;
+
+html,
+body,
+#root,
+#root>div,
+.App {
+
+  /* The below code is for properly sizing the main content container of the page
+    and accounts for the header size and the footer size. This pushes
+    the footer to the bottom of the page regardless of height 
+    without absolute positioning needed, and allows the website to have a 
+    default background color for all pages.
+    Minimum height will be the size of the viewport, but it can expand to 
+    fit the content of the page while keeping the footer below the content */
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  #main-wrapper {
+    background-color: rgb(234, 237, 237);
+
+    /* will cover the rest of the screen minus the header and footer */
+    min-height: calc(100% - #{$header-height} - 41px);
+
+    @media (max-width: $breakpoint-tablet) {
+      min-height: calc(100% - $header-height - 68px);
+    }
+
+    main {
+      /* will cover the rest of the screen minus the header and footer*/
+      min-height: calc(100% - #{$header-height} - 41px);
+
+      @media (max-width: $breakpoint-tablet) {
+        min-height: calc(100% - $header-height - 68px);
+      }
+    }
+  }
+}
