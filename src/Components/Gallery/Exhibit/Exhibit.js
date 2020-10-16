@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './Exhibit.scss'
 import { getSection } from '../../Shared/Constants';
-import Carousel from 'react-responsive-carousel';
+import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 
@@ -30,6 +30,7 @@ function loadImages(exhibitName) {
   }
 
   images = images.filter(image => image.includes(exhibitName));
+  console.log(images)
 
 }
 
@@ -42,12 +43,26 @@ export default function Exhibit(props) {
   return (
     <main id="dark-background">
 
-      <Carousel images={images}
-        thumb={true}
-        loop={true}
-      // autoplay={3000} 
-      />
+      <div className="image-container">
+        {images.length === 1 &&
+          <img src={images[0]} alt={images[0]}></img>
+        }
 
+
+        {/* Render a Carousel if there is more than one image */}
+        {images.length > 1 &&
+          <Carousel showArrows={true}>
+
+            {images.map((section, index) => (
+              <div key={images[index]}>
+                <img src={images[index]} alt={images[index]} />
+              </div>
+            ))}
+
+          </Carousel>
+        }
+      </div>
     </main>
+
   );
 }
