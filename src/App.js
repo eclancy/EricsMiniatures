@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Components/Shared/Header/Header';
 import Footer from './Components/Shared/Footer/Footer';
-import * as Constants from './Components/Shared/Constants'
+import {sections} from './Components/Shared/Constants'
 
 // Pages
 import Home from './Components/Home/Home';
@@ -17,7 +17,7 @@ function App() {
       <React.Fragment>
         <CssBaseline />
         <div id="main-wrapper">
-          <Header sections={Constants.sections} />
+          <Header sections={sections} />
           {/* Routing for the various pages rendered inside the header and footer */}
           <Switch>
             <Route exact path="/" component={Home} />

@@ -1,8 +1,9 @@
 import * as React from 'react';
 import './Exhibit.scss'
-import Grid from '@material-ui/core/Grid';
 import { getSection } from '../../Shared/Constants';
-import Carousel from 'react-image-carousel';
+import Carousel from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 
 function importAll(r) {
   return r.keys().map(r);
@@ -41,11 +42,11 @@ export default function Exhibit(props) {
   return (
     <main id="dark-background">
 
-        <Carousel images={images}
-          thumb={true}
-          loop={true}
-          // autoplay={3000} 
-          />
+      <Carousel images={images}
+        thumb={true}
+        loop={true}
+      // autoplay={3000} 
+      />
 
     </main>
   );

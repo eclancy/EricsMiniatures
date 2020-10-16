@@ -36,11 +36,6 @@
     }
 }
 
-.navbar, .footer {
-    background-color: $black;
-   svg{ fill: white; }
-}
-
 @media (max-width: $breakpoint-tablet) {}
 
 @keyframes fadeToBlack {

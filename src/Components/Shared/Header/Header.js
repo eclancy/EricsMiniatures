@@ -23,10 +23,9 @@ export default function Header(props) {
     setAnchorEl(null);
   };
 
-
   return (
     <React.Fragment>
-        <Toolbar className="navbar" disableGutters>
+        <Toolbar className={window.location.href.includes('exhibit') ? "navbar darkMode" : "navbar" } disableGutters>
           <Link className="HomeNav" to={"/"}>
             <img src={BigLogoColor} alt="Eric's Miniatures Home" width={160}></img>
           </Link>

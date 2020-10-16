@@ -42,4 +42,14 @@ body,
       }
     }
   }
+
+  .navbar.darkMode,
+  .footer.darkMode {
+      background-color: $black;
+  
+      svg {
+          fill: white;
+      }
+  }
+
 }
