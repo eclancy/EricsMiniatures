@@ -13,8 +13,14 @@
         height: calc(100vh - $header-height - 68px);
     }
 
-    .image-container, .slide{
-        width: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    .image-container,
+    .slide {
+        width: 90vw;
         max-width: 1650px;
         max-height: 1040px;
         display: flex;
@@ -22,33 +28,56 @@
         align-items: center;
         margin: auto;
 
-        .exhibitImage {
+        .carousel-slider {
+            .exhibitImage {
+                //size the image within the screen regardless of resolution
+                max-width: 90vw;
+                max-height: 70vh;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        .exhibitImageSingle {
             //size the image within the screen regardless of resolution
-            max-width: 90vh;
+            max-width: 90vw;
             max-height: 70vh;
             width: auto;
             height: auto;
 
         }
+
     }
 
-    .carousel-root{
+    .carousel-root {
         height: 100%;
         width: 100%;
-        margin-top: 5%;
+        max-height: 1100px;
+        margin-top: -10%;
 
-        @media (max-height: 1000px) {
-            margin-top: 20px;
+        @media (max-height: 1400px) {
+            margin-top: 20px !important;
         }
+
     }
 
-    .thumbs-wrapper{
+    .thumbs-wrapper {
         min-width: 500px;
+        width: 80%;
     }
 
 }
 
+.galleryButton {
+    margin: 0px;
+    right: 20px;
+    bottom: 20px;
+    position: fixed !important;
 
+    @media (max-width: 1200px){
+        bottom: 80px;
+    }
+}
 
 
 
@@ -61,4 +90,3 @@
         background-color: $dark-mode-background-color;
     }
 }
-

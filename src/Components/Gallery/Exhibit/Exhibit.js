@@ -3,11 +3,12 @@ import './Exhibit.scss'
 import { getSection } from '../../Shared/Constants';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
+import { Fab } from '@material-ui/core';
 
 function importAll(r) {
   return r.keys().map(r);
 }
+
 
 // Loads all images based on the URL parameter (so you can link to a specific exhibit)
 let images = [];
@@ -42,23 +43,25 @@ export default function Exhibit(props) {
 
       <div className="image-container">
         {images.length === 1 &&
-          <img src={images[0]} alt={images[0]}></img>
+          <img src={images[0]} alt={images[0]} className="exhibitImageSingle"></img>
         }
-
 
         {/* Render a Carousel if there is more than one image */}
         {images.length > 1 &&
           <Carousel showArrows={true}>
 
             {images.map((section, index) => (
-              <div key={images[index]} className="exhibitImage">
-                <img src={images[index]} alt={images[index]} />
+              <div key={images[index]} >
+                <img src={images[index]} alt={images[index]} className="exhibitImage" />
               </div>
             ))}
 
           </Carousel>
         }
       </div>
+
+      <Fab className="galleryButton" variant="extended"> Back to Gallery </Fab>
+
     </main>
 
   );
