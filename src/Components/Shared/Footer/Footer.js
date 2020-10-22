@@ -16,7 +16,7 @@ const socials = {
 export default function Footer(props) {
 
   return (
-    <footer className={window.location.href.includes('exhibit') ? "footer darkMode" : "footer"}>
+    <footer className={location.pathname.includes('exhibit') ? "footer darkMode" : "footer"}>
       {socials.social.map((links) => (
         <Link className="footerLinkContainer" variant="body1" href="#" key={links.label}>
           <Grid container alignItems="center" justify="center" className={"footerLink"}>
