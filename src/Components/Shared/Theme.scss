@@ -19,7 +19,7 @@ body,
     Minimum height will be the size of the viewport, but it can expand to 
     fit the content of the page while keeping the footer below the content */
 
-  height: 100vh;
+  // height: 100vh;
   margin: 0;
   padding: 0;
 
@@ -27,18 +27,18 @@ body,
     background-color: rgb(234, 237, 237);
 
     /* will at least cover the rest of the screen minus the header and footer */
-    min-height: calc(100% - #{$header-height} - 41px);
+    min-height: calc(100vh - #{$header-height} - 41px);
 
     @media (max-width: $breakpoint-tablet) {
-      min-height: calc(100% - $header-height - 68px);
+      min-height: calc(100vh - $header-height - 68px);
     }
 
     main {
       /* will cover the rest of the screen minus the header and footer*/
-      min-height: calc(100% - #{$header-height} - 41px);
+      min-height: calc(100vh - #{$header-height} - 41px);
 
       @media (max-width: $breakpoint-tablet) {
-        min-height: calc(100% - $header-height - 68px);
+        min-height: calc(100vh - $header-height - 68px);
       }
     }
   }
@@ -52,4 +52,26 @@ body,
       }
   }
 
+}
+
+@mixin center($width: null, $height: null) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  @if not $width and not $height {
+    transform: translate(-50%, -50%);
+  } @else if $width and $height {
+    width: $width;
+    height: $height;
+    margin: -($width / 2) #{0 0} -($height / 2);
+  } @else if not $height {
+    width: $width;
+    margin-left: -($width / 2);
+    transform: translateY(-50%);
+  } @else {
+    height: $height;
+    margin-top: -($height / 2);
+    transform: translateX(-50%);
+  }
 }

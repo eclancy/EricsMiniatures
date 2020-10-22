@@ -9,9 +9,7 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-/*
-  Loads all images based on the URL parameter (so you can link to a specific exhibit)
-*/
+// Loads all images based on the URL parameter (so you can link to a specific exhibit)
 let images = [];
 function loadImages(exhibitName) {
   let sectionLabel = getSection();
@@ -19,18 +17,17 @@ function loadImages(exhibitName) {
   switch (sectionLabel) {
     //this a switch because "require.context()" cannot take a variable - it needs to be statically analyzed
     case 'miniatures':
-      images = importAll(require.context('../../../Images/Miniatures/', true, /\.(png|jpe?g|svg)$/));
+      images = importAll(require.context('../../../Images/Miniatures/', true, /\.(png|jpe?g|svg|gif)$/));
       break;
     case 'terrain':
-      images = importAll(require.context('../../../Images/Terrain/', true, /\.(png|jpe?g|svg)$/));
+      images = importAll(require.context('../../../Images/Terrain/', true, /\.(png|jpe?g|svg|gif)$/));
       break;
     default: //they're in other
-      images = importAll(require.context('../../../Images/Other/', true, /\.(png|jpe?g|svg)$/));
+      images = importAll(require.context('../../../Images/Other/', true, /\.(png|jpe?g|svg|gif)$/));
       break;
   }
 
   images = images.filter(image => image.includes(exhibitName));
-  console.log(images)
 
 }
 
@@ -54,7 +51,7 @@ export default function Exhibit(props) {
           <Carousel showArrows={true}>
 
             {images.map((section, index) => (
-              <div key={images[index]}>
+              <div key={images[index]} className="exhibitImage">
                 <img src={images[index]} alt={images[index]} />
               </div>
             ))}

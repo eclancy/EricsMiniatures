@@ -3,8 +3,9 @@
 #dark-background {
     animation: fadeToBlack 1s ease-in-out forwards;
     background-color: $dark-mode-background-color;
-    min-height: 0;
 
+    //override theme height for carousel - min height = carousel height + height of preview images + margins
+    min-height: calc(70vh + 136px + 40px) !important;
     /* will cover the screen minus the header and footer and keep the pictures within that size */
     height: calc(100vh - #{$header-height} - 41px);
 
@@ -12,17 +13,19 @@
         height: calc(100vh - $header-height - 68px);
     }
 
-    .image-container{
-        height: 100%;
-        width: 100%;
+    .image-container, .slide{
+        width: 90vh;
+        max-width: 1650px;
+        max-height: 1040px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
 
-        img {
+        .exhibitImage {
             //size the image within the screen regardless of resolution
-            max-width: 90%;
-            max-height: 90%;
+            max-width: 90vh;
+            max-height: 70vh;
             width: auto;
             height: auto;
 
@@ -32,14 +35,22 @@
     .carousel-root{
         height: 100%;
         width: 100%;
-        max-height: 1040px;
+        margin-top: 5%;
+
+        @media (max-height: 1000px) {
+            margin-top: 20px;
+        }
+    }
+
+    .thumbs-wrapper{
+        min-width: 500px;
     }
 
 }
 
 
 
-@media (max-width: $breakpoint-tablet) {}
+
 
 @keyframes fadeToBlack {
     0% {
@@ -50,3 +61,4 @@
         background-color: $dark-mode-background-color;
     }
 }
+
