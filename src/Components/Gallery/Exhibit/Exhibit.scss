@@ -71,11 +71,11 @@
 .galleryButton {
     margin: 0px;
     right: 20px;
-    bottom: 20px;
+    bottom: 60px;
     position: fixed !important;
 
-    @media (max-width: 1200px){
-        bottom: 80px;
+    @media (max-width: 800px){
+        // display: none !important;
     }
 }
 

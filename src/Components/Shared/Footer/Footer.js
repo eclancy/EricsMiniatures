@@ -5,6 +5,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import './Footer.scss';
+import { useLocation } from 'react-router-dom';
 
 const socials = {
   social: [
@@ -14,9 +15,10 @@ const socials = {
 };
 
 export default function Footer(props) {
+  const location = useLocation();
 
   return (
-    <footer className={window.location.href.includes('exhibit') ? "footer darkMode" : "footer"}>
+    <footer className={location.pathname.includes('exhibit') ? "footer darkMode" : "footer"}>
       {socials.social.map((links) => (
         <Link className="footerLinkContainer" variant="body1" href="#" key={links.label}>
           <Grid container alignItems="center" justify="center" className={"footerLink"}>
