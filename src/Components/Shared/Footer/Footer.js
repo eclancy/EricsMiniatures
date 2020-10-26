@@ -17,6 +17,8 @@ const socials = {
 export default function Footer(props) {
   const location = useLocation();
 
+  const location = useLocation();
+  
   return (
     <footer className={location.pathname.includes('exhibit') ? "footer darkMode" : "footer"}>
       {socials.social.map((links) => (
