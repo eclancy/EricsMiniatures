@@ -1,51 +1,41 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+require('webpack');
 
 module.exports = (env, options) => {
     return {
-        entry: './src/block.js',
-
+        entry: './src/index.js',
         output: {
-            path: path.resolve(__dirname, 'build'),
-            filename: 'block.js',
+            path: path.resolve(__dirname, 'dist'),
+            filename: 'bundle.js',
         },
-
-        devtool: 'cheap-eval-source-map',
-
         module: {
             rules: [
                 {
                     test: /\.jsx$|\.es6$|\.js$/,
+                    exclude: /node_modules/,
                     use: {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['react'],
+                            presets: ['@babel/react'],
                         }
                     },
-                    exclude: /(node_modules|bower_components)/
                 },
                 {
-                    test: /\.css$/,
+                    test: /\.s[ac]ss$/i,
+                    exclude: /node_modules/,
                     use: [
-                        MiniCssExtractPlugin.loader,
-                        {
-                            loader: 'css-loader',
-                            options: {
-                                importLoaders: 1,
-                                minimize: (options.mode === 'production' ? true : false),
-                                sourceMap: true,
-                            }
-                        },
-                        {
-                            loader: 'postcss-loader',
-                            options: {
-                                plugins: [require('autoprefixer')]
-                            }
-                        },
+                        // Creates `style` nodes from JS strings
+                        'style-loader',
+                        // Translates CSS into CommonJS
+                        'css-loader',
+                        // Compiles Sass to CSS
+                        'sass-loader',
                     ],
                 },
                 {
                     test: /\.(png|jpg|gif)$/,
+                    exclude: /node_modules/,
                     use: [
                         {
                             loader: 'file-loader',

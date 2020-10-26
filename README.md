@@ -1,2 +1,2 @@
-# Personal Site
+# Eric's Miniatures
  
