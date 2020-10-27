@@ -30,7 +30,7 @@ body,
     min-height: calc(100vh - #{$header-height} - 41px);
 
     @media (max-width: $breakpoint-tablet) {
-      min-height: calc(100vh - $header-height - 68px);
+      min-height: calc(100vh - #{$header-height} - 68px);
     }
 
     main {
@@ -38,7 +38,7 @@ body,
       min-height: calc(100vh - #{$header-height} - 41px);
 
       @media (max-width: $breakpoint-tablet) {
-        min-height: calc(100vh - $header-height - 68px);
+        min-height: calc(100vh - #{$header-height} - 68px);
       }
     }
   }

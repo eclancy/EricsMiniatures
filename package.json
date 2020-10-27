@@ -25,9 +25,10 @@
     "webpack-merge": "^5.2.0"
   },
   "scripts": {
-    "run": "react-scripts start",
-    "dev": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,0 +1,2 @@
+- name: SCP Files
+  uses: appleboy/scp-action@v0.0.1

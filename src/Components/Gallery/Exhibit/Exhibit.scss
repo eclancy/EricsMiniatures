@@ -10,7 +10,7 @@
     height: calc(100vh - #{$header-height} - 41px);
 
     @media (max-width: $breakpoint-tablet) {
-        height: calc(100vh - $header-height - 68px);
+        height: calc(100vh - #{$header-height} - 68px);
     }
 
     display: flex;
