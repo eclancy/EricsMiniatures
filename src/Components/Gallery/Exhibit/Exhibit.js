@@ -9,6 +9,13 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
+//If user clicks an image, look at all the pictures from a particular set
+function backToGallery(props) {
+  
+    props.history.push({
+      pathname: '/gallery/' + getSection()
+    });
+  }
 
 // Loads all images based on the URL parameter (so you can link to a specific exhibit)
 let images = [];
@@ -27,9 +34,7 @@ function loadImages(exhibitName) {
       images = importAll(require.context('../../../Images/Other/', true, /\.(png|jpe?g|svg|gif)$/));
       break;
   }
-
   images = images.filter(image => image.includes(exhibitName));
-
 }
 
 export default function Exhibit(props) {
@@ -60,7 +65,7 @@ export default function Exhibit(props) {
         }
       </div>
 
-      <Fab className="galleryButton" variant="extended"> Back to Gallery </Fab>
+      <Fab className="galleryButton" variant="extended" onClick={() => backToGallery(props)}> Back to Gallery </Fab>
 
     </main>
 

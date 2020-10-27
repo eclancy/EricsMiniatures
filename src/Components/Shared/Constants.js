@@ -1,6 +1,6 @@
 import GirlOnBeach from '../../Images/Miniatures/GirlOnBeach/GirlOnBeach1.jpg';
 import Temple6 from '../../Images/Terrain/TempleInterior/Temple6.jpg';
-import GameAnimation from '../../Images/Other/WizardWars/FireAnimation.gif'
+import GameAnimation from '../../Images/Other/WizardWars/WizardWarsFireGif.gif'
 
 export const sections = [
    {

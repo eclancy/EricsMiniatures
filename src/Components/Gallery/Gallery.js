@@ -4,7 +4,6 @@ import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
 import {getSection} from '../Shared/Constants';
 
-
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
   description: "Creatures of all shapes and sizes - some are nice, some are not...",
