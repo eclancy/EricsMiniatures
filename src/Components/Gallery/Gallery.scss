@@ -1,6 +1,11 @@
+@import '../Shared/Theme.scss';
 $breakpoint-tablet: 960px;
-$SlimBanner: url('../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg');
-$LongBanner: url('../../Images/BannerImages/SludgeMonstrosity.jpg');
+$miniatureBannerSlim: url('../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg');
+$miniatureBannerLong: url('../../Images/BannerImages/SludgeMonstrosity.jpg');
+$terrainBannerSlim: url('../../Images/BannerImages/DocksSmall Banner.jpg');
+$terrainBannerLong: url('../../Images/BannerImages/PrismaWallBanner.jpg');
+$otherBannerSlim: url('../../Images/BannerImages/MothersDayDiorama.jpg');
+$otherBannerLong: url('../../Images/BannerImages/CoinBanner.jpg');
 
 main {
     background-color: rgb(234, 237, 237);
@@ -39,17 +44,38 @@ main {
         }
     }
 
-    @media (min-width:990px) {
-        .galleryBackgroundImage {
-            background-image: $LongBanner;
-        }
+    //classes are dynamically build from state, and then the background image is set here
+    .largeminiatures {
+        background-image: $miniatureBannerLong;
+        @include left-align-text;
     }
 
-    @media (max-width:990px) {
-        .galleryBackgroundImage {
-            background-image: $SlimBanner;
-        }
+    .slimminiatures {
+        background-image: $miniatureBannerSlim;
+        @include center-text;
     }
+
+    .largeterrain {
+        background-image: $terrainBannerLong;
+
+        @include center-text;
+    }
+
+    .slimterrain {
+        background-image: $terrainBannerSlim;
+        @include center-text;
+    }
+
+    .largeother {
+        background-image: $otherBannerLong;
+        @include left-align-text;
+    }
+
+    .slimother {
+        background-image: $otherBannerSlim;
+        @include center-text;
+    }
+
 
     @media (max-width: $breakpoint-tablet) {
         .gridContainer {
@@ -65,3 +91,4 @@ main {
         }
     }
 }
+

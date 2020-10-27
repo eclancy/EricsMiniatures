@@ -13,6 +13,7 @@
     "history": "^5.0.0",
     "jshint": "^2.12.0",
     "list-react-files": "^0.2.0",
+    "lodash.debounce": "^4.0.8",
     "markdown-to-jsx": "^6.11.4",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",

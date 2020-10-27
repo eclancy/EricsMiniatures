@@ -1,14 +1,9 @@
-import * as React from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
 import { getSection } from '../Shared/Constants';
-// import miniatureBannerSlim from '../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg';
-// import miniatureBannerLong from '../../Images/BannerImages/SludgeMonstrosity.jpg';
-// import terrainBannerSlim from '../../Images/BannerImages/DocksSmall Banner.jpg';
-// import terrainBannerLong from '../../Images/BannerImages/PrismaWallBanner.jpg';
-// import otherBannerSlim from '../../Images/BannerImages/MothersDayDiorama.jpg';
-// import otherBannerLong from '../../Images/BannerImages/CoinBanner.jpg';
+import debounce from 'lodash.debounce';
 
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
@@ -23,28 +18,6 @@ const OtherBanner = {
   description: "Check out some of the other things I spend time on",
 };
 
-
-// let bannerImageLong, bannerImageSlim;
-// function getBackgroundImages() {
-//   let sectionLabel = getSection();
-
-//   switch (sectionLabel) {
-//     case 'miniatures':
-//       bannerImageLong = miniatureBannerLong;
-//       bannerImageSlim = miniatureBannerSlim;
-//       break;
-//     case 'terrain':
-//       bannerImageLong = terrainBannerLong;
-//       bannerImageSlim = terrainBannerSlim;
-//       break;
-//     case 'other':
-//       bannerImageLong = otherBannerLong;
-//       bannerImageSlim = otherBannerSlim;
-//       break;
-//     default: //they're in home
-//       break;
-//   }
-// }
 
 //import all pictures for the given page
 function importAll(r) {
@@ -65,16 +38,16 @@ function visitExhibit(props, image) {
 }
 
 //fisher-yates shuffle algorithm for randomizing images on the page
-function shuffle(a) {
-  var j, x, i;
-  for (i = a.length - 1; i > 0; i--) {
-    j = Math.floor(Math.random() * (i + 1));
-    x = a[i];
-    a[i] = a[j];
-    a[j] = x;
-  }
-  return a;
-}
+// function shuffle(a) {
+//   var j, x, i;
+//   for (i = a.length - 1; i > 0; i--) {
+//     j = Math.floor(Math.random() * (i + 1));
+//     x = a[i];
+//     a[i] = a[j];
+//     a[j] = x;
+//   }
+//   return a;
+// }
 
 //load all the images for the given gallery
 let images = [], sectionLabel, bannerInfo = {};
@@ -84,31 +57,47 @@ function loadImages(e) {
   switch (sectionLabel) {
     case 'miniatures':
       bannerInfo = MinisBanner;
-      images = shuffle(importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/)));
+      images = importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
       break;
     case 'terrain':
       bannerInfo = TerrainBanner;
-      images = shuffle(importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/)));
+      images = importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
       break;
     case 'other':
       bannerInfo = OtherBanner;
-      images = shuffle(importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/)));
+      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
       break;
     default: //default to other if they've somehow ended up with a random url in the gallery
       bannerInfo = OtherBanner;
-      images = shuffle(importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/)));
+      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
       break;
   }
+  //randomize the images
+  // images = shuffle(images);
+}
+
+function useWindowSize() {
+  const [size, setSize] = useState([0]);
+  useLayoutEffect(() => {
+    const debouncedUpdateSize = debounce( function updateSize() {
+      setSize([window.innerWidth]);
+    }, 10);
+
+    window.addEventListener('resize', debouncedUpdateSize);
+    debouncedUpdateSize();
+    return () => window.removeEventListener('resize', debouncedUpdateSize);
+  }, []);
+  return size;
 }
 
 export default function Gallery(props) {
   loadImages();
-  // getBackgroundImages();
-
+  const screenWidth = ( useWindowSize() > 990 ? 'large' : 'slim' ); 
+  const [section] = useState(sectionLabel);
 
   return (
     <main>
-      <Banner bannerInfo={bannerInfo} className={"short galleryBackgroundImage"}/>
+      <Banner bannerInfo={bannerInfo} className={"short " + screenWidth + section} />
 
       <Grid className='gridContainer' container spacing={4}>
         {images.map((image, index) => (
