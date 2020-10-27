@@ -2,7 +2,13 @@ import * as React from 'react';
 import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
-import {getSection} from '../Shared/Constants';
+import { getSection } from '../Shared/Constants';
+// import miniatureBannerSlim from '../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg';
+// import miniatureBannerLong from '../../Images/BannerImages/SludgeMonstrosity.jpg';
+// import terrainBannerSlim from '../../Images/BannerImages/DocksSmall Banner.jpg';
+// import terrainBannerLong from '../../Images/BannerImages/PrismaWallBanner.jpg';
+// import otherBannerSlim from '../../Images/BannerImages/MothersDayDiorama.jpg';
+// import otherBannerLong from '../../Images/BannerImages/CoinBanner.jpg';
 
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
@@ -17,6 +23,29 @@ const OtherBanner = {
   description: "Check out some of the other things I spend time on",
 };
 
+
+// let bannerImageLong, bannerImageSlim;
+// function getBackgroundImages() {
+//   let sectionLabel = getSection();
+
+//   switch (sectionLabel) {
+//     case 'miniatures':
+//       bannerImageLong = miniatureBannerLong;
+//       bannerImageSlim = miniatureBannerSlim;
+//       break;
+//     case 'terrain':
+//       bannerImageLong = terrainBannerLong;
+//       bannerImageSlim = terrainBannerSlim;
+//       break;
+//     case 'other':
+//       bannerImageLong = otherBannerLong;
+//       bannerImageSlim = otherBannerSlim;
+//       break;
+//     default: //they're in home
+//       break;
+//   }
+// }
+
 //import all pictures for the given page
 function importAll(r) {
   return r.keys().map(r);
@@ -24,7 +53,7 @@ function importAll(r) {
 
 //If user clicks an image, look at all the pictures from a particular set
 function visitExhibit(props, image) {
-image = image.substring(14, image.indexOf('1'));
+  image = image.substring(14, image.indexOf('1'));
 
   props.history.push({
     pathname: '/gallery/' + sectionLabel + '/exhibit/' + image,
@@ -74,10 +103,12 @@ function loadImages(e) {
 
 export default function Gallery(props) {
   loadImages();
+  // getBackgroundImages();
+
 
   return (
     <main>
-      <Banner bannerInfo={bannerInfo} className="short galleryBackgroundImage" />
+      <Banner bannerInfo={bannerInfo} className={"short galleryBackgroundImage"}/>
 
       <Grid className='gridContainer' container spacing={4}>
         {images.map((image, index) => (
