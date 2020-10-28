@@ -26,6 +26,8 @@ function App() {
 
             <Route exact path="/gallery/:id" component={Gallery} />
 
+            {/* if they have nonsensical url, redirect to home */}
+
           </Switch>
           {/* End of routing */}
           <Footer />

@@ -2,7 +2,6 @@ import React, { useLayoutEffect, useState } from 'react';
 import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
-import { getSection } from '../Shared/Constants';
 import debounce from 'lodash.debounce';
 
 const MinisBanner = {
@@ -25,14 +24,14 @@ function importAll(r) {
 }
 
 //If user clicks an image, look at all the pictures from a particular set
-function visitExhibit(props, image) {
+function visitExhibit(props, section, image) {
   image = image.substring(14, image.indexOf('1'));
 
   props.history.push({
-    pathname: '/gallery/' + sectionLabel + '/exhibit/' + image,
+    pathname: '/gallery/' + section + '/exhibit/' + image,
     state: {
       exhibitName: (image),
-      sectionLabel: sectionLabel,
+      sectionLabel: section,
     }
   });
 }
@@ -50,27 +49,22 @@ function visitExhibit(props, image) {
 // }
 
 //load all the images for the given gallery
-let images = [], sectionLabel, bannerInfo = {};
-function loadImages(e) {
-  sectionLabel = getSection();
+let bannerInfo = {};
+function loadImages(sectionLabel) {
   //this a switch because "require.context()" cannot take a variable - it needs to be statically analyzed
   switch (sectionLabel) {
     case 'miniatures':
       bannerInfo = MinisBanner;
-      images = importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
-      break;
+      return importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
     case 'terrain':
       bannerInfo = TerrainBanner;
-      images = importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
-      break;
+      return importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
     case 'other':
       bannerInfo = OtherBanner;
-      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
-      break;
+     return importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
     default: //default to other if they've somehow ended up with a random url in the gallery
       bannerInfo = OtherBanner;
-      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
-      break;
+      return importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
   }
   //randomize the images
   // images = shuffle(images);
@@ -91,9 +85,9 @@ function useWindowSize() {
 }
 
 export default function Gallery(props) {
-  loadImages();
+  let images = loadImages(props.match.id);
   const screenWidth = ( useWindowSize() > 990 ? 'large' : 'slim' ); 
-  const [section] = useState(sectionLabel);
+  const section = props.match.id;
 
   return (
     <main>
@@ -102,7 +96,7 @@ export default function Gallery(props) {
       <Grid className='gridContainer' container spacing={4}>
         {images.map((image, index) => (
           <div className="imageContainer" key={image} >
-            <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, image)}></img>
+            <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, section, image)}></img>
           </div>
         ))}
       </Grid>
