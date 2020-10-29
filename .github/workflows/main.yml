@@ -21,5 +21,6 @@ jobs:
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           source: "./build"
-          target: "/var/www/html/"
+          target: "/var/www/ericsminiatures/html"
           overwrite: true
+          rm: true
