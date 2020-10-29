@@ -22,6 +22,4 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           source: "./build"
           target: "/var/www/html/"
-          rm: true
           overwrite: true
-
