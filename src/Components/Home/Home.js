@@ -11,8 +11,7 @@ const banner = {
 };
 
 
-export default function Home() {
-
+export default function Home(props) {
   return (
     <main className='main'>
       <Banner bannerInfo={banner} className="homeBackgroundImage"/>

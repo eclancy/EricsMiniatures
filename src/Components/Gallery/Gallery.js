@@ -85,9 +85,9 @@ function useWindowSize() {
 }
 
 export default function Gallery(props) {
-  let images = loadImages(props.match.id);
+  let images = loadImages(props.match.params.id);
   const screenWidth = ( useWindowSize() > 990 ? 'large' : 'slim' ); 
-  const section = props.match.id;
+  const section = props.match.params.id;
 
   return (
     <main>

@@ -8,9 +8,6 @@ $otherBannerSlim: url('../../Images/BannerImages/MothersDayDiorama.jpg');
 $otherBannerLong: url('../../Images/BannerImages/CoinBanner.jpg');
 
 main {
-    background-color: rgb(234, 237, 237);
-    min-height: 100%;
-
     .gridContainer {
         min-height: 100%;
         margin: 0;
@@ -21,7 +18,7 @@ main {
 
         .imageContainer {
             margin: 20px;
-
+            box-shadow: 0 0 20px gray;
             .previewLink {
                 //Sizes the images to fit on screen properly, and then adjusts the size ratio to fix stretching
                 display: block;
@@ -53,6 +50,7 @@ main {
     .slimminiatures {
         background-image: $miniatureBannerSlim;
         @include center-text;
+
         .bannerText {
             text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black;
         }

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import './Exhibit.scss'
-import { getSection } from '../../Shared/Constants';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Fab } from '@material-ui/core';
@@ -10,17 +9,16 @@ function importAll(r) {
 }
 
 //If user clicks an image, look at all the pictures from a particular set
-function backToGallery(props) {
+function backToGallery(props, sectionLabel) {
   
     props.history.push({
-      pathname: '/gallery/' + getSection()
+      pathname: '/gallery/' + sectionLabel
     });
   }
 
 // Loads all images based on the URL parameter (so you can link to a specific exhibit)
 let images = [];
-function loadImages(exhibitName) {
-  let sectionLabel = getSection();
+function loadImages(sectionLabel, exhibitName) {
 
   switch (sectionLabel) {
     //this a switch because "require.context()" cannot take a variable - it needs to be statically analyzed
@@ -41,7 +39,7 @@ export default function Exhibit(props) {
 
   //load the data for the image they selected/image in the url. 
   let exhibitData = window.location.href.substring(window.location.href.lastIndexOf('exhibit/') + 8, window.location.href.length);
-  loadImages(exhibitData);
+  loadImages(props.match.params.id, exhibitData);
 
   return (
     <main id="dark-background">
@@ -65,7 +63,7 @@ export default function Exhibit(props) {
         }
       </div>
 
-      <Fab className="galleryButton" variant="extended" onClick={() => backToGallery(props)}> Back to Gallery </Fab>
+      <Fab className="galleryButton" variant="extended" onClick={() => backToGallery(props, props.match.params.id)}> Back to Gallery </Fab>
 
     </main>
 

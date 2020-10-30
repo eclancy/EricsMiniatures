@@ -3,6 +3,10 @@ $SlimBanner: url('../../Images/BannerImages/FullBannerPurpleWormSlim.jpg');
 $breakpoint-tablet: 960px;
 @import '../Shared/Theme.scss';
 
+main{
+    background-color: #dadada;
+    min-height: 100%;
+}
 .linkCardsContainer {
     width: 100%;
     min-height: 100%;

@@ -36,7 +36,7 @@ export default function FeaturedPost(props) {
 
   return (
     <Grid item xs={12} md={6} className={props.className}>
-      <CardActionArea component={Link} to={post.url}>
+      <CardActionArea component={Link} to={post.url} className={'featuredCard'}>
           <Card className={classes.card} >
             <div className={classes.cardDetails}>
               <CardContent>

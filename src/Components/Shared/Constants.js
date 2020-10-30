@@ -29,16 +29,4 @@ export const sections = [
   },
 ];
 
-export function getSection() {
-  if (window.location.href.includes('miniatures')) {
-    return 'miniatures'
-  }
-  else if (window.location.href.includes('terrain')) {
-    return 'terrain'
-  }
-  else if (window.location.href.includes('other')) {
-    return 'other'
-  }
-}
-
 export default sections;
