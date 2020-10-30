@@ -13,7 +13,7 @@ jobs:
       - name: Create Build
         run: npm install && npm run build
         
-      - name: tar the build folder to prepare for deployment
+      - name: TAR the build folder to prepare for deployment
         run: | 
           mkdir ../build
           cp -TR ./build ../deploy
@@ -28,5 +28,3 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           source: "./deploy.tar"
           target: "/var/www/ericsminiatures.com/html"
-          overwrite: true
-          rm: true
