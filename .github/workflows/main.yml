@@ -12,6 +12,12 @@ jobs:
         
       - name: Create Build
         run: npm install && npm run build
+        
+      - name: tar the build folder to prepare for deployment
+          run:|
+          mkdir ../build
+          cp -TR ./build ../deploy
+          tar -cvf deploy.tar ../deploy/
           
       - name: Copy Files 
         uses: appleboy/scp-action@master
@@ -20,7 +26,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          source: "./build"
+          source: "./deploy.tar"
           target: "/var/www/ericsminiatures.com/html"
           overwrite: true
           rm: true
