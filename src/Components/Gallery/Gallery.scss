@@ -18,7 +18,7 @@ main {
 
         .imageContainer {
             margin: 20px;
-            box-shadow: 0 0 20px gray;
+            box-shadow: 0 0 20px rgb(121, 121, 121);
             .previewLink {
                 //Sizes the images to fit on screen properly, and then adjusts the size ratio to fix stretching
                 display: block;
