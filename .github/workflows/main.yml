@@ -12,13 +12,7 @@ jobs:
         
       - name: Create Build
         run: npm install && npm run build
-        
-#       - name: TAR the build folder to prepare for deployment
-#         run: | 
-#           mkdir ../build
-#           cp -TR ./build ../build
-#           tar -cvf deploy.tar ../build/
-          
+
       - name: Copy Files 
         uses: appleboy/scp-action@master
         with:
