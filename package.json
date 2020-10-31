@@ -17,6 +17,8 @@
     "markdown-to-jsx": "^6.11.4",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-awesome-slider": "^4.1.0",
+    "react-bnb-gallery": "^1.4.4",
     "react-dom": "^16.13.1",
     "react-responsive-carousel": "^3.2.10",
     "react-router": "^5.2.0",

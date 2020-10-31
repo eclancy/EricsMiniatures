@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './Exhibit.scss'
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Fab } from '@material-ui/core';
+import AwesomeSlider from 'react-awesome-slider';
+import AwsSliderStyles from 'react-awesome-slider/src/styles.js';
 
 function importAll(r) {
   return r.keys().map(r);
@@ -10,16 +10,15 @@ function importAll(r) {
 
 //If user clicks an image, look at all the pictures from a particular set
 function backToGallery(props, sectionLabel) {
-  
-    props.history.push({
-      pathname: '/gallery/' + sectionLabel
-    });
-  }
+
+  props.history.push({
+    pathname: '/gallery/' + sectionLabel
+  });
+}
 
 // Loads all images based on the URL parameter (so you can link to a specific exhibit)
-let images = [];
 function loadImages(sectionLabel, exhibitName) {
-
+  let images;
   switch (sectionLabel) {
     //this a switch because "require.context()" cannot take a variable - it needs to be statically analyzed
     case 'miniatures':
@@ -32,14 +31,14 @@ function loadImages(sectionLabel, exhibitName) {
       images = importAll(require.context('../../../Images/Other/', true, /\.(png|jpe?g|svg|gif)$/));
       break;
   }
-  images = images.filter(image => image.includes(exhibitName));
+  return images.filter(image => image.includes(exhibitName));
+
 }
 
 export default function Exhibit(props) {
-
   //load the data for the image they selected/image in the url. 
   let exhibitData = window.location.href.substring(window.location.href.lastIndexOf('exhibit/') + 8, window.location.href.length);
-  loadImages(props.match.params.id, exhibitData);
+  let images = loadImages(props.match.params.id, exhibitData);
 
   return (
     <main id="dark-background">
@@ -51,15 +50,11 @@ export default function Exhibit(props) {
 
         {/* Render a Carousel if there is more than one image */}
         {images.length > 1 &&
-          <Carousel showArrows={true}>
-
+          <AwesomeSlider cssModule={AwsSliderStyles}>
             {images.map((section, index) => (
-              <div key={images[index]} >
-                <img src={images[index]} alt={images[index]} className="exhibitImage" />
-              </div>
+              <div key={images[index]} data-src={images[index]} className="exhibitImage" />
             ))}
-
-          </Carousel>
+          </AwesomeSlider>
         }
       </div>
 
