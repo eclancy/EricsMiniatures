@@ -46,12 +46,12 @@ body,
   .navbar.darkMode,
   .footer.darkMode {
       background-color: $black;
-  
+      animation: fadeToBlackHeaderFooter 1s ease-in-out forwards;
+
       svg {
           fill: white;
       }
   }
-
 }
 
 @mixin center($width: null, $height: null) {
@@ -107,5 +107,25 @@ body,
       .flavorText {
           max-width: 562px;
       }
+  }
+}
+
+@keyframes fadeToBlack {
+  0% {
+      background-color: $background-color;
+  }
+
+  100% {
+      background-color: $dark-mode-background-color;
+  }
+}
+
+@keyframes fadeToBlackHeaderFooter {
+  0% {
+      background-color: $background-color;
+  }
+
+  100% {
+      background-color: $black;
   }
 }
