@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import ScrollIntoView from "./Components/Shared/ScrollIntoView";
+// import ScrollIntoView from "./Components/Shared/ScrollIntoView";
 
 // Pages
 import Home from './Components/Home/Home';
