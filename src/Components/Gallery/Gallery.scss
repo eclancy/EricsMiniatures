@@ -1,11 +1,11 @@
-@import '../Shared/Theme.scss';
+@import "../Shared/Theme.scss";
 $breakpoint-tablet: 960px;
-$miniatureBannerSlim: url('../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg');
-$miniatureBannerLong: url('../../Images/BannerImages/SludgeMonstrosity.jpg');
-$terrainBannerSlim: url('../../Images/BannerImages/DocksSmall Banner.jpg');
-$terrainBannerLong: url('../../Images/BannerImages/PrismaWallBanner.jpg');
-$otherBannerSlim: url('../../Images/BannerImages/MothersDayDiorama.jpg');
-$otherBannerLong: url('../../Images/BannerImages/CoinBanner.jpg');
+$miniatureBannerSlim: url("../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg");
+$miniatureBannerLong: url("../../Images/BannerImages/SludgeMonstrosity.jpg");
+$terrainBannerSlim: url("../../Images/BannerImages/DocksSmall Banner.jpg");
+$terrainBannerLong: url("../../Images/BannerImages/PrismaWallBanner.jpg");
+$otherBannerSlim: url("../../Images/BannerImages/MothersDayDiorama.jpg");
+$otherBannerLong: url("../../Images/BannerImages/CoinBanner.jpg");
 
 main {
     .gridContainer {
@@ -34,7 +34,7 @@ main {
                 margin: auto;
 
                 &:hover {
-                    transition: .3s ease-in-out;
+                    transition: 0.3s ease-in-out;
                     transform: scale(1.2);
                     /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
                 }
@@ -89,7 +89,11 @@ main {
         @include center-text;
     }
 
-
+    .paginationController {
+        button {
+            font-size: 20px;
+        }
+    }
     @media (max-width: $breakpoint-tablet) {
         .gridContainer {
             .imageContainer {
@@ -98,7 +102,6 @@ main {
                 .previewLink {
                     //Sizes the images to fit on screen properly, and then adjusts the size ratio to fix stretching
                     max-width: 100%;
-
                 }
             }
         }

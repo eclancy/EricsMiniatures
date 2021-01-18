@@ -3,6 +3,8 @@ import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
 import debounce from 'lodash.debounce';
+import Pagination from '@material-ui/lab/Pagination';
+import { makeStyles } from '@material-ui/core/styles';
 
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
@@ -16,7 +18,18 @@ const OtherBanner = {
   title: 'Other Projects',
   description: "Check out some of the other things I spend time on",
 };
+let images = [];
+let bannerInfo = {};
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(2),
+      justifyContent: "center",
+      display: 'flex'
+    },
+  },
+}));
 
 //import all pictures for the given page
 function importAll(r) {
@@ -49,7 +62,7 @@ function visitExhibit(props, section, image) {
 // }
 
 //load all the images for the given gallery
-let bannerInfo = {};
+
 function loadImages(sectionLabel) {
   //this a switch because "require.context()" cannot take a variable - it needs to be statically analyzed
   switch (sectionLabel) {
@@ -61,7 +74,7 @@ function loadImages(sectionLabel) {
       return importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
     case 'other':
       bannerInfo = OtherBanner;
-     return importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
+      return importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
     default: //default to other if they've somehow ended up with a random url in the gallery
       bannerInfo = OtherBanner;
       return importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
@@ -73,7 +86,7 @@ function loadImages(sectionLabel) {
 function useWindowSize() {
   const [size, setSize] = useState([0]);
   useLayoutEffect(() => {
-    const debouncedUpdateSize = debounce( function updateSize() {
+    const debouncedUpdateSize = debounce(function updateSize() {
       setSize([window.innerWidth]);
     }, 10);
 
@@ -85,21 +98,40 @@ function useWindowSize() {
 }
 
 export default function Gallery(props) {
-  let images = loadImages(props.match.params.id);
-  const screenWidth = ( useWindowSize() > 990 ? 'large' : 'slim' ); 
+
+  const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
   const section = props.match.params.id;
+  const classes = useStyles();
+
+  
+  images = loadImages(props.match.params.id);
+  let [imagesRendered, setImagesRendered] = useState(images.slice(0, 9));
+  
+  const renderImages = imagesRendered.map((image, index) => {
+    return <div className="imageContainer" key={image} >
+      <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, section, image)}></img>
+    </div>
+  });
+
 
   return (
+
     <main>
       <Banner bannerInfo={bannerInfo} className={"short " + screenWidth + section} />
 
       <Grid className='gridContainer' container spacing={4}>
-        {images.map((image, index) => (
-          <div className="imageContainer" key={image} >
-            <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, section, image)}></img>
-          </div>
-        ))}
+        {renderImages}
       </Grid>
+
+      <div className={classes.root}>
+        <Pagination
+          className={"paginationController"}
+          color="primary"
+          count={images.length % 10 === 0 ? images.length / 10 : Math.floor(images.length / 10) + 1}
+          onChange={(event, pageNumber) => setImagesRendered(images.slice(((pageNumber - 1) * (10)), ((pageNumber) * (10))))}
+        />
+      </div>
+
     </main>
   );
 }
