@@ -50,7 +50,7 @@ export default function Exhibit(props) {
 
         {/* Render a Carousel if there is more than one image */}
         {images.length > 1 &&
-          <AwesomeSlider cssModule={AwsSliderStyles}>
+          <AwesomeSlider cssModule={AwsSliderStyles} className="carousel">
             {images.map((section, index) => (
               <div key={images[index]} data-src={images[index]} className="exhibitImage" />
             ))}

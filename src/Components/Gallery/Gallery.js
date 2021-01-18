@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import debounce from 'lodash.debounce';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
+import { useEffect } from 'react'
 
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
@@ -102,23 +103,24 @@ export default function Gallery(props) {
   const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
   const section = props.match.params.id;
   const classes = useStyles();
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-  
+  //all the images in the gallery, and the images we're rendering based on the user's selected page
   images = loadImages(props.match.params.id);
   let [imagesRendered, setImagesRendered] = useState(images.slice(0, 9));
-  
+
+  //used to pick the ten relevant images to display, based on the user's selected page
   const renderImages = imagesRendered.map((image, index) => {
     return <div className="imageContainer" key={image} >
       <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, section, image)}></img>
     </div>
   });
 
-
   return (
-
     <main>
       <Banner bannerInfo={bannerInfo} className={"short " + screenWidth + section} />
-
       <Grid className='gridContainer' container spacing={4}>
         {renderImages}
       </Grid>
@@ -128,7 +130,10 @@ export default function Gallery(props) {
           className={"paginationController"}
           color="primary"
           count={images.length % 10 === 0 ? images.length / 10 : Math.floor(images.length / 10) + 1}
-          onChange={(event, pageNumber) => setImagesRendered(images.slice(((pageNumber - 1) * (10)), ((pageNumber) * (10))))}
+
+          //loads the next ten images, as well as scrolling to top 
+          // eslint-disable-next-line no-sequences
+          onChange={scrollTop, (event, pageNumber) => setImagesRendered(images.slice(((pageNumber - 1) * (10)), ((pageNumber) * (10))))}
         />
       </div>
 

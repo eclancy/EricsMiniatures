@@ -14,7 +14,6 @@ import Footer from './Components/Shared/Footer/Footer';
 function App() {
   return (
     <BrowserRouter>
-      {/* <ScrollIntoView> */}
         <React.Fragment>
           <CssBaseline />
           <div id="main-wrapper">
@@ -34,7 +33,6 @@ function App() {
             <Footer />
           </div>
         </React.Fragment>
-      {/* </ScrollIntoView> */}
     </BrowserRouter>
 
   );
