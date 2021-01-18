@@ -30,18 +30,18 @@ body,
     background-color: rgb(234, 237, 237);
 
     /* will at least cover the rest of the screen minus the header and footer */
-    min-height: calc(100vh - #{$header-height} - 41px);
+    min-height: calc(100vh - #{$header-height} - 38px);
 
     @media (max-width: $breakpoint-tablet) {
-      min-height: calc(100vh - #{$header-height} - 68px);
+      min-height: calc(100vh - #{$header-height} - 62px);
     }
 
     main {
       /* will cover the rest of the screen minus the header and footer*/
-      min-height: calc(100vh - #{$header-height} - 41px);
+      min-height: calc(100vh - #{$header-height} - 38px);
 
       @media (max-width: $breakpoint-tablet) {
-        min-height: calc(100vh - #{$header-height} - 68px);
+        min-height: calc(100vh - #{$header-height} - 62px);
       }
     }
   }
