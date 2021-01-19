@@ -1,11 +1,10 @@
-import React, { useLayoutEffect, useState, useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useState} from 'react';
 import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
 import debounce from 'lodash.debounce';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
-import usePrevious from '../Shared/usePrevious'
 
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
