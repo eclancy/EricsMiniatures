@@ -1,11 +1,11 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect, useState, useEffect, useRef } from 'react';
 import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
 import debounce from 'lodash.debounce';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
-import { useEffect } from 'react'
+import usePrevious from '../Shared/usePrevious'
 
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
@@ -99,42 +99,40 @@ function useWindowSize() {
   return size;
 }
 
+
+function getImagesToRender(props) {
+
+  if (props.location.state === undefined || !props.location.state.pageNumber) {
+    props.location.state = { pageNumber: 1 };
+  }
+  images = loadImages(props.match.params.id);
+  return images.slice((props.location.state.pageNumber - 1) * 10, props.location.state.pageNumber * 10)
+}
+
 export default function Gallery(props) {
 
   const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
   const section = props.match.params.id;
   const classes = useStyles();
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  //loads the next ten images, as well as scrolling to top and pushing the page change to the history
+  // on pagination change, loads the next ten images, as well as scrolling to top and pushing the page change to the history
   const changePage = (props, section, selectedPageNumber) => {
     props.history.push({
       pathname: '/gallery/' + section,
       state: { pageNumber: selectedPageNumber }
     });
-    setImagesRendered(images.slice((selectedPageNumber - 1) * 10, (selectedPageNumber * 10)));
-    scrollTop();
   }
 
-  //all the images in the gallery, and the images we're rendering based on the user's selected page
-  images = loadImages(props.match.params.id);
-  if(!props.state.pageNumber) {props.state.pageNumber = 1}
-  let [imagesRendered, setImagesRendered] = useState(
-    images.slice(props.state.pageNumber - 1 * 10), (props.state.pageNumber * 10)
-  );
-
-  console.log(props.history)
-
-
-  // let [pageNumber, setPageNumber] = useState(pageNumber !== null ? pageNumber : 1);
+  let imagesRendered = getImagesToRender(props)
   //used to pick the ten relevant images to display, based on the user's selected page
-  const renderImages = imagesRendered.map((image, index) => {
+  let renderImages = imagesRendered.map((image, index) => {
     return <div className="imageContainer" key={image} >
       <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, section, image)}></img>
     </div>
   });
+
+
 
   return (
     <main>
@@ -148,7 +146,8 @@ export default function Gallery(props) {
           className={"paginationController"}
           color="primary"
           count={images.length % 10 === 0 ? images.length / 10 : Math.floor(images.length / 10) + 1}
-
+          page={props.location.state.pageNumber}
+          // page={props.location.state.pageNumber}
           //loads the next ten images, as well as scrolling to top and pushing the page change to the history
           onChange={(event, selectedPageNumber) => changePage(props, section, selectedPageNumber)}
         />
