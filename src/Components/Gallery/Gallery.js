@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState} from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import './Gallery.scss'
 import Banner from '../Home/Banner/Banner';
 import Grid from '@material-ui/core/Grid';
@@ -103,11 +103,11 @@ function getImagesToRender(props) {
   if (props.location.state === undefined || !props.location.state.pageNumber) {
     props.location.state = { pageNumber: 1 };
   }
-  // images = loadImages(props.match.params.id);
   return images.slice((props.location.state.pageNumber - 1) * 10, props.location.state.pageNumber * 10)
 }
 
 export default function Gallery(props) {
+
   loadImages(props.match.params.id);
   const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
   const section = props.match.params.id;
@@ -129,8 +129,6 @@ export default function Gallery(props) {
       <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, section, image)}></img>
     </div>
   });
-
-
 
   return (
     <main>
