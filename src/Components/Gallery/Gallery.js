@@ -68,16 +68,16 @@ function loadImages(sectionLabel) {
   switch (sectionLabel) {
     case 'miniatures':
       bannerInfo = MinisBanner;
-      return importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
+      return images = importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
     case 'terrain':
       bannerInfo = TerrainBanner;
-      return importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
+      return images = importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
     case 'other':
       bannerInfo = OtherBanner;
-      return importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
+      return images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
     default: //default to other if they've somehow ended up with a random url in the gallery
       bannerInfo = OtherBanner;
-      return importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
+      return images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
   }
   //randomize the images
   // images = shuffle(images);
@@ -98,18 +98,17 @@ function useWindowSize() {
   return size;
 }
 
-
+//loads the images, and 
 function getImagesToRender(props) {
-
   if (props.location.state === undefined || !props.location.state.pageNumber) {
     props.location.state = { pageNumber: 1 };
   }
-  images = loadImages(props.match.params.id);
+  // images = loadImages(props.match.params.id);
   return images.slice((props.location.state.pageNumber - 1) * 10, props.location.state.pageNumber * 10)
 }
 
 export default function Gallery(props) {
-
+  loadImages(props.match.params.id);
   const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
   const section = props.match.params.id;
   const classes = useStyles();
@@ -146,7 +145,6 @@ export default function Gallery(props) {
           color="primary"
           count={images.length % 10 === 0 ? images.length / 10 : Math.floor(images.length / 10) + 1}
           page={props.location.state.pageNumber}
-          // page={props.location.state.pageNumber}
           //loads the next ten images, as well as scrolling to top and pushing the page change to the history
           onChange={(event, selectedPageNumber) => changePage(props, section, selectedPageNumber)}
         />
