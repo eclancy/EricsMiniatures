@@ -1,13 +1,33 @@
 .galleryLink {
-    position: absolute;
-    bottom: 10px;
+  position: absolute;
+  bottom: 10px;
 
-    .arrowIcon{
-        display: inline-flex;
-        vertical-align: middle;
-    }
+  .arrowIcon {
+    display: inline-flex;
+    vertical-align: middle;
+  }
 }
 
-.featuredCard{
-    box-shadow: 0 0 10px rgb(168, 168, 168),
+.featuredCard {
+  box-shadow: 0 0 10px rgb(168, 168, 168);
+  @media (max-width: 330px) {
+    .sectionPreviewImage {
+      display: none;
+    }
+  }
+
+  p,
+  .galleryLink {
+    @media (max-width: 452px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 10px;
+    }
+
+    @media (max-width: 330px) {
+      font-size: 14px;
+    }
+  }
 }
