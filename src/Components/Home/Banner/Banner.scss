@@ -1,36 +1,63 @@
+$width-xs: 300px;
 $width-sm: 990px;
 $height-sm: 800px;
 $height-lg: 1245px;
 
 #banner {
-    position: relative;
-    color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 300px;
-    border-radius: 0px;
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0px;
 }
-#banner.short{
-    height: 300px !important;
+#banner.short {
+  height: 300px;
+  @media (max-width: 660px) {
+    h1 {
+        font-size: 36px;
+      }
+      p {
+        font-size: 18px;
+      }
+  }
 }
 @media (max-width: $width-sm) {
-
-    #overlay {
-        background-color: rgba(0, 0, 0, 0.50);
-        height: 100%;
-        width: 100%;
-    }
+  #overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+  }
 }
 
-@media(min-height: $height-lg) {
-    #banner {
-        height: 600px;
-    }
+@media (min-height: $height-sm) {
+  #banner {
+    height: 600px;
+  }
 }
 
-@media(min-height: $height-sm) and (max-height: $height-lg) {
-    #banner {
-        height: 600px;
+@media (max-height: $height-sm) {
+
+  #banner {
+    height: 300px;
+
+    @media (max-width: $width-sm) {
+      h1 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 24px;
+      }
     }
+
+    @media (max-width: $width-xs) {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+
+  }
 }

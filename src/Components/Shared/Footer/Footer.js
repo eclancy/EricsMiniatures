@@ -21,7 +21,7 @@ export default function Footer(props) {
     <footer className={location.pathname.includes('exhibit') ? "footer darkMode" : "footer"}>
       {socials.social.map((links) => (
         <Link className="footerLinkContainer" variant="body1" href={links.link} key={links.label}>
-          <Grid container alignItems="center" justify="center" className={"footerLink"}>
+          <Grid container alignItems="center" justifyContent='center' className={"footerLink"}>
             <links.icon className={"icon " + (links.icon === GitHubIcon ? 'githubLinkFix' : '')} />
             <p className={"text"}>{links.label}</p>
           </Grid>
