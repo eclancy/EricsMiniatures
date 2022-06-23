@@ -1,11 +1,18 @@
 @import "../Shared/Theme.scss";
 $breakpoint-tablet: 960px;
+
 $miniatureBannerSlim: url("../../Images/BannerImages/ClockworkDragonBannerHighContrast.jpg");
 $miniatureBannerLong: url("../../Images/BannerImages/SludgeMonstrosity.jpg");
+
 $terrainBannerSlim: url("../../Images/BannerImages/DocksSmall Banner.jpg");
 $terrainBannerLong: url("../../Images/BannerImages/PrismaWallBanner.jpg");
+
+$modelKitsBannerSlim: url("../../Images/BannerImages/GundamChibiBanner.jpg");
+$modelKitsBannerLong: url("../../Images/BannerImages/GoldUnicornBanner.jpg");
+
 $otherBannerSlim: url("../../Images/BannerImages/MothersDayDiorama.jpg");
 $otherBannerLong: url("../../Images/BannerImages/CoinBanner.jpg");
+
 
 main {
     .gridContainer {
@@ -47,7 +54,6 @@ main {
         background-image: $miniatureBannerLong;
         @include left-align-text;
     }
-
     .slimminiatures {
         background-image: $miniatureBannerSlim;
         @include center-text;
@@ -56,7 +62,6 @@ main {
             text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black;
         }
     }
-
     .largeterrain {
         background-image: $terrainBannerLong;
         @include center-text;
@@ -67,9 +72,23 @@ main {
             text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black;
         }
     }
-
     .slimterrain {
         background-image: $terrainBannerSlim;
+        @include center-text;
+    }
+
+    .largemodelkits {
+        background-image: $modelKitsBannerLong;
+        @include center-text;
+
+        .bannerText {
+            text-align: center ;
+            transform: translate(-50%, -30%);
+            text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black;
+        }
+    }
+    .slimmodelkits {
+        background-image: $modelKitsBannerSlim;
         @include center-text;
     }
 

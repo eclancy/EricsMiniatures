@@ -27,6 +27,9 @@ function loadImages(sectionLabel, exhibitName) {
     case 'terrain':
       images = importAll(require.context('../../../Images/Terrain/', true, /\.(png|jpe?g|svg|gif)$/));
       break;
+      case 'modelkits':
+      images = importAll(require.context('../../../Images/ModelKits/', true, /\.(png|jpe?g|svg|gif)$/));
+      break;
     default: //they're in other
       images = importAll(require.context('../../../Images/Other/', true, /\.(png|jpe?g|svg|gif)$/));
       break;

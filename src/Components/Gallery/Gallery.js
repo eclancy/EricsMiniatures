@@ -18,6 +18,10 @@ const OtherBanner = {
   title: 'Other Projects',
   description: "Check out some of the other things I spend time on",
 };
+const ModelKitBanner = {
+  title: 'Model Kits',
+  description: "Robots, laser swords, and tiny parts holding them all together",
+};
 let images = [];
 let bannerInfo = {};
 
@@ -68,19 +72,26 @@ function loadImages(sectionLabel) {
   switch (sectionLabel) {
     case 'miniatures':
       bannerInfo = MinisBanner;
-      return images = importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
+      images = importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
+      break;
     case 'terrain':
       bannerInfo = TerrainBanner;
-      return images = importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
+      images = importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
+      break;
     case 'other':
       bannerInfo = OtherBanner;
-      return images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
+      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
+      break;
+    case 'modelkits':
+      bannerInfo = ModelKitBanner;
+      images = importAll(require.context('../../Images/ModelKits/', true, /1\.(png|jpe?g|svg)$/));
+      break;
     default: //default to other if they've somehow ended up with a random url in the gallery
       bannerInfo = OtherBanner;
-      return images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
+      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
   }
   //randomize the images
-  // images = shuffle(images);
+  return images; //= shuffle(images);
 }
 
 //function to listen for window resizing, and limit the rerender calls
