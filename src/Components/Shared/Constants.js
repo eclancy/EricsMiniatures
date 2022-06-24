@@ -1,4 +1,4 @@
-import miniaturePreview from '../../Images/Miniatures/Blimpy/Blimpy2.jpg';
+import miniaturePreview from '../../Images/Miniatures/0Blimpy/0Blimpy2.jpg';
 import terrainPreview from '../../Images/Terrain/TempleInterior/Temple6.jpg';
 import modelkitPreview from '../../Images/ModelKits/GundamCentaur/GundamCentaur3.jpg'
 import otherPreview from '../../Images/Other/WizardWars/WizardWarsFireGif.gif'
