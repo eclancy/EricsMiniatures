@@ -67,7 +67,7 @@ body,
   } @else if $width and $height {
     width: $width;
     height: $height;
-    margin: -($width / 2) #{0 0} -($height / 2);
+    margin: -($width / 2) #{0 0} (-($height / 2));
   } @else if not $height {
     width: $width;
     margin-left: -($width / 2);

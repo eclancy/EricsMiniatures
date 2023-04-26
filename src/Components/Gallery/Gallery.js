@@ -42,7 +42,7 @@ function importAll(r) {
 
 //If user clicks an image, look at all the pictures from a particular set
 function visitExhibit(props, section, image) {
-  image = image.substring(14, image.lastIndexOf('1'));
+  image = image.substring(14, image.lastIndexOf('1.'));
 
   props.history.push({
     pathname: '/gallery/' + section + '/exhibit/' + image,
