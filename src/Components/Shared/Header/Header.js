@@ -5,12 +5,11 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
 import BigLogoColor from '../../../Images/Logos/BigLogoColor.png';
-import BigLogoColorWhiteEye from '../../../Images/Logos/BigLogoColorWhiteEye.png';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import * as Constants from "../Constants.js";
 import './Header.scss';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Header(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,14 +22,12 @@ export default function Header(props) {
     setAnchorEl(null);
   };
 
-  const location = useLocation();
-
   return (
 
     <React.Fragment>
-      <Toolbar className={location.pathname.includes('exhibit') ? "navbar darkMode" : "navbar"} disableGutters>
+      <Toolbar className="navbar" disableGutters>
         <Link className="HomeNav" to={"/"}>
-          <img src={location.pathname.includes('exhibit') ? BigLogoColorWhiteEye : BigLogoColor} alt="Eric's Miniatures Home" width={160}></img>
+          <img src={BigLogoColor} alt="Eric's Miniatures Home" width={160}></img>
         </Link>
 
         <IconButton className={'menuIcon'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>

@@ -5,6 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import debounce from 'lodash.debounce';
 import Pagination from '@material-ui/lab/Pagination';
 import { makeStyles } from '@material-ui/core/styles';
+import ReactBnbGallery from 'react-bnb-gallery';
+import 'react-bnb-gallery/dist/style.css';
 
 const MinisBanner = {
   title: 'Hand Painted Miniatures',
@@ -40,17 +42,24 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-//If user clicks an image, look at all the pictures from a particular set
-function visitExhibit(props, section, image) {
-  image = image.substring(14, image.lastIndexOf('1.'));
-
-  props.history.push({
-    pathname: '/gallery/' + section + '/exhibit/' + image,
-    state: {
-      exhibitName: (image),
-      sectionLabel: section,
-    }
-  });
+//Load all images for a specific exhibit set
+function loadExhibitImages(sectionLabel, exhibitName) {
+  let exhibitImages = [];
+  switch (sectionLabel) {
+    case 'miniatures':
+      exhibitImages = importAll(require.context('../../Images/Miniatures/', true, /\.(png|jpe?g|svg|gif)$/));
+      break;
+    case 'terrain':
+      exhibitImages = importAll(require.context('../../Images/Terrain/', true, /\.(png|jpe?g|svg|gif)$/));
+      break;
+    case 'modelkits':
+      exhibitImages = importAll(require.context('../../Images/ModelKits/', true, /\.(png|jpe?g|svg|gif)$/));
+      break;
+    default:
+      exhibitImages = importAll(require.context('../../Images/Other/', true, /\.(png|jpe?g|svg|gif)$/));
+      break;
+  }
+  return exhibitImages.filter(image => image.includes(exhibitName));
 }
 
 //fisher-yates shuffle algorithm for randomizing images on the page
@@ -120,6 +129,8 @@ function getImagesToRender(props) {
 export default function Gallery(props) {
 
   loadImages(props.match.params.id);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [exhibitPhotos, setExhibitPhotos] = useState([]);
   const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
   const section = props.match.params.id;
   const classes = useStyles();
@@ -133,11 +144,20 @@ export default function Gallery(props) {
     });
   }
 
+  // Opens the gallery modal with images for the selected exhibit
+  const openGallery = (image) => {
+    const exhibitName = image.substring(14, image.lastIndexOf('1.'));
+    const exhibitImages = loadExhibitImages(section, exhibitName);
+    const photos = exhibitImages.map(img => ({ photo: img, thumbnail: img }));
+    setExhibitPhotos(photos);
+    setGalleryOpen(true);
+  }
+
   let imagesRendered = getImagesToRender(props)
   //used to pick the ten relevant images to display, based on the user's selected page
   let renderImages = imagesRendered.map((image, index) => {
     return <div className="imageContainer" key={image} >
-      <img className="previewLink" alt={image.key} src={image} onClick={() => visitExhibit(props, section, image)}></img>
+      <img className="previewLink" alt={image.key} src={image} onClick={() => openGallery(image)}></img>
     </div>
   });
 
@@ -159,6 +179,14 @@ export default function Gallery(props) {
         />
       </div>
 
+      {galleryOpen && (
+        <ReactBnbGallery 
+          photos={exhibitPhotos}
+          showThumbnails={true}
+          show={galleryOpen}
+          onClose={() => setGalleryOpen(false)}
+        />
+      )}
     </main>
   );
 }
