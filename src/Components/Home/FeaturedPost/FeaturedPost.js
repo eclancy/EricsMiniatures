@@ -15,16 +15,22 @@ const useStyles = makeStyles({
   card: {
     display: 'flex',
     flex: 1,
-    height: '230px'
+    height: '330px',
+    minHeight: '330px',
   },
   cardDetails: {
     flex: 1,
+    padding: '28px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
   },
   cardMedia: {
-    width: 160
+    width: 300,
+    minWidth: 300,
   },
   ArrowForwardIcon: {
-    marginTop: '30px',
+    marginTop: '4px',
   },
 
 });
@@ -34,7 +40,7 @@ export default function FeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Grid item xs={12} md={6} className={props.className}>
+    <Grid item xs={12} md={10} lg={8} className={props.className}>
       <CardActionArea component={Link} to={post.url} className={'featuredCard'}>
           <Card className={classes.card}>
             <div className={classes.cardDetails}>

@@ -16,7 +16,7 @@ export default function Home(props) {
     <main className='main'>
       <Banner bannerInfo={banner} className="homeBackgroundImage"/>
       <div className="linkCardsContainer">
-        <Grid className='linksGrid' container spacing={4}>
+        <Grid className='linksGrid' container spacing={4} justify="center">
 
           {sections.map((section, index) => (
             /*Determine if this is there is an open space next to the last card (odd number of cards). 

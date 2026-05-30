@@ -3,26 +3,24 @@ $SlimBanner: url('../../Images/BannerImages/FullBannerPurpleWormSlim.jpg');
 $breakpoint-tablet: 960px;
 @import '../Shared/Theme.scss';
 
-main{
-    background-color: #eaeded;
+main {
+    background-color: #f6f7f9;
     min-height: 100%;
-    min-width: 253px;
+    min-width: 320px;
 }
+
 .linkCardsContainer {
     width: 100%;
     min-height: 100%;
+    padding: 40px 0 80px;
 
     .linksGrid {
         width: 100%;
-        max-width: 1500px;
-        padding: 5px;
-        padding-top: 20px;
-        height: 100%;
-        margin: 0;
-
-        @media (min-width: 1500px) {
-            margin: auto;
-        }
+        max-width: 1480px;
+        padding: 0 16px;
+        margin: 0 auto;
+        gap: 28px;
+        justify-content: center;
 
         .expand {
             max-width: 100%;
@@ -31,14 +29,14 @@ main{
     }
 }
 
-@media (min-width:990px) {
+@media (min-width: 990px) {
     .homeBackgroundImage {
         background-image: $LongBanner;
         @include left-align-text;
     }
 }
 
-@media (max-width:990px) {
+@media (max-width: 990px) {
     .homeBackgroundImage {
         background-image: $SlimBanner;
         @include center-text;
