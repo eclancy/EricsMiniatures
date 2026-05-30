@@ -1,0 +1,13 @@
+diff --git a/node_modules/cssnano-preset-default/src/index.js b/node_modules/cssnano-preset-default/src/index.js
+index 090aa66..fa158fc 100644
+--- a/node_modules/cssnano-preset-default/src/index.js
++++ b/node_modules/cssnano-preset-default/src/index.js
+@@ -91,6 +91,8 @@ const defaultOpts = {
+  */
+ function defaultPreset(opts = {}) {
+   const options = Object.assign({}, defaultOpts, opts);
++  // Avoid buggy merging of border longhands into invalid shorthand like `border: 0 initial`.
++  options.mergeLonghand = false;
+ 
+   /** @type {[import('postcss').PluginCreator<any>, boolean | Record<string, any> | undefined][]} **/
+   const plugins = [

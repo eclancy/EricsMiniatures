@@ -140,3 +140,12 @@
   }
 }
 
+.gallery .gallery-control {
+  border: 0 none transparent;
+  border-image: none;
+}
+.gallery .gallery-control:focus,
+.gallery .gallery-control:active {
+  outline: none;
+}
+
