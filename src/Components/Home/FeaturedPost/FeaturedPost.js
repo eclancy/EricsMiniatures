@@ -10,6 +10,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import './FeaturedPost.scss';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const useStyles = makeStyles({
   card: {
@@ -39,8 +40,20 @@ export default function FeaturedPost(props) {
   const classes = useStyles();
   const { post } = props;
 
+  const previewImage = post.image || '/images/preview-1200x630.png';
+  const previewTitle = post.title || "Eric's Miniatures";
+  const previewDescription = post.description || "Eric's Miniatures — galleries, models, and painting inspiration.";
+
   return (
     <Grid item xs={12} md={10} lg={8} className={props.className}>
+      <Helmet>
+        <title>{previewTitle}</title>
+        <meta property="og:title" content={previewTitle} />
+        <meta property="og:description" content={previewDescription} />
+        <meta property="og:image" content={previewImage} />
+        <meta property="og:url" content={window.location.href} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <CardActionArea component={Link} to={post.url} className={'featuredCard'}>
           <Card className={classes.card}>
             <div className={classes.cardDetails}>
