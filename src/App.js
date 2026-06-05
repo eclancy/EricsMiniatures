@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Helmet } from "react-helmet-async";
@@ -30,6 +30,10 @@ function getTitleForPath(pathname) {
 function App() {
   const { pathname } = useLocation();
   const title = getTitleForPath(pathname);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname]);
 
   return (
     <React.Fragment>
