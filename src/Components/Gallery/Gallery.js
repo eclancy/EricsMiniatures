@@ -134,7 +134,15 @@ export default function Gallery(props) {
   const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
   const section = props.match.params.id;
   const classes = useStyles();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  const [previousSection, setPreviousSection] = useState(section);
+
+  // Only scroll to top when navigating to a different section (page change)
+  useLayoutEffect(() => {
+    if (previousSection !== section) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setPreviousSection(section);
+    }
+  }, [section, previousSection]);
 
   // on pagination change, loads the next ten images, as well as scrolling to top and pushing the page change to the history
   const changePage = (props, section, selectedPageNumber) => {
@@ -190,4 +198,3 @@ export default function Gallery(props) {
     </main>
   );
 }
-
