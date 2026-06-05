@@ -111,11 +111,28 @@
     transform: translateX(2px);
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 760px) {
     min-height: auto;
 
     .MuiCardContent-root {
       padding: 24px !important;
+    }
+
+    .sectionPreviewImage {
+      width: 100%;
+      min-width: auto;
+      height: 240px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .MuiTypography-h5 {
+      font-size: 1.8rem;
+    }
+
+    .MuiTypography-subtitle1,
+    .galleryLink {
+      font-size: 0.95rem;
     }
   }
 

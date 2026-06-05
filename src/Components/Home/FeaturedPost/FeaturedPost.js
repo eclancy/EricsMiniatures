@@ -18,6 +18,11 @@ const useStyles = makeStyles({
     flex: 1,
     height: '330px',
     minHeight: '330px',
+    '@media (max-width: 760px)': {
+      flexDirection: 'column',
+      height: 'auto',
+      minHeight: 'auto',
+    },
   },
   cardDetails: {
     flex: 1,
@@ -25,10 +30,18 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    '@media (max-width: 760px)': {
+      padding: '20px',
+    },
   },
   cardMedia: {
     width: 300,
     minWidth: 300,
+    '@media (max-width: 760px)': {
+      width: '100%',
+      minWidth: 'auto',
+      height: 240,
+    },
   },
   ArrowForwardIcon: {
     marginTop: '4px',
