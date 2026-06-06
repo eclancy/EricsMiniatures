@@ -140,14 +140,22 @@ export default function Gallery(props) {
   // Only scroll to top when navigating to a different section (page change)
   useLayoutEffect(() => {
     if (previousSection !== section) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const banner = document.getElementById('banner');
+      if (banner) {
+        const bannerBottom = banner.offsetHeight;
+        window.scrollTo({ top: bannerBottom, behavior: 'smooth' });
+      }
       setPreviousSection(section);
     }
   }, [section, previousSection]);
 
   // Scroll to top when page number changes
   useLayoutEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const banner = document.getElementById('banner');
+    if (banner) {
+      const bannerBottom = banner.offsetHeight;
+      window.scrollTo({ top: bannerBottom, behavior: 'smooth' });
+    }
   }, [currentPageNumber]);
 
   // on pagination change, loads the next ten images, as well as scrolling to top and pushing the page change to the history
