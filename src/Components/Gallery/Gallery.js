@@ -135,6 +135,7 @@ export default function Gallery(props) {
   const section = props.match.params.id;
   const classes = useStyles();
   const [previousSection, setPreviousSection] = useState(section);
+  const currentPageNumber = props.location.state?.pageNumber || 1;
 
   // Only scroll to top when navigating to a different section (page change)
   useLayoutEffect(() => {
@@ -143,6 +144,11 @@ export default function Gallery(props) {
       setPreviousSection(section);
     }
   }, [section, previousSection]);
+
+  // Scroll to top when page number changes
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPageNumber]);
 
   // on pagination change, loads the next ten images, as well as scrolling to top and pushing the page change to the history
   const changePage = (props, section, selectedPageNumber) => {
