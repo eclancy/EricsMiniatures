@@ -10,10 +10,17 @@ $height-lg: 1245px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 0px;
-  min-height: 780px;
+  min-height: 460px;
   display: flex;
   align-items: center;
   overflow: hidden;
+}
+
+/* Matches the wide home banner image's native ratio so regular desktop
+   widths show more of the image instead of a fixed min-height cropping it. */
+#banner.homeBackgroundImage {
+  aspect-ratio: 2.434 / 1;
+  max-height: 900px;
 }
 
 #overlay {
@@ -55,6 +62,10 @@ $height-lg: 1245px;
   #banner {
     height: 620px;
   }
+
+  #banner.homeBackgroundImage {
+    aspect-ratio: auto;
+  }
 }
 
 @media (max-width: 660px) {
@@ -80,7 +91,7 @@ $height-lg: 1245px;
 }
 
 @media (min-width: 1600px) {
-  #banner {
-    min-height: 860px;
+  #banner.homeBackgroundImage {
+    max-height: 1000px;
   }
 }
