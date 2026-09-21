@@ -69,6 +69,7 @@ export default function FeaturedPost(props) {
               alt={`${post.title} preview`}
               sizes="(max-width: 760px) 100vw, 300px"
               eager={eager}
+              playAnimation
               className="sectionPreviewImage__media"
             />
           </div>

@@ -15,7 +15,7 @@ const FULL_WIDTHS = [640, 960, 1280, 1600, 1920, 2560];
  * load, shows the inline blur placeholder from the index until the real file
  * arrives, and leaves format selection to the server via content negotiation.
  */
-export default function MediaImage({ photo, alt, sizes, variant, eager, className, onClick }) {
+export default function MediaImage({ photo, alt, sizes, variant, eager, playAnimation, className, onClick }) {
   const [loaded, setLoaded] = useState(false);
 
   if (!photo) return null;
@@ -41,8 +41,10 @@ export default function MediaImage({ photo, alt, sizes, variant, eager, classNam
     );
   }
 
-  // The lightbox asks for animation; the grid always gets a still frame.
-  const animated = variant === 'full' && photo.animated;
+  // Grid tiles get a still frame by default, so a gallery of GIFs does not cost
+  // megabytes. The lightbox always animates, and callers can opt in explicitly
+  // (the home page section cards, which used to be animated CSS backgrounds).
+  const animated = photo.animated && (variant === 'full' || playAnimation);
 
   return (
     <div
@@ -76,6 +78,8 @@ MediaImage.propTypes = {
   sizes: PropTypes.string,
   variant: PropTypes.oneOf(['grid', 'full']),
   eager: PropTypes.bool,
+  /** Animate an animated source even in a grid tile. */
+  playAnimation: PropTypes.bool,
   className: PropTypes.string,
   onClick: PropTypes.func,
 };

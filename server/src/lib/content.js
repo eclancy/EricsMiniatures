@@ -17,24 +17,30 @@ const SECTION_META = {
     blurb: 'Hand painted miniature creatures, characters, and props. Monsters that can fit in the palm of your hand!',
     bannerTitle: 'Hand Painted Miniatures',
     bannerDescription: 'Creatures of all shapes and sizes - some are nice, some are not...',
+    preview: { project: 'blimpy', file: 'blimpy-2.jpg' },
   },
   terrain: {
     title: 'Terrain',
     blurb: 'Sculpted from a wide variety of items including clay, foam, or even trash! Realistic landscapes crafted and painted from basic every day items.',
     bannerTitle: 'Custom Built Terrain',
     bannerDescription: 'Every journey begins somewhere',
+    preview: { project: 'temple-interior', file: 'temple-interior-6.jpg' },
   },
   modelkits: {
     title: 'Model Kits',
     blurb: 'Model kits involve tiny plastic parts and following instructions. Not as creative as other projects, but oh so satisfying.',
     bannerTitle: 'Model Kits',
     bannerDescription: 'Robots, laser swords, and tiny parts holding them all together',
+    preview: { project: 'gundam-centaur', file: 'gundam-centaur-3.jpg' },
   },
   other: {
     title: 'Other Projects',
     blurb: "Other projects I've worked on, including 3d printing, creating games, and anything else I think is cool enough to share.",
     bannerTitle: 'Other Projects',
     bannerDescription: 'Check out some of the other things I spend time on',
+    // An animated GIF. The home page used to set it as a CSS background, where
+    // it played; the card requests the animated derivative to keep that.
+    preview: { project: 'wizard-wars', file: 'wizard-wars-fire-gif.gif' },
   },
 };
 
@@ -83,14 +89,22 @@ function build() {
     .filter((slug) => index.sections?.[slug])
     .map((slug) => {
       const slugs = index.sections[slug].projects || [];
-      const meta = SECTION_META[slug] || { title: titleize(slug), blurb: '' };
+      const { preview: previewRef, ...meta } = SECTION_META[slug] || { title: titleize(slug), blurb: '' };
       const members = slugs.map((s) => projects.get(`${slug}/${s}`)).filter(Boolean);
+
+      // The home page card uses a deliberately chosen photo, not whichever
+      // project happens to sort first. Falls back to the first cover if the
+      // chosen one is ever renamed or removed.
+      const chosen = previewRef
+        ? projects.get(`${slug}/${previewRef.project}`)?.photos.find((p) => p.file === previewRef.file)
+        : null;
+
       return {
         slug,
         ...meta,
         url: `/gallery/${slug}`,
         projectCount: members.length,
-        preview: members[0]?.cover || null,
+        preview: chosen || members[0]?.cover || null,
       };
     });
 
