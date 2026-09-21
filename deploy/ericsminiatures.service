@@ -1,0 +1,42 @@
+# Install to /etc/systemd/system/ericsminiatures.service, then:
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now ericsminiatures
+#
+# Replace REPLACE_ME_USER with the deploy user (the same one CI logs in as).
+
+[Unit]
+Description=Eric's Miniatures media API
+After=network.target
+
+[Service]
+Type=simple
+User=REPLACE_ME_USER
+WorkingDirectory=/home/REPLACE_ME_USER/ericsminiatures.com/server
+Environment=NODE_ENV=production
+Environment=PORT=4000
+# Paths are resolved relative to the repo root by default; set them explicitly
+# so the service does not depend on the working directory layout.
+Environment=MEDIA_ROOT=/home/REPLACE_ME_USER/ericsminiatures.com/media
+Environment=CONTENT_ROOT=/home/REPLACE_ME_USER/ericsminiatures.com/content
+Environment=CACHE_ROOT=/var/cache/ericsminiatures
+Environment=CLIENT_ROOT=/home/REPLACE_ME_USER/ericsminiatures.com/build
+# nginx serves the static client directly, so the API does not need to.
+Environment=SERVE_CLIENT=false
+# Each concurrent encode holds up to ~160 MB. On a 1 vCPU / 1 GB droplet keep
+# this at 1-2; raise it on a larger box.
+Environment=MAX_CONCURRENT_ENCODES=2
+# Lower to 2 to trade ~15% more AVIF bytes for a ~4x faster cold encode.
+Environment=AVIF_EFFORT=4
+ExecStart=/usr/bin/node src/index.js
+Restart=on-failure
+RestartSec=5
+
+# The cache directory is the only path the service needs to write to.
+ReadWritePaths=/var/cache/ericsminiatures
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

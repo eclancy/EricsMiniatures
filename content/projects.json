@@ -1,0 +1,1686 @@
+{
+  "sections": {},
+  "projects": {
+    "miniatures/animated-chains": {
+      "title": "Animated Chains",
+      "description": "Six lengths of chain reared up off their bases like snakes, each one twisted from wire and rusted with washes. The spell lasts one minute. The paint took rather longer.",
+      "captions": {
+        "animated-chains-1.jpg": "",
+        "animated-chains-2.jpg": "",
+        "animated-chains-3.jpg": ""
+      }
+    },
+    "miniatures/armored-jeep": {
+      "title": "Armored Jeep",
+      "description": "A scrap-plated gun truck, weathered with rust and chipping down to bare metal. The hand-painted smiley on the hood clears up any confusion about whose side it is on.",
+      "captions": {
+        "armored-jeep-1.jpg": "",
+        "armored-jeep-2.jpg": ""
+      }
+    },
+    "miniatures/artificer": {
+      "title": "Artificer",
+      "description": "An artificer perched beneath her own oversized turret, strung with red tubing and standing in a nest of tiny tools. Every one of those gadgets is a separate speck of paint.",
+      "captions": {
+        "artificer-1.jpg": "",
+        "artificer-2.jpg": ""
+      }
+    },
+    "miniatures/ballista": {
+      "title": "Ballista",
+      "description": "A siege ballista on a drybrushed timber frame, with a skull bolted to the shield in case the giant crossbow was too subtle.",
+      "captions": {
+        "ballista-1.jpg": "",
+        "ballista-2.jpg": "",
+        "ballista-3.jpg": ""
+      }
+    },
+    "miniatures/big-kraken": {
+      "title": "Big Kraken",
+      "description": "Tentacles sprawling far past the base, painted in a pink-to-violet gradient that deepens toward the mantle, with dark red bled into every hooked claw.",
+      "captions": {
+        "big-kraken-1.jpg": "",
+        "big-kraken-2.jpg": "",
+        "big-kraken-3.jpg": "",
+        "big-kraken-4.jpg": "",
+        "big-kraken-5.jpg": ""
+      }
+    },
+    "miniatures/blimpy": {
+      "title": "Blimpy",
+      "description": "A barbarian in a top hat raising a beer atop a mound of discarded weapons. The orange mohawk is the centerpiece. The beer is a close second.",
+      "captions": {
+        "blimpy-1.jpg": "",
+        "blimpy-2.jpg": "",
+        "blimpy-3.jpg": "",
+        "blimpy-4.jpg": "",
+        "blimpy-5.jpg": ""
+      }
+    },
+    "miniatures/bloody-vampire": {
+      "title": "Bloody Vampire",
+      "description": "A vampire mid-gloat over a fresh kill, cape lined in deep blue, standing on cobblestones that took more red than was strictly necessary.",
+      "captions": {
+        "bloody-vampire-1.jpg": "",
+        "bloody-vampire-2.jpg": "",
+        "bloody-vampire-3.jpg": "",
+        "bloody-vampire-4.jpg": ""
+      }
+    },
+    "miniatures/blue-cloaker": {
+      "title": "Blue Cloaker",
+      "description": "A cloaker drifting on a clear flight stand, blue across the back and pale underneath, with a mouth full of teeth you notice slightly too late.",
+      "captions": {
+        "blue-cloaker-1.jpg": "",
+        "blue-cloaker-2.jpg": "",
+        "blue-cloaker-3.jpg": ""
+      }
+    },
+    "miniatures/blue-dragonborn-paladin": {
+      "title": "Blue Dragonborn Paladin",
+      "description": "A dragonborn paladin caught mid-stride, red cloak streaming behind and a flaming sword raised. The cloak and the flame were painted to read as the same gust of motion.",
+      "captions": {
+        "blue-dragonborn-paladin-1.jpg": "",
+        "blue-dragonborn-paladin-2.jpg": ""
+      }
+    },
+    "miniatures/brain-collector": {
+      "title": "Brain Collector",
+      "description": "A neothelid bristling with eyes and grasping claws, its dome studded with pale brains under teal and acid-green glazes. Nothing about it is reassuring.",
+      "captions": {
+        "brain-collector-1.jpg": "",
+        "brain-collector-2.jpg": "",
+        "brain-collector-3.jpg": "",
+        "brain-collector-4.jpg": ""
+      }
+    },
+    "miniatures/brutal-gnoll": {
+      "title": "Brutal Gnoll",
+      "description": "A gnoll warlord mid-swing with axe and shield, standing on flagstones. The golden armor plates catch the light against all that matted fur.",
+      "captions": {
+        "brutal-gnoll-1.jpg": "",
+        "brutal-gnoll-2.jpg": ""
+      }
+    },
+    "miniatures/bush-sneaky-man": {
+      "title": "Bush Sneaky Man",
+      "description": "A halfling scout hiding behind a shrub roughly four times his size. The stealth plan is not sophisticated, but it is committed.",
+      "captions": {
+        "bush-sneaky-man-1.jpg": "",
+        "bush-sneaky-man-2.jpg": ""
+      }
+    },
+    "miniatures/cassan": {
+      "title": "Cassan",
+      "description": "A tabaxi hauling an enormous crate across planking, tail out for balance. Grey fur over a warm wooden base, kept deliberately simple.",
+      "captions": {
+        "cassan-1.jpg": "",
+        "cassan-2.jpg": ""
+      }
+    },
+    "miniatures/clockwork-dragon": {
+      "title": "Clockwork Dragon",
+      "description": "A brass clockwork dragon with exposed gearwork and patchwork stained-glass wings. The wing panels are painted individually, which is why it took as long as it did.",
+      "captions": {
+        "clockwork-dragon-1.jpg": "",
+        "clockwork-dragon-2.jpg": "",
+        "clockwork-dragon-3.jpg": "",
+        "clockwork-dragon-4.jpg": "",
+        "clockwork-dragon-5.jpg": ""
+      }
+    },
+    "miniatures/cloud-of-daggers": {
+      "title": "Cloud Of Daggers",
+      "description": "A spell effect made physical: a fan of blades suspended over a single base, hovering in formation and waiting for someone to walk through.",
+      "captions": {
+        "cloud-of-daggers-1.jpg": ""
+      }
+    },
+    "miniatures/corgi-armored": {
+      "title": "Corgi Armored",
+      "description": "A corgi in full barding on a cobblestone base. Stubby legs, plate armor, complete confidence.",
+      "captions": {
+        "corgi-armored-1.jpg": "",
+        "corgi-armored-2.jpg": "",
+        "corgi-armored-3.jpg": ""
+      }
+    },
+    "miniatures/dark-raven": {
+      "title": "Dark Raven",
+      "description": "A raven with wings spread on a bare branch, kept almost entirely black. The only paint doing real work here is the sheen.",
+      "captions": {
+        "dark-raven-1.jpg": "",
+        "dark-raven-2.jpg": ""
+      }
+    },
+    "miniatures/death-tyrant": {
+      "title": "Death Tyrant",
+      "description": "A beholder skull with its eyestalks rebuilt from pale pink nerve and a single violet central eye. Death did not noticeably improve its attitude.",
+      "captions": {
+        "death-tyrant-1.jpg": "",
+        "death-tyrant-2.jpg": "",
+        "death-tyrant-3.jpg": ""
+      }
+    },
+    "miniatures/devil-lady": {
+      "title": "Devil Lady",
+      "description": "A winged devil standing with both wings thrown wide, the membranes glazed red over a lighter underpaint so they read as translucent. The armor is kept hot red to match.",
+      "captions": {
+        "devil-lady-1.jpg": "",
+        "devil-lady-2.jpg": "",
+        "devil-lady-3.jpg": "",
+        "devil-lady-4.jpg": "",
+        "devil-lady-5.jpg": ""
+      }
+    },
+    "miniatures/displacer-beast": {
+      "title": "Displacer Beast",
+      "description": "A displacer beast in near-black blue, tentacles arched overhead and tipped with pale pads. Painted dark on purpose, so it reads exactly as well as it should.",
+      "captions": {
+        "displacer-beast-1.jpg": "",
+        "displacer-beast-2.jpg": ""
+      }
+    },
+    "miniatures/displacer-beast-mutilated": {
+      "title": "Displacer Beast Mutilated",
+      "description": "The same beast after a very bad encounter, bright blue against a blood-streaked flagstone base. Whatever won this fight did not do so tidily.",
+      "captions": {
+        "displacer-beast-mutilated-1.jpg": "",
+        "displacer-beast-mutilated-2.jpg": "",
+        "displacer-beast-mutilated-3.jpg": ""
+      }
+    },
+    "miniatures/doppelganger-print": {
+      "title": "Doppelganger Print",
+      "description": "A doppelganger printed and painted in flat featureless blue, left deliberately without detail. That blankness is the whole point of the creature.",
+      "captions": {
+        "doppelganger-print-1.jpg": "",
+        "doppelganger-print-2.jpg": ""
+      }
+    },
+    "miniatures/dragonborn-with-crows": {
+      "title": "Dragonborn With Crows",
+      "description": "A dragonborn in blue and gold with a serrated blade, wreathed in wire smoke. The smoke is teased steel wool, which behaves about as well as you would expect.",
+      "captions": {
+        "dragonborn-with-crows-1.jpg": "",
+        "dragonborn-with-crows-2.jpg": "",
+        "dragonborn-with-crows-3.jpg": ""
+      }
+    },
+    "miniatures/dungeon-doggy-monty": {
+      "title": "Dungeon Doggy Monty",
+      "description": "A beagle kitted out with saddlebags and an adventuring pack, standing in static grass. Every good party needs a dog carrying the gear.",
+      "captions": {
+        "dungeon-doggy-monty-1.jpg": "",
+        "dungeon-doggy-monty-2.jpg": "",
+        "dungeon-doggy-monty-3.jpg": ""
+      }
+    },
+    "miniatures/dungeon-doggy-tobias": {
+      "title": "Dungeon Doggy Tobias",
+      "description": "A corgi in pink barding with studded straps and packs, on a glowing magma base. Short legs, long inventory.",
+      "captions": {
+        "dungeon-doggy-tobias-1.jpg": "",
+        "dungeon-doggy-tobias-2.jpg": "",
+        "dungeon-doggy-tobias-3.jpg": ""
+      }
+    },
+    "miniatures/early-orc-warrior": {
+      "title": "Early Orc Warrior",
+      "description": "An orc mid-swing with a curved blade and a battered shield. Early work, and the mottled green skin shows where the technique was still being figured out.",
+      "captions": {
+        "early-orc-warrior-1.jpg": ""
+      }
+    },
+    "miniatures/elf-archer": {
+      "title": "Elf Archer",
+      "description": "An elf archer drawing back at full extension, almost entirely hidden inside a tan cloak. The cloak does most of the storytelling.",
+      "captions": {
+        "elf-archer-1.jpg": "",
+        "elf-archer-2.jpg": "",
+        "elf-archer-3.jpg": "",
+        "elf-archer-4.jpg": ""
+      }
+    },
+    "miniatures/elf-sniper": {
+      "title": "Elf Sniper",
+      "description": "An elf braced low over a long rifle on a scrubby tuft of ground. The pose is all weight and patience.",
+      "captions": {
+        "elf-sniper-1.jpg": "",
+        "elf-sniper-2.jpg": ""
+      }
+    },
+    "miniatures/eric-albright": {
+      "title": "Eric Albright",
+      "description": "A wizard in deep red robes with a pointed hat and a staff topped by an orb, planted on a grassy base. Exactly the sort of figure you would build for a favorite character.",
+      "captions": {
+        "eric-albright-1.jpg": "",
+        "eric-albright-2.jpg": ""
+      }
+    },
+    "miniatures/fairy-flies": {
+      "title": "Fairy Flies",
+      "description": "A swarm of pale green fairies streaming off a mossy base in one long arc. Individually delicate, collectively a problem.",
+      "captions": {
+        "fairy-flies-1.jpg": "",
+        "fairy-flies-2.jpg": ""
+      }
+    },
+    "miniatures/familiar-fish": {
+      "title": "Familiar Fish",
+      "description": "A small blue fish familiar surfacing on a sandy base scattered with coral. Tiny, wide-eyed, and entirely out of its depth.",
+      "captions": {
+        "familiar-fish-1.jpg": "",
+        "familiar-fish-2.jpg": ""
+      }
+    },
+    "miniatures/fiery-martial-arts-robot": {
+      "title": "Fiery Martial Arts Robot",
+      "description": "A robot mid-kata with flames breaking from its fists and feet, the fire built from wire and blended orange to yellow. The chrome body was kept cold so the flames carry the heat.",
+      "captions": {
+        "fiery-martial-arts-robot-1.jpg": "",
+        "fiery-martial-arts-robot-2.jpg": "",
+        "fiery-martial-arts-robot-3.jpg": ""
+      }
+    },
+    "miniatures/fire-truck-war-wagon": {
+      "title": "Fire Truck War Wagon",
+      "description": "A six-wheeled war rig built out of a fire truck, complete with ram spikes and a bed full of cargo. Post-apocalyptic municipal services.",
+      "captions": {
+        "fire-truck-war-wagon-1.jpg": "",
+        "fire-truck-war-wagon-2.jpg": "",
+        "fire-truck-war-wagon-3.jpg": "",
+        "fire-truck-war-wagon-4.jpg": ""
+      }
+    },
+    "miniatures/first-orc": {
+      "title": "First Orc",
+      "description": "The first orc, arms raised in triumph. Chunky, cheerful, and kept exactly as painted, because everyone should be able to see where they started.",
+      "captions": {
+        "first-orc-1.jpg": ""
+      }
+    },
+    "miniatures/first-pixie": {
+      "title": "First Pixie",
+      "description": "An early pixie on a toadstool, hands over her mouth mid-giggle. The wings are thin enough that the light comes through them, which was the whole experiment.",
+      "captions": {
+        "first-pixie-1.jpg": ""
+      }
+    },
+    "miniatures/fox-samurai": {
+      "title": "Fox Samurai",
+      "description": "A kitsune samurai in green and red, blade raised overhead on a gravel base. The tail is doing as much work in the silhouette as the sword.",
+      "captions": {
+        "fox-samurai-1.jpg": "",
+        "fox-samurai-2.jpg": "",
+        "fox-samurai-3.jpg": ""
+      }
+    },
+    "miniatures/francis-the-corgi": {
+      "title": "Francis The Corgi",
+      "description": "A corgi hauling a strapped-on jetpack rig, tongue out, entirely unbothered by the payload. Named, and clearly beloved.",
+      "captions": {
+        "francis-the-corgi-1.jpg": "",
+        "francis-the-corgi-2.jpg": "",
+        "francis-the-corgi-3.jpg": ""
+      }
+    },
+    "miniatures/frog-demon": {
+      "title": "Frog Demon",
+      "description": "A hunched amphibian demon on a rocky slab, glossy green with red claws and spines. The wet-looking skin is doing the heavy lifting.",
+      "captions": {
+        "frog-demon-1.jpg": "",
+        "frog-demon-2.jpg": "",
+        "frog-demon-3.jpg": ""
+      }
+    },
+    "miniatures/gargoyles": {
+      "title": "Gargoyles",
+      "description": "A rank of gargoyles lined up wing to wing, still in bare metal. Assembled and ready for primer, waiting their turn.",
+      "captions": {
+        "gargoyles-1.jpg": ""
+      }
+    },
+    "miniatures/garren-bromson": {
+      "title": "Garren Bromson",
+      "description": "A fighter in deep red armor with a shield and raised blade, cloak swept back. Built as a character, and painted in his own colors throughout.",
+      "captions": {
+        "garren-bromson-1.jpg": "",
+        "garren-bromson-2.jpg": "",
+        "garren-bromson-3.jpg": "",
+        "garren-bromson-4.jpg": "",
+        "garren-bromson-5.jpg": ""
+      }
+    },
+    "miniatures/gelatinous-cube": {
+      "title": "Gelatinous Cube",
+      "description": "A translucent cube of digestive jelly, cast clear and tinted from acid yellow at the top down to a murky green at the floor. Whatever it ate is long gone.",
+      "captions": {
+        "gelatinous-cube-1.jpg": "",
+        "gelatinous-cube-2.jpg": "",
+        "gelatinous-cube-3.jpg": "",
+        "gelatinous-cube-4.jpg": "",
+        "gelatinous-cube-5.jpg": ""
+      }
+    },
+    "miniatures/gibbering-mouthers": {
+      "title": "Gibbering Mouthers",
+      "description": "Two heaving piles of fused mouths and mismatched eyes in sickly beige. The horror here is that none of the faces agree on where to look.",
+      "captions": {
+        "gibbering-mouthers-1.jpg": "",
+        "gibbering-mouthers-2.jpg": ""
+      }
+    },
+    "miniatures/girl-on-beach": {
+      "title": "Girl On Beach",
+      "description": "A blonde figure reading on a strip of sand where the surf meets the shore, the base split between wet blue and dry grit. Quietest piece on the shelf.",
+      "captions": {
+        "girl-on-beach-1.jpg": "",
+        "girl-on-beach-2.jpg": "",
+        "girl-on-beach-3.jpg": ""
+      }
+    },
+    "miniatures/hellhound": {
+      "title": "Hellhound",
+      "description": "A hellhound stalking across cracked magma, its coat blended from dark brown at the shoulders to glowing orange along the spine and tail. The base glows to match.",
+      "captions": {
+        "hellhound-1.jpg": "",
+        "hellhound-2.jpg": ""
+      }
+    },
+    "miniatures/ice-elemental": {
+      "title": "Ice Elemental",
+      "description": "An elemental cast in translucent blue with a shard of ice erupting beside it, left mostly unpainted so the light travels through the resin.",
+      "captions": {
+        "ice-elemental-1.jpg": "",
+        "ice-elemental-2.jpg": ""
+      }
+    },
+    "miniatures/jergal-angels": {
+      "title": "Jergal Angels",
+      "description": "A matched pair of grey-winged angels in dark robes, each holding a blade and a green flame, standing in snow. Identical twins, down to the freehand on the robes.",
+      "captions": {
+        "jergal-angels-1.jpg": "",
+        "jergal-angels-2.jpg": ""
+      }
+    },
+    "miniatures/laser-car": {
+      "title": "Laser Car",
+      "description": "A stripped-down racer with an enormous laser cannon bolted over the cockpit, finished in chipped white. Aerodynamics were not the priority.",
+      "captions": {
+        "laser-car-1.jpg": "",
+        "laser-car-2.jpg": "",
+        "laser-car-3.jpg": ""
+      }
+    },
+    "miniatures/le-monte-claire": {
+      "title": "Le Monte Claire",
+      "description": "A bard mid-flourish in wine-red and gold, one hand raised, standing on a broken stone plinth. Built as a character and posed like he knows it.",
+      "captions": {
+        "le-monte-claire-1.jpg": "",
+        "le-monte-claire-2.jpg": "",
+        "le-monte-claire-3.jpg": "",
+        "le-monte-claire-4.jpg": "",
+        "le-monte-claire-5.jpg": "",
+        "le-monte-claire-6.jpg": ""
+      }
+    },
+    "miniatures/lich-god": {
+      "title": "Lich God",
+      "description": "A lich enthroned in dark armor, wreathed in pale green necrotic energy on a tiled floor. Nine photos, because this one earned them.",
+      "captions": {
+        "lich-god-1.jpg": "",
+        "lich-god-2.jpg": "",
+        "lich-god-3.jpg": "",
+        "lich-god-4.jpg": "",
+        "lich-god-5.jpg": "",
+        "lich-god-6.jpg": "",
+        "lich-god-7.jpg": "",
+        "lich-god-8.jpg": "",
+        "lich-god-9.jpg": ""
+      }
+    },
+    "miniatures/little-imp": {
+      "title": "Little Imp",
+      "description": "A bright orange imp caught mid-stride on a chunk of rubble, barely larger than a fingernail. Small, red, and clearly up to something.",
+      "captions": {
+        "little-imp-1.jpg": "",
+        "little-imp-2.jpg": "",
+        "little-imp-3.jpg": ""
+      }
+    },
+    "miniatures/little-lime-octopus": {
+      "title": "Little Lime Octopus",
+      "description": "A tiny octopus in lime green with its arms curled under, painted with a wash that pools in the suckers. No base, no context, just a good octopus.",
+      "captions": {
+        "little-lime-octopus-1.jpg": ""
+      }
+    },
+    "miniatures/lord-of-bones": {
+      "title": "Lord Of Bones",
+      "description": "A skeletal lord on a bat-winged throne built from bones and stacked skulls, robed in red. The throne took more work than its occupant.",
+      "captions": {
+        "lord-of-bones-1.jpg": "",
+        "lord-of-bones-2.jpg": "",
+        "lord-of-bones-3.jpg": "",
+        "lord-of-bones-4.jpg": ""
+      }
+    },
+    "miniatures/lord-of-murder": {
+      "title": "Lord Of Murder",
+      "description": "A gaunt figure trailing an enormous fan of blades from its back, kept in cold greys on a cracked stone base. The blades read as one silhouette from across the table.",
+      "captions": {
+        "lord-of-murder-1.jpg": "",
+        "lord-of-murder-2.jpg": "",
+        "lord-of-murder-3.jpg": "",
+        "lord-of-murder-4.jpg": ""
+      }
+    },
+    "miniatures/lord-of-war": {
+      "title": "Lord Of War",
+      "description": "An orc warlord with axe and sword raised, planted in a wild tuft of dried grass. The grass is doing a surprising amount of work on the base.",
+      "captions": {
+        "lord-of-war-1.jpg": "",
+        "lord-of-war-2.jpg": ""
+      }
+    },
+    "miniatures/machine-gun-buggy": {
+      "title": "Machine Gun Buggy",
+      "description": "A skeletal dune buggy with a gunner standing at an exposed mount, built from open tube framing. There is no bodywork anywhere on it, which feels like a choice.",
+      "captions": {
+        "machine-gun-buggy-1.jpg": "",
+        "machine-gun-buggy-2.jpg": ""
+      }
+    },
+    "miniatures/marelle-usinee": {
+      "title": "Marelle Usinee",
+      "description": "A character in segmented blue armor with an oversized mechanical arm, standing on planking. Painted cool throughout so the one warm face stands out.",
+      "captions": {
+        "marelle-usinee-1.jpg": "",
+        "marelle-usinee-2.jpg": "",
+        "marelle-usinee-3.jpg": ""
+      }
+    },
+    "miniatures/master-lich": {
+      "title": "Master Lich",
+      "description": "A lich standing beneath a ribbed stone arch, holding an open spellbook glowing green, on a checkered floor. The freehand tiles were the real project.",
+      "captions": {
+        "master-lich-1.jpg": "",
+        "master-lich-2.jpg": "",
+        "master-lich-3.jpg": ""
+      }
+    },
+    "miniatures/mega-arcanine": {
+      "title": "Mega Arcanine",
+      "description": "A repainted Arcanine bulked up into its mega form, orange coat streaked with black tiger striping, shown next to the original figure and a Funko for scale.",
+      "captions": {
+        "mega-arcanine-1.jpg": ""
+      }
+    },
+    "miniatures/mimics": {
+      "title": "Mimics",
+      "description": "Two chests caught mid-transformation, lids peeled back into rings of teeth with tongues lolling out. Never trust furniture.",
+      "captions": {
+        "mimics-1.jpg": "",
+        "mimics-2.jpg": ""
+      }
+    },
+    "miniatures/mind-flayers": {
+      "title": "Mind Flayers",
+      "description": "A matched pair of illithids in violet robes, tentacles curled, each set on a cracked green base. The robes are highlighted up sharply so the folds read at arm's length.",
+      "captions": {
+        "mind-flayers-1.jpg": "",
+        "mind-flayers-2.jpg": ""
+      }
+    },
+    "miniatures/missle-junker": {
+      "title": "Missle Junker",
+      "description": "A battered sedan in faded blue with a missile strapped across the roof and mesh over the windows. Rust weathering over most of the panels.",
+      "captions": {
+        "missle-junker-1.jpg": ""
+      }
+    },
+    "miniatures/mutated-abomination": {
+      "title": "Mutated Abomination",
+      "description": "A pale spined horror with one central eye, torn tendrils, and a whipping tail, standing on flat green. The raw red on the tendril ends is the only warm color on it.",
+      "captions": {
+        "mutated-abomination-1.jpg": "",
+        "mutated-abomination-2.jpg": "",
+        "mutated-abomination-3.jpg": ""
+      }
+    },
+    "miniatures/new-owlbear": {
+      "title": "New Owlbear",
+      "description": "An owlbear rearing forward in thick brown fur, beak open, on an autumn base with fallen leaves. The fur is drybrushed layer over layer to get that depth.",
+      "captions": {
+        "new-owlbear-1.jpg": "",
+        "new-owlbear-2.jpg": "",
+        "new-owlbear-3.jpg": "",
+        "new-owlbear-4.jpg": "",
+        "new-owlbear-5.jpg": ""
+      }
+    },
+    "miniatures/oarfish": {
+      "title": "Oarfish",
+      "description": "A long ribbon of oarfish arched over a seabed base, with bright blue and magenta coral tufts below. The fins are fine enough that the light comes through.",
+      "captions": {
+        "oarfish-1.jpg": "",
+        "oarfish-2.jpg": "",
+        "oarfish-3.jpg": ""
+      }
+    },
+    "miniatures/orange-warrior": {
+      "title": "Orange Warrior",
+      "description": "A bald warrior in layered orange robes carrying a long blade over one shoulder, on grey flagstones. Confident, unhurried, and entirely orange.",
+      "captions": {
+        "orange-warrior-1.jpg": "",
+        "orange-warrior-2.jpg": ""
+      }
+    },
+    "miniatures/orc-carnival-master": {
+      "title": "Orc Carnival Master",
+      "description": "An orc ringmaster in a purple tailcoat and top hat, leaning on a cane. The carnival is presumably not a safe one.",
+      "captions": {
+        "orc-carnival-master-1.jpg": ""
+      }
+    },
+    "miniatures/organ-monstrosity": {
+      "title": "Organ Monstrosity",
+      "description": "A raw, flayed thing sprouting arteries in every direction, wielding an axe, standing among skulls. All reds and pinks, with nothing left to the imagination.",
+      "captions": {
+        "organ-monstrosity-1.jpg": "",
+        "organ-monstrosity-2.jpg": "",
+        "organ-monstrosity-3.jpg": "",
+        "organ-monstrosity-4.jpg": ""
+      }
+    },
+    "miniatures/otyugh-lava": {
+      "title": "Otyugh Lava",
+      "description": "An otyugh heaving itself out of a crack in the rock, two eyestalks up and a mouth full of teeth wide open. The base glows orange beneath it.",
+      "captions": {
+        "otyugh-lava-1.jpg": "",
+        "otyugh-lava-2.jpg": "",
+        "otyugh-lava-3.jpg": ""
+      }
+    },
+    "miniatures/purple-worm": {
+      "title": "Purple Worm",
+      "description": "A purple worm erupting from a grass base, segmented plates blended violet to bone with a ring of teeth around a very red throat. It also makes a good banner image.",
+      "captions": {
+        "purple-worm-1.jpg": "",
+        "purple-worm-3.jpg": "",
+        "purple-worm-full-banner.jpg": ""
+      }
+    },
+    "miniatures/rainbow-beetles": {
+      "title": "Rainbow Beetles",
+      "description": "Two beetles with iridescent shells, shifting blue to violet depending on the angle, on cracked earth bases. The shimmer is layered glaze, not a single color.",
+      "captions": {
+        "rainbow-beetles-1.jpg": "",
+        "rainbow-beetles-2.jpg": "",
+        "rainbow-beetles-3.jpg": ""
+      }
+    },
+    "miniatures/ritual-circle": {
+      "title": "Ritual Circle",
+      "description": "A ring of standing stones set with skulls and candles, built as a free-standing scatter piece. Drop it on the table and everyone immediately knows what is about to happen.",
+      "captions": {
+        "ritual-circle-1.jpg": ""
+      }
+    },
+    "miniatures/ritual-cultist": {
+      "title": "Ritual Cultist",
+      "description": "A hooded cultist raising a curved dagger, painted almost entirely in black with the highlights doing all the shape work. The book at the waist is the only spot of color.",
+      "captions": {
+        "ritual-cultist-1.jpg": "",
+        "ritual-cultist-2.jpg": ""
+      }
+    },
+    "miniatures/rot-fountain": {
+      "title": "Rot Fountain",
+      "description": "A carved stone fountain with a basin of stagnant yellow-green sludge, rendered thick and glossy. Nobody is drinking from this one.",
+      "captions": {
+        "rot-fountain-1.jpg": "",
+        "rot-fountain-2.jpg": ""
+      }
+    },
+    "miniatures/rust-monster": {
+      "title": "Rust Monster",
+      "description": "A rust monster in copper and orange, antennae forward and feathered tail up, scuttling off a rocky base. It is coming for your armor specifically.",
+      "captions": {
+        "rust-monster-1.jpg": "",
+        "rust-monster-2.jpg": "",
+        "rust-monster-3.jpg": ""
+      }
+    },
+    "miniatures/rusted-frames": {
+      "title": "Rusted Frames",
+      "description": "Three car shells stripped to bare bodywork and weathered to near-total rust, one still carrying a painted target on the door. Wrecks waiting to be built into something.",
+      "captions": {
+        "rusted-frames-1.jpg": "",
+        "rusted-frames-2.jpg": ""
+      }
+    },
+    "miniatures/sahuaghin-trident": {
+      "title": "Sahuaghin Trident",
+      "description": "A sahuagin lunging with trident in hand, painted in mottled green over a lighter belly. The skin is stippled rather than blended, so it reads as scaly from a distance.",
+      "captions": {
+        "sahuaghin-trident-1.jpg": "",
+        "sahuaghin-trident-2.jpg": ""
+      }
+    },
+    "miniatures/skeleton-archers": {
+      "title": "Skeleton Archers",
+      "description": "Two skeletons drawing longbows on bright green bases, ribs and joints picked out in bone and shadow. Cheap troops, endlessly reusable.",
+      "captions": {
+        "skeleton-archers-1.jpg": "",
+        "skeleton-archers-2.jpg": ""
+      }
+    },
+    "miniatures/slagfist": {
+      "title": "Slagfist",
+      "description": "An armored fighter flanked by two dome-shelled drones on articulated legs. The freehand gold filigree on the central base is the detail worth looking for.",
+      "captions": {
+        "slagfist-1.jpg": "",
+        "slagfist-2.jpg": "",
+        "slagfist-3.jpg": "",
+        "slagfist-4.jpg": ""
+      }
+    },
+    "miniatures/sludge-monster": {
+      "title": "Sludge Monster",
+      "description": "A pale bloated giant dragging chains, hide stretched over a gaping torso cavity, standing on toxic green. The chains are real chain, which is why they hang right.",
+      "captions": {
+        "sludge-monster-1.jpg": "",
+        "sludge-monster-2.jpg": "",
+        "sludge-monster-3.jpg": ""
+      }
+    },
+    "miniatures/small-beetle": {
+      "title": "Small Beetle",
+      "description": "One dark beetle on a mossy green base, glossy and unbothered. Small enough that the base is most of what you see.",
+      "captions": {
+        "small-beetle-1.jpg": ""
+      }
+    },
+    "miniatures/snowy-owlbear": {
+      "title": "Snowy Owlbear",
+      "description": "An owlbear in white and grey winter plumage, hunched low with one claw raised. The red eye is the only warm color anywhere on it.",
+      "captions": {
+        "snowy-owlbear-1.jpg": "",
+        "snowy-owlbear-2.jpg": "",
+        "snowy-owlbear-3.jpg": ""
+      }
+    },
+    "miniatures/soul-grinder": {
+      "title": "Soul Grinder",
+      "description": "A daemon engine on six bladed brass legs, violet torso rising from the chassis with an energy blade in each claw. Big enough to need its own footprint on the table.",
+      "captions": {
+        "soul-grinder-1.jpg": "",
+        "soul-grinder-2.jpg": "",
+        "soul-grinder-3.jpg": "",
+        "soul-grinder-4.jpg": "",
+        "soul-grinder-5.jpg": ""
+      }
+    },
+    "miniatures/speedy-car": {
+      "title": "Speedy Car",
+      "description": "A low red muscle car with a blown hood and blue windows, weathered down along the edges. Fast, and not much else.",
+      "captions": {
+        "speedy-car-1.jpg": "",
+        "speedy-car-2.jpg": "",
+        "speedy-car-3.jpg": ""
+      }
+    },
+    "miniatures/swamp-monster": {
+      "title": "Swamp Monster",
+      "description": "A bloated swamp creature in teal and sickly green, arms out, standing among moss clumps. The palette is all cold, which makes it read as damp.",
+      "captions": {
+        "swamp-monster-1.jpg": "",
+        "swamp-monster-2.jpg": "",
+        "swamp-monster-3.jpg": "",
+        "swamp-monster-4.jpg": ""
+      }
+    },
+    "miniatures/t-rex": {
+      "title": "T Rex",
+      "description": "A full-size T-Rex striding through jungle undergrowth, green along the back fading to pale underneath. The base is thick with real foliage.",
+      "captions": {
+        "t-rex-1.jpg": "",
+        "t-rex-2.jpg": "",
+        "t-rex-3.jpg": "",
+        "t-rex-4.jpg": "",
+        "t-rex-5.jpg": ""
+      }
+    },
+    "miniatures/tentacle-pair": {
+      "title": "Tentacle Pair",
+      "description": "Two tentacles bursting up through sculpted whitewater, one dark purple and one violet, each on its own base. Sold separately, encountered together.",
+      "captions": {
+        "tentacle-pair-1.jpg": ""
+      }
+    },
+    "miniatures/thought-devourer": {
+      "title": "Thought Devourer",
+      "description": "An exposed pink brain riding a set of splayed yellow legs. It is exactly as unsettling as that sounds, and it fits on a thumbnail.",
+      "captions": {
+        "thought-devourer-1.jpg": "",
+        "thought-devourer-2.jpg": "",
+        "thought-devourer-3.jpg": ""
+      }
+    },
+    "miniatures/tiefling-sorceror-green-dress": {
+      "title": "Tiefling Sorceror Green Dress",
+      "description": "A tiefling sorcerer in a green dress with red skin and trailing hair, dagger drawn, standing on stone. The hair and the horns carry the whole silhouette.",
+      "captions": {
+        "tiefling-sorceror-green-dress-1.jpg": "",
+        "tiefling-sorceror-green-dress-2.jpg": ""
+      }
+    },
+    "miniatures/tormin-mahaloom": {
+      "title": "Tormin Mahaloom",
+      "description": "A horned fighter with sword and shield braced in a wide stance, on an earth base with a skull at his feet. Built as a character, and painted in muted, practical colors.",
+      "captions": {
+        "tormin-mahaloom-1.jpg": "",
+        "tormin-mahaloom-2.jpg": ""
+      }
+    },
+    "miniatures/triple-grell": {
+      "title": "Triple Grell",
+      "description": "Three grells, each a floating brain trailing a curtain of tan tentacles around a hooked beak. Painted as a set so they read as one encounter.",
+      "captions": {
+        "triple-grell-1.jpg": "",
+        "triple-grell-2.jpg": ""
+      }
+    },
+    "miniatures/twilight-imperium-prints": {
+      "title": "Twilight Imperium Prints",
+      "description": "A full set of Twilight Imperium fleets printed and painted by faction, laid out across the kitchen table and sorted by color. Every ship in the box, replaced.",
+      "captions": {
+        "twilight-imperium-prints-1.jpg": "",
+        "twilight-imperium-prints-2.jpg": "",
+        "twilight-imperium-prints-3.jpg": "",
+        "twilight-imperium-prints-4.jpg": "",
+        "twilight-imperium-prints-5.jpg": ""
+      }
+    },
+    "miniatures/twin-statues": {
+      "title": "Twin Statues",
+      "description": "Two stone guardian statues, one holding a basin and one a sword, painted entirely in greys to read as carved rock rather than a figure.",
+      "captions": {
+        "twin-statues-1.jpg": "",
+        "twin-statues-2.jpg": ""
+      }
+    },
+    "miniatures/water-elemental": {
+      "title": "Water Elemental",
+      "description": "An elemental of curling translucent water, left largely unpainted so the light passes straight through the resin. Only the shadows are painted in.",
+      "captions": {
+        "water-elemental-1.jpg": "",
+        "water-elemental-2.jpg": ""
+      }
+    },
+    "miniatures/water-ninja": {
+      "title": "Water Ninja",
+      "description": "A robed figure with a shuriken, standing on a pale sheet of ice. The teal and cream palette is kept cold enough that the base and the coat feel like the same material.",
+      "captions": {
+        "water-ninja-1.jpg": "",
+        "water-ninja-2.jpg": ""
+      }
+    },
+    "miniatures/water-slaad": {
+      "title": "Water Slaad",
+      "description": "A blue slaad with a magenta mouth and throat, claws out, standing on a wet stone base. The hot pink interior against all that cold blue is the entire trick.",
+      "captions": {
+        "water-slaad-1.jpg": "",
+        "water-slaad-2.jpg": "",
+        "water-slaad-3.jpg": "",
+        "water-slaad-4.jpg": "",
+        "water-slaad-5.jpg": "",
+        "water-slaad-6.jpg": "",
+        "water-slaad-7.jpg": ""
+      }
+    },
+    "miniatures/weaponized-jeep": {
+      "title": "Weaponized Jeep",
+      "description": "A red jeep armored in bolted plate and mounted skulls, with a spotlight rig on the roof. Every panel is chipped down to bare metal.",
+      "captions": {
+        "weaponized-jeep-1.jpg": "",
+        "weaponized-jeep-2.jpg": "",
+        "weaponized-jeep-3.jpg": ""
+      }
+    },
+    "miniatures/white-spectator": {
+      "title": "White Spectator",
+      "description": "A small pale spectator with four eyestalks and a wide grin, hovering over an earth base. Friendlier than a beholder, if only slightly.",
+      "captions": {
+        "white-spectator-1.jpg": "",
+        "white-spectator-2.jpg": ""
+      }
+    },
+    "miniatures/wraith-couple": {
+      "title": "Wraith Couple",
+      "description": "Two wraiths in trailing robes, one violet and one pale blue, both fading out toward the hem so they read as half-solid.",
+      "captions": {
+        "wraith-couple-1.jpg": "",
+        "wraith-couple-2.jpg": ""
+      }
+    },
+    "miniatures/zombicorn": {
+      "title": "Zombicorn",
+      "description": "A unicorn well past its prime, mane and tail rotted to green, gold horn still intact. The horn was kept clean so it is obvious what it used to be.",
+      "captions": {
+        "zombicorn-1.jpg": "",
+        "zombicorn-2.jpg": "",
+        "zombicorn-3.jpg": ""
+      }
+    },
+    "terrain/coals": {
+      "title": "Coals",
+      "description": "A bed of banked coals sculpted across a round base, each lump glazed orange in the cracks and left charred on top. Built to drop under something that is about to be on fire.",
+      "captions": {
+        "coals-1.jpg": ""
+      }
+    },
+    "terrain/destroyed-castle": {
+      "title": "Destroyed Castle",
+      "description": "A ruined keep with one wall collapsed into rubble, carved block by block and weathered grey with moss creeping through the debris.",
+      "captions": {
+        "destroyed-castle-1.jpg": "",
+        "destroyed-castle-2.jpg": "",
+        "destroyed-castle-3.jpg": "",
+        "destroyed-castle-4.jpg": "",
+        "destroyed-castle-6.jpg": ""
+      }
+    },
+    "terrain/destroyed-column": {
+      "title": "Destroyed Column",
+      "description": "A toppled classical column half-buried on a round base, grass growing over the drum sections. Small piece, does a lot of scene-setting.",
+      "captions": {
+        "destroyed-column-1.jpg": "",
+        "destroyed-column-2.jpg": ""
+      }
+    },
+    "terrain/docks": {
+      "title": "Docks",
+      "description": "Modular boardwalk sections on pilings, planked individually and weathered to look waterlogged. They connect in different arrangements so the harbor changes shape.",
+      "captions": {
+        "docks-1.jpg": "",
+        "docks-2.jpg": "",
+        "docks-3.jpg": "",
+        "docks-4.jpg": ""
+      }
+    },
+    "terrain/egg-pit": {
+      "title": "Egg Pit",
+      "description": "A nest of glassy orange eggs packed into a dark rock hollow, built up in clusters so the light catches unevenly across the mass.",
+      "captions": {
+        "egg-pit-1.jpg": "",
+        "egg-pit-2.jpg": "",
+        "egg-pit-3.jpg": "",
+        "egg-pit-4.jpg": "",
+        "egg-pit-5.jpg": "",
+        "egg-pit-6.jpg": "",
+        "egg-pit-7.jpg": "",
+        "egg-pit-8.gif": ""
+      }
+    },
+    "terrain/firestacks": {
+      "title": "Firestacks",
+      "description": "Four fire markers lit from inside, with smoke columns teased out of wool above each flame. The glow is real, which is why they photograph so well in the dark.",
+      "captions": {
+        "firestacks-1.jpg": "",
+        "firestacks-2.jpg": "",
+        "firestacks-3.jpg": ""
+      }
+    },
+    "terrain/floating-crystal": {
+      "title": "Floating Crystal",
+      "description": "A huge pink crystal suspended above a mossy outcrop by chains, angled so it looks tethered rather than resting. The faceting is cut, not sculpted.",
+      "captions": {
+        "floating-crystal-1.jpg": ""
+      }
+    },
+    "terrain/golden-portal": {
+      "title": "Golden Portal",
+      "description": "A gold-framed gateway flanked by winged lions, the interior a swirl of violet. Set on flagstones so it reads as built rather than conjured.",
+      "captions": {
+        "golden-portal-1.jpg": "",
+        "golden-portal-2.jpg": "",
+        "golden-portal-3.jpg": ""
+      }
+    },
+    "terrain/golden-scales": {
+      "title": "Golden Scales",
+      "description": "A working set of balance scales built from wire and thin discs, with pans that actually hang level. Small enough to sit on a single base.",
+      "captions": {
+        "golden-scales-1.jpg": "",
+        "golden-scales-2.jpg": ""
+      }
+    },
+    "terrain/ice-disc-base": {
+      "title": "Ice Disc Base",
+      "description": "A frozen pool with a crack star bursting from the center, poured in translucent blue over a textured disc. Something recently went through it.",
+      "captions": {
+        "ice-disc-base-1.jpg": ""
+      }
+    },
+    "terrain/ice-pillars-base": {
+      "title": "Ice Pillars Base",
+      "description": "A cluster of grey ice shards pushing up through snow, kept almost colorless so it reads as cold rather than blue.",
+      "captions": {
+        "ice-pillars-base-1.jpg": ""
+      }
+    },
+    "terrain/infinity-portal": {
+      "title": "Infinity Portal",
+      "description": "An infinity mirror portal rigged with LEDs, so the ring of lights recedes into what looks like a bottomless shaft. Best appreciated with the lights off.",
+      "captions": {
+        "infinity-portal-1.gif": ""
+      }
+    },
+    "terrain/insect-eggs": {
+      "title": "Insect Eggs",
+      "description": "A sheet of webbing stretched over yellow egg clusters and dark growth, built up in translucent layers so the eggs sit under the web rather than on it.",
+      "captions": {
+        "insect-eggs-1.jpg": "",
+        "insect-eggs-2.jpg": "",
+        "insect-eggs-3.jpg": "",
+        "insect-eggs-4.jpg": "",
+        "insect-eggs-5.jpg": "",
+        "insect-eggs-6.jpg": ""
+      }
+    },
+    "terrain/lavaplatform": {
+      "title": "Lavaplatform",
+      "description": "A rock platform balanced on a column of pouring lava, blended white-hot at the core to deep orange at the edges. The lava is the support, structurally and visually.",
+      "captions": {
+        "lavaplatform-1.jpg": "",
+        "lavaplatform-2.jpg": "",
+        "lavaplatform-3.jpg": "",
+        "lavaplatform-4.jpg": "",
+        "lavaplatform-5.jpg": ""
+      }
+    },
+    "terrain/magic-rune-tile": {
+      "title": "Magic Rune Tile",
+      "description": "A dungeon floor tile with a rune cut clean through and lit green from beneath. Innocuous with the lights up, considerably less so in the dark.",
+      "captions": {
+        "magic-rune-tile-1.jpg": "",
+        "magic-rune-tile-2.jpg": "",
+        "magic-rune-tile-3.jpg": "",
+        "magic-rune-tile-4.jpg": ""
+      }
+    },
+    "terrain/mutated-trees": {
+      "title": "Mutated Trees",
+      "description": "Three dead trees split open to reveal toothed mouths running up their trunks, rooted among bones and moss. The bark texture hides the mouth until you are close.",
+      "captions": {
+        "mutated-trees-1.jpg": "",
+        "mutated-trees-2.jpg": "",
+        "mutated-trees-3.jpg": "",
+        "mutated-trees-4.jpg": ""
+      }
+    },
+    "terrain/oblex-well": {
+      "title": "Oblex Well",
+      "description": "A stone well glowing orange from somewhere deep below the rim. Whatever is down there is lit, awake, and not water.",
+      "captions": {
+        "oblex-well-1.jpg": "",
+        "oblex-well-2.jpg": "",
+        "oblex-well-3.jpg": ""
+      }
+    },
+    "terrain/ocean-rock": {
+      "title": "Ocean Rock",
+      "description": "A flat grey rock rising out of deep blue water, with sculpted foam breaking white around its base. Built as a display plinth as much as terrain.",
+      "captions": {
+        "ocean-rock-1.jpg": ""
+      }
+    },
+    "terrain/oiltank": {
+      "title": "Oiltank",
+      "description": "A fuel drum on a welded cradle, rusted through in patches down to bare metal. Built as industrial scatter, and weathered until it looks abandoned rather than merely old.",
+      "captions": {
+        "oiltank-1.jpg": "",
+        "oiltank-2.jpg": ""
+      }
+    },
+    "terrain/prisma-wall": {
+      "title": "Prisma Wall",
+      "description": "A wall of crystal shards in a full spectrum, running green through blue to violet along its length. Every shard is placed individually, which is why the gradient is smooth.",
+      "captions": {
+        "prisma-wall-1.jpg": "",
+        "prisma-wall-other-side-gif.gif": ""
+      }
+    },
+    "terrain/puke-fountain": {
+      "title": "Puke Fountain",
+      "description": "An ornate fountain producing something that is emphatically not water. The sculpture is elegant; the output is not.",
+      "captions": {
+        "puke-fountain-1.jpg": ""
+      }
+    },
+    "terrain/river": {
+      "title": "River",
+      "description": "A full gaming board with a river cut through it, banks built up in layers of flock and gravel, poplars along the far side. The water is poured resin with the bed painted before it went in.",
+      "captions": {
+        "river-1.jpg": "",
+        "river-2.jpg": "",
+        "river-3.jpg": "",
+        "river-4.jpg": "",
+        "river-5.jpg": "",
+        "river-6.jpg": ""
+      }
+    },
+    "terrain/ruined-windmill": {
+      "title": "Ruined Windmill",
+      "description": "A windmill with its sails half rotted away and its tower opened to the weather, built from stripped timber on a stone base. It looks structurally unsound, which is the point.",
+      "captions": {
+        "ruined-windmill-1.jpg": "",
+        "ruined-windmill-2.jpg": "",
+        "ruined-windmill-3.jpg": "",
+        "ruined-windmill-4.jpg": "",
+        "ruined-windmill-5.jpg": "",
+        "ruined-windmill-6.gif": ""
+      }
+    },
+    "terrain/shed-on-the-hill": {
+      "title": "Shed On The Hill",
+      "description": "A tile-roofed shed sitting on a grassy rise with rock faces carved down the sides. The whole hill is the model, not just the building.",
+      "captions": {
+        "shed-on-the-hill-1.jpg": "",
+        "shed-on-the-hill-2.jpg": "",
+        "shed-on-the-hill-3.jpg": "",
+        "shed-on-the-hill-4.jpg": "",
+        "shed-on-the-hill-5.jpg": ""
+      }
+    },
+    "terrain/sludge-crater": {
+      "title": "Sludge Crater",
+      "description": "A crater of green sludge draining out through a breach in the rim, poured glossy so it still looks wet. Something toxic happened here.",
+      "captions": {
+        "sludge-crater-1.jpg": "",
+        "sludge-crater-2.jpg": ""
+      }
+    },
+    "terrain/snowy-crater": {
+      "title": "Snowy Crater",
+      "description": "A frozen impact crater with a deep blue pool at the center and snow thrown up over the rim in rays. Cold enough to read from across the table.",
+      "captions": {
+        "snowy-crater-1.jpg": "",
+        "snowy-crater-2.jpg": "",
+        "snowy-crater-3.jpg": ""
+      }
+    },
+    "terrain/temple-interior": {
+      "title": "Temple Interior",
+      "description": "A full temple built to scale, with cobbled stone floors, banner-lined walls, and a rose window rising behind the altar. Angel statues flank the dais, and the pews are ready for a congregation.",
+      "captions": {
+        "temple-interior-1.jpg": "",
+        "temple-interior-2.jpg": "",
+        "temple-interior-3.jpg": "",
+        "temple-interior-4.jpg": "",
+        "temple-interior-5.jpg": "",
+        "temple-interior-6.jpg": "",
+        "temple-interior-7.jpg": "",
+        "temple-interior-8.jpg": "",
+        "temple-interior-9.jpg": "",
+        "temple-interior-99.jpg": "",
+        "temple-interior-999.png": ""
+      }
+    },
+    "terrain/tilled-farmland": {
+      "title": "Tilled Farmland",
+      "description": "A field of ploughed furrows with crops coming up in rows, every ridge scored by hand. Unglamorous, and exactly what a village board needs.",
+      "captions": {
+        "tilled-farmland-1.jpg": "",
+        "tilled-farmland-2.jpg": "",
+        "tilled-farmland-3.jpg": "",
+        "tilled-farmland-4.jpg": ""
+      }
+    },
+    "terrain/trashed-terrain": {
+      "title": "Trashed Terrain",
+      "description": "A fenced enclosure of churned ground and dead grass, built from scrap sticks and offcuts. Proof that a good board section does not need good materials.",
+      "captions": {
+        "trashed-terrain-1.jpg": "",
+        "trashed-terrain-2.jpg": ""
+      }
+    },
+    "terrain/two-level-simple-house": {
+      "title": "Two Level Simple House",
+      "description": "A timber-framed house with whitewashed panels over a rough stone ground floor, built to be lifted apart by level so figures can go inside.",
+      "captions": {
+        "two-level-simple-house-1.jpg": "",
+        "two-level-simple-house-2.jpg": "",
+        "two-level-simple-house-3.jpg": ""
+      }
+    },
+    "terrain/underdark-rock-pillars": {
+      "title": "Underdark Rock Pillars",
+      "description": "Stacked purple rock formations studded with glowing fungus in pink and blue. Nothing down here is lit by the sun, so everything had to glow on its own.",
+      "captions": {
+        "underdark-rock-pillars-1.jpg": "",
+        "underdark-rock-pillars-2.jpg": ""
+      }
+    },
+    "terrain/water-fall": {
+      "title": "Water Fall",
+      "description": "A waterfall pouring into a rock pool, the falling water sculpted clear and whipped white where it lands. Moss and scree built up the banks around it.",
+      "captions": {
+        "water-fall-1.jpg": "",
+        "water-fall-2.jpg": ""
+      }
+    },
+    "terrain/waystone": {
+      "title": "Waystone",
+      "description": "A carved standing stone on a low rise, with a dirt track running past and trees at either end. A landmark piece, built to mark where the party is rather than fight over.",
+      "captions": {
+        "waystone-1.jpg": "",
+        "waystone-2.jpg": "",
+        "waystone-3.jpg": ""
+      }
+    },
+    "modelkits/chibi-dragon-gundam": {
+      "title": "Chibi Dragon Gundam",
+      "description": "A chibi-proportioned Dragon Gundam in orange and violet, flame effects mounted on both fists. All squashed-down proportions and no restraint.",
+      "captions": {
+        "chibi-dragon-gundam-1.jpg": "",
+        "chibi-dragon-gundam-2.jpg": ""
+      }
+    },
+    "modelkits/garchomp": {
+      "title": "Garchomp",
+      "description": "A Garchomp model kit snapped together in navy and red, fins out and posed low. Built clean out of the box, no paint needed.",
+      "captions": {
+        "garchomp-1.jpg": ""
+      }
+    },
+    "modelkits/gold-unicorn": {
+      "title": "Gold Unicorn",
+      "description": "The Unicorn Gundam in full gold plating with psychoframe panels exposed, beam rifle and sabre mounted. Every panel line had to stay crisp against that much reflective surface.",
+      "captions": {
+        "gold-unicorn-1.jpg": "",
+        "gold-unicorn-2.jpg": "",
+        "gold-unicorn-3.jpg": "",
+        "gold-unicorn-4.jpg": "",
+        "gold-unicorn-5.jpg": ""
+      }
+    },
+    "modelkits/gundam-centaur": {
+      "title": "Gundam Centaur",
+      "description": "A centaur-framed Gundam in black and red, bow drawn, standing on four legs instead of two. The rear legs carry the whole pose, so the joints had to be tight.",
+      "captions": {
+        "gundam-centaur-1.jpg": "",
+        "gundam-centaur-2.jpg": "",
+        "gundam-centaur-3.jpg": "",
+        "gundam-centaur-4.jpg": "",
+        "gundam-centaur-5.jpg": ""
+      }
+    },
+    "modelkits/gundam-chibi": {
+      "title": "Gundam Chibi",
+      "description": "An SD Gundam in full ceremonial gold and blue with flame-shaped effect parts fanned out behind it. Tiny body, enormous backdrop.",
+      "captions": {
+        "gundam-chibi-1.jpg": "",
+        "gundam-chibi-2.jpg": "",
+        "gundam-chibi-3.jpg": ""
+      }
+    },
+    "modelkits/gundam-submarine": {
+      "title": "Gundam Submarine",
+      "description": "A pale blue aquatic mobile suit standing on four clawed legs. Built straight from the kit, with the leg articulation doing all the character work.",
+      "captions": {
+        "gundam-submarine-1.jpg": "",
+        "gundam-submarine-2.jpg": "",
+        "gundam-submarine-3.jpg": "",
+        "gundam-submarine-4.jpg": ""
+      }
+    },
+    "modelkits/gundam-transforming": {
+      "title": "Gundam Transforming",
+      "description": "A white transforming Gundam with beam sabre drawn and wings deployed. It converts between modes, which means every joint has to hold in two different configurations.",
+      "captions": {
+        "gundam-transforming-1.jpg": "",
+        "gundam-transforming-2.jpg": "",
+        "gundam-transforming-3.jpg": "",
+        "gundam-transforming-4.jpg": "",
+        "gundam-transforming-5.jpg": "",
+        "gundam-transforming-6.mp4": ""
+      }
+    },
+    "modelkits/lego-bonsai": {
+      "title": "Lego Bonsai",
+      "description": "The LEGO bonsai built with its pink cherry blossom canopy and displayed on a slatted wooden stand. Every blossom is a tiny frog piece in disguise.",
+      "captions": {
+        "lego-bonsai-1.jpg": "",
+        "lego-bonsai-2.jpg": ""
+      }
+    },
+    "modelkits/lego-flowers": {
+      "title": "Lego Flowers",
+      "description": "A deep red LEGO flower opened out in a black planter, photographed from directly above so the petal geometry reads. Ten builds in the set, no water required.",
+      "captions": {
+        "lego-flowers-1.jpg": "",
+        "lego-flowers-2.jpg": "",
+        "lego-flowers-3.jpg": "",
+        "lego-flowers-4.jpg": "",
+        "lego-flowers-5.jpg": "",
+        "lego-flowers-6.jpg": "",
+        "lego-flowers-7.jpg": "",
+        "lego-flowers-8.jpg": "",
+        "lego-flowers-9.jpg": "",
+        "lego-flowers-10.jpg": ""
+      }
+    },
+    "modelkits/lego-insects": {
+      "title": "Lego Insects",
+      "description": "The LEGO insect collection posed together on a clear stand with mushrooms and foliage, built as one display rather than three separate models.",
+      "captions": {
+        "lego-insects-1.jpg": "",
+        "lego-insects-2.jpg": "",
+        "lego-insects-3.jpg": ""
+      }
+    },
+    "modelkits/little-arm-gundam": {
+      "title": "Little Arm Gundam",
+      "description": "A compact olive-green mobile suit built out of the box, squat and heavily armored. Not every kit needs to be a centerpiece.",
+      "captions": {
+        "little-arm-gundam-1.jpg": ""
+      }
+    },
+    "modelkits/metagross": {
+      "title": "Metagross",
+      "description": "Metagross snapped together in teal and steel, all four legs planted and the X across its face lined up clean. Built without glue or paint.",
+      "captions": {
+        "metagross-1.jpg": "",
+        "metagross-2.jpg": ""
+      }
+    },
+    "modelkits/paladinmon": {
+      "title": "Paladinmon",
+      "description": "A Digimon knight in red and gold with a lance and shield, cape hanging behind. The plated armor and the cloth cape are separate materials in the kit, and both had to sit right.",
+      "captions": {
+        "paladinmon-1.jpg": "",
+        "paladinmon-2.jpg": "",
+        "paladinmon-3.jpg": "",
+        "paladinmon-4.jpg": "",
+        "paladinmon-5.jpg": "",
+        "paladinmon-6.jpg": ""
+      }
+    },
+    "modelkits/rayquaza": {
+      "title": "Rayquaza",
+      "description": "Rayquaza built in segments so the whole body coils, mounted on a cloud stand. The segmented spine is what lets it hold a pose at all.",
+      "captions": {
+        "rayquaza-1.jpg": ""
+      }
+    },
+    "modelkits/steampunk-beetles": {
+      "title": "Steampunk Beetles",
+      "description": "Two clockwork insects in brass and red, wings spread on turned display bases with brass plaques. Mechanical kits built to be furniture, not toys.",
+      "captions": {
+        "steampunk-beetles-1.jpg": "",
+        "steampunk-beetles-2.jpg": "",
+        "steampunk-beetles-3.jpg": "",
+        "steampunk-beetles-4.jpg": "",
+        "steampunk-beetles-5.jpg": "",
+        "steampunk-beetles-6.gif": "",
+        "steampunk-beetles-7.gif": ""
+      }
+    },
+    "other/axolotl": {
+      "title": "Axolotl",
+      "description": "A print-in-place articulated axolotl in pink, with gills and limbs that flex straight off the print bed. No assembly, no glue, just support removal.",
+      "captions": {
+        "axolotl-1.jpg": "",
+        "axolotl-2.jpg": "",
+        "axolotl-3.jpg": "",
+        "axolotl-4.jpg": ""
+      }
+    },
+    "other/bulbasaur": {
+      "title": "Bulbasaur",
+      "description": "A Bulbasaur planter printed in teal with a real succulent growing out of the bulb. The vines were printed separately and run out across the counter.",
+      "captions": {
+        "bulbasaur-1.jpg": "",
+        "bulbasaur-2.jpg": "",
+        "bulbasaur-4.jpg": "",
+        "bulbasaur-5.jpg": "",
+        "bulbasaur-6.jpg": ""
+      }
+    },
+    "other/candle-bowl": {
+      "title": "Candle Bowl",
+      "description": "A d12 candle sitting in a printed bowl holder, numbers picked out in white against blue. A natural twenty was structurally unavailable.",
+      "captions": {
+        "candle-bowl-1.jpg": "",
+        "candle-bowl-2.png": ""
+      }
+    },
+    "other/clancy-dinner-ornament": {
+      "title": "Clancy Dinner Ornament",
+      "description": "A family gathered around the dinner table, printed and hand painted figure by figure on a wood-grain base. Made as an ornament, which is why everyone is recognizable.",
+      "captions": {
+        "clancy-dinner-ornament-1.jpg": "",
+        "clancy-dinner-ornament-2.jpg": "",
+        "clancy-dinner-ornament-3.jpg": "",
+        "clancy-dinner-ornament-4.jpg": "",
+        "clancy-dinner-ornament-5.jpg": "",
+        "clancy-dinner-ornament-6.jpg": "",
+        "clancy-dinner-ornament-7.jpg": "",
+        "clancy-dinner-ornament-8.gif": ""
+      }
+    },
+    "other/currency": {
+      "title": "Currency",
+      "description": "A set of fantasy coins and tokens, each with its own sculpted face and finished in a different metal. Printed as a batch so the whole set matches in scale.",
+      "captions": {
+        "currency-1.jpg": "",
+        "currency-2.jpg": "",
+        "currency-3.jpg": ""
+      }
+    },
+    "other/daycare-railing-fix": {
+      "title": "Daycare Railing Fix",
+      "description": "A printed bracket that caps a railing post and anchors it back to the wall. Not decorative in the slightest, and it solved the problem.",
+      "captions": {
+        "daycare-railing-fix-1.jpg": "",
+        "daycare-railing-fix-2.webp": "",
+        "daycare-railing-fix-3.png": ""
+      }
+    },
+    "other/dino-skull": {
+      "title": "Dino Skull",
+      "description": "A large T-Rex skull printed and finished with a bone wash, teeth left bright against the aged surface. Printed hollow, because otherwise it would be unliftable.",
+      "captions": {
+        "dino-skull-1.jpg": "",
+        "dino-skull-2.jpg": ""
+      }
+    },
+    "other/door-fix": {
+      "title": "Door Fix",
+      "description": "A printed replacement for a broken door stop, fitted straight into the existing hole in the floor. Ten minutes of modeling instead of a trip to the hardware store.",
+      "captions": {
+        "door-fix-1.jpg": "",
+        "door-fix-2.jpg": "",
+        "door-fix-3.jpg": ""
+      }
+    },
+    "other/doug-firefighter-lightbar": {
+      "title": "Doug Firefighter Lightbar",
+      "description": "A lightbar printed in translucent orange and lit from inside, so the layer lines diffuse the glow rather than spoiling it. Printed for a firefighter, and it shows.",
+      "captions": {
+        "doug-firefighter-lightbar-1.jpg": "",
+        "doug-firefighter-lightbar-2.jpg": "",
+        "doug-firefighter-lightbar-3.jpg": "",
+        "doug-firefighter-lightbar-4.jpg": "",
+        "doug-firefighter-lightbar-5.jpg": "",
+        "doug-firefighter-lightbar-6.gif": ""
+      }
+    },
+    "other/earrings": {
+      "title": "Earrings",
+      "description": "A full Halloween run of earrings cut and assembled in batches, from ghosts and pumpkins to coffins, spiders and Frankensteins. Made to be given away by the handful.",
+      "captions": {
+        "earrings-1.webp": "",
+        "earrings-2.jpg": "",
+        "earrings-3.jpg": "",
+        "earrings-4.jpg": ""
+      }
+    },
+    "other/fence-coat-hangar": {
+      "title": "Fence Coat Hangar",
+      "description": "A coat rack built as a run of miniature picket fence, each picket angled to work as a hook. Practical, and nobody guesses what it is until it is pointed out.",
+      "captions": {
+        "fence-coat-hangar-1.jpg": "",
+        "fence-coat-hangar-2.jpg": ""
+      }
+    },
+    "other/first-date-map-print": {
+      "title": "First Date Map Print",
+      "description": "A framed street map with a heart marking one intersection, rendered flat in blocked color. A specific place, kept for a specific reason.",
+      "captions": {
+        "first-date-map-print-1.jpg": ""
+      }
+    },
+    "other/flower-petal-bookmarks": {
+      "title": "Flower Petal Bookmarks",
+      "description": "Pressed petals sealed into bookmark strips, arranged so the autumn tones run in sequence along each one. The flowers are real and preserved flat.",
+      "captions": {
+        "flower-petal-bookmarks-1.jpg": "",
+        "flower-petal-bookmarks-2.jpg": ""
+      }
+    },
+    "other/hades-charon-coin": {
+      "title": "Hades Charon Coin",
+      "description": "Charon's obol from Hades, printed in two colors so the red glyph sits proud of the gold face. Printed as a prop rather than a model.",
+      "captions": {
+        "hades-charon-coin-1.jpg": "",
+        "hades-charon-coin-2.jpg": ""
+      }
+    },
+    "other/inspiration-coin": {
+      "title": "Inspiration Coin",
+      "description": "A printed table caddy holding an inspiration token and a d20, stacked so both sit within reach of whoever needs them next.",
+      "captions": {
+        "inspiration-coin-1.jpg": ""
+      }
+    },
+    "other/isolation": {
+      "title": "Isolation",
+      "description": "A split diorama with a snowbound peak on one side and a green cliff on the other, one lone figure at the top. Built during a period that the title explains.",
+      "captions": {
+        "isolation-1.jpg": ""
+      }
+    },
+    "other/manatee": {
+      "title": "Manatee",
+      "description": "A manatee printed smooth and finished in soft grey, rolled onto its back mid-float. No base, no scene, just a very content sea cow.",
+      "captions": {
+        "manatee-1.jpg": "",
+        "manatee-2.jpg": "",
+        "manatee-3.jpg": "",
+        "manatee-4.jpg": "",
+        "manatee-5.jpg": ""
+      }
+    },
+    "other/mareep": {
+      "title": "Mareep",
+      "description": "A Mareep with a fleece textured rough against smooth blue limbs, tail orb painted to look lit. The contrast in surface finish is what sells the wool.",
+      "captions": {
+        "mareep-1.jpg": "",
+        "mareep-2.jpg": "",
+        "mareep-3.jpg": "",
+        "mareep-4.jpg": ""
+      }
+    },
+    "other/mario-kart-trophies": {
+      "title": "Mario Kart Trophies",
+      "description": "A set of Mario Kart trophies printed for a birthday tournament, complete with a plinth reading Happy Birthday. Awarded, presumably, with appropriate ceremony.",
+      "captions": {
+        "mario-kart-trophies-1.jpg": "",
+        "mario-kart-trophies-2.jpg": "",
+        "mario-kart-trophies-3.jpg": "",
+        "mario-kart-trophies-4.jpg": "",
+        "mario-kart-trophies-5.jpg": "",
+        "mario-kart-trophies-6.jpg": ""
+      }
+    },
+    "other/mothers-day-diorama": {
+      "title": "Mothers Day Diorama",
+      "description": "A garden island with two blossoming trees, a stream, a statue and flowers scattered through the grass, set on carved rock. Built as a gift, and it has served as a site banner since.",
+      "captions": {
+        "mothers-day-diorama-1.jpg": ""
+      }
+    },
+    "other/ocean-turtle": {
+      "title": "Ocean Turtle",
+      "description": "A sea turtle with its shell painted in warm reds and golds against brown flippers, photographed from above so the plate pattern reads clearly.",
+      "captions": {
+        "ocean-turtle-1.png": "",
+        "ocean-turtle-2.png": "",
+        "ocean-turtle-3.png": "",
+        "ocean-turtle-4.png": "",
+        "ocean-turtle-5.jpg": ""
+      }
+    },
+    "other/oil-rain-lamp": {
+      "title": "Oil Rain Lamp",
+      "description": "A restored oil rain lamp, with the oil running down fine lines around a central figure. The hardest part of these is getting them flowing evenly again.",
+      "captions": {
+        "oil-rain-lamp-1.jpg": "",
+        "oil-rain-lamp-2.jpg": "",
+        "oil-rain-lamp-3.jpg": "",
+        "oil-rain-lamp-4.jpg": "",
+        "oil-rain-lamp-5.jpg": "",
+        "oil-rain-lamp-6.jpg": "",
+        "oil-rain-lamp-7.jpg": "",
+        "oil-rain-lamp-8.jpg": "",
+        "oil-rain-lamp-9.jpg": ""
+      }
+    },
+    "other/paint-setup": {
+      "title": "Paint Setup",
+      "description": "The paint rack, fully stocked and sorted by color family, with wet palettes and brushes within reach. Every other project on this site came off this bench.",
+      "captions": {
+        "paint-setup-1.jpg": ""
+      }
+    },
+    "other/planters": {
+      "title": "Planters",
+      "description": "Ribbed planters printed in deep red and filled with succulents. The vertical fluting hides the layer lines completely, which is the whole reason for the shape.",
+      "captions": {
+        "planters-1.jpg": "",
+        "planters-3.jpg": "",
+        "planters-4.jpg": ""
+      }
+    },
+    "other/pokedex": {
+      "title": "Pokedex",
+      "description": "A Pokedex printed in red with the shell detail modeled in, closed and roughly palm sized. Printed as a prop, not a working device.",
+      "captions": {
+        "pokedex-1.jpg": "",
+        "pokedex-2.jpg": ""
+      }
+    },
+    "other/pressed-flowers": {
+      "title": "Pressed Flowers",
+      "description": "Real flowers pressed and set into resin panels over colored backings, each arrangement built around a single stem. The blue backings let the dried stems read as silhouettes.",
+      "captions": {
+        "pressed-flowers-1.png": "",
+        "pressed-flowers-2.jpg": "",
+        "pressed-flowers-3.jpg": "",
+        "pressed-flowers-4.jpg": "",
+        "pressed-flowers-5.jpg": "",
+        "pressed-flowers-6.jpg": "",
+        "pressed-flowers-7.jpg": ""
+      }
+    },
+    "other/printed-fancy-wallet": {
+      "title": "Printed Fancy Wallet",
+      "description": "A printed wallet with a hinged cover, holding cards and folded bills in a body thin enough to pocket. The hinge is printed as part of the shell rather than assembled.",
+      "captions": {
+        "printed-fancy-wallet-1.png": "",
+        "printed-fancy-wallet-2.mp4": ""
+      }
+    },
+    "other/real-potions": {
+      "title": "Real Potions",
+      "description": "Cork-stoppered bottles filled with colored liquid in red, green and blue, in three different vessel shapes. Real glass, real liquid, effects unverified.",
+      "captions": {
+        "real-potions-1.jpg": ""
+      }
+    },
+    "other/refurbished-shelf": {
+      "title": "Refurbished Shelf",
+      "description": "A rebuilt display shelf holding the plant and insect builds together, each on its own level with the terrariums at the bottom. The shelf was the project; the contents moved in afterward.",
+      "captions": {
+        "refurbished-shelf-1.jpg": ""
+      }
+    },
+    "other/rocket-league-diorama": {
+      "title": "Rocket League Diorama",
+      "description": "A Rocket League goal moment frozen in place, with the car airborne and a wool smoke trail behind it. The smoke is teased out by hand so it holds the arc.",
+      "captions": {
+        "rocket-league-diorama-1.jpg": "",
+        "rocket-league-diorama-2.jpg": "",
+        "rocket-league-diorama-3.jpg": ""
+      }
+    },
+    "other/scarearium": {
+      "title": "Scarearium",
+      "description": "A graveyard terrarium in a glass cube, with a bare wire tree, headstones, a tomb and scattered bone over dark soil. A terrarium that cannot die, which is thematically correct.",
+      "captions": {
+        "scarearium-1.jpg": "",
+        "scarearium-2.jpg": ""
+      }
+    },
+    "other/spice-rack": {
+      "title": "Spice Rack",
+      "description": "Rotating bottle holders that pull five jars out of the dead space at the back of the cabinet, turning a shelf you had to dig through into one you can read at a glance.",
+      "captions": {
+        "spice-rack-1.jpg": "",
+        "spice-rack-2.gif": "",
+        "spice-rack-3.jpg": "",
+        "spice-rack-4.jpg": ""
+      }
+    },
+    "other/uss-congress": {
+      "title": "USS Congress",
+      "description": "A wooden ship model with three masts stepped and the hull planked and gunported, shown before the rigging goes on. Built plank by plank from a kit.",
+      "captions": {
+        "uss-congress-1.png": "",
+        "uss-congress-2.jpg": "",
+        "uss-congress-3.jpg": "",
+        "uss-congress-4.jpg": "",
+        "uss-congress-5.webp": "",
+        "uss-congress-6.jpg": "",
+        "uss-congress-7.png": "",
+        "uss-congress-8.png": ""
+      }
+    },
+    "other/witchlight-carnival-tickets": {
+      "title": "Witchlight Carnival Tickets",
+      "description": "Holographic carnival tickets printed and cut as table handouts, each one listing its own attraction. Props that get passed to players rather than looked at on a shelf.",
+      "captions": {
+        "witchlight-carnival-tickets-1.jpg": "",
+        "witchlight-carnival-tickets-2.jpg": "",
+        "witchlight-carnival-tickets-3.jpg": "",
+        "witchlight-carnival-tickets-4.mp4": "",
+        "witchlight-carnival-tickets-5.mp4": ""
+      }
+    },
+    "other/wizard-wars": {
+      "title": "Wizard Wars",
+      "description": "An original wizard duelling game, complete with a spellbook board, illustrated casters and a start token. Designed, drawn and built from scratch.",
+      "captions": {
+        "wizard-wars-1.png": "",
+        "wizard-wars-demo-gif.gif": "",
+        "wizard-wars-fire-gif.gif": ""
+      }
+    },
+    "banners/site": {
+      "title": "Site",
+      "description": "",
+      "captions": {
+        "zoomed-banner-purple-worm2.jpg": "",
+        "zoomed-banner-purple-worm3.jpg": "",
+        "zoomed-banner-purple-worm4.jpg": "",
+        "zoomed-banner-purple-worm5.jpg": "",
+        "clockwork-dragon-banner-high-contrast.jpg": "",
+        "coin-banner.jpg": "",
+        "docks-small-banner.jpg": "",
+        "full-banner-purple-worm-slim.jpg": "",
+        "full-banner-purple-worm.jpg": "",
+        "gold-unicorn-banner.jpg": "",
+        "gundam-chibi-banner.jpg": "",
+        "mothers-day-diorama.jpg": "",
+        "prisma-wall-banner.jpg": "",
+        "sludge-monstrosity.jpg": "",
+        "zoomed-banner-purple-worm.jpg": ""
+      }
+    }
+  }
+}

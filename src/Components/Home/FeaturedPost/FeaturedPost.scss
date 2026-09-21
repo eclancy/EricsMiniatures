@@ -51,6 +51,26 @@
 .featuredCard {
   border-radius: 20px;
   overflow: hidden;
+
+  /* Preview photo column. This used to be MUI's CardMedia background image;
+     it is now a real <img> so it can be lazy-loaded and served responsively. */
+  .sectionPreviewImage {
+    width: 300px;
+    min-width: 300px;
+    align-self: stretch;
+    overflow: hidden;
+    background: #ededf0;
+
+    &__media {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   background: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
@@ -122,6 +142,10 @@
       width: 100%;
       min-width: auto;
       height: 240px;
+
+      &__media {
+        height: 240px;
+      }
     }
   }
 

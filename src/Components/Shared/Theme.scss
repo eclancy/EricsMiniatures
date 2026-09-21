@@ -132,3 +132,29 @@ body,
       background-color: $black;
   }
 }
+/* ---------------------------------------------------------------------------
+   Banner images
+   ---------------------------------------------------------------------------
+   Banners are served by the media API rather than bundled by webpack. The
+   server picks AVIF/WebP/JPEG from the browser's Accept header, so a plain
+   url() here still gets a modern format. The width is requested explicitly per
+   breakpoint so phones never download a 2560px wide banner.
+--------------------------------------------------------------------------- */
+$banner-base: '/media/banners/site';
+
+@mixin banner-image($file, $width: 1920) {
+  background-image: url('#{$banner-base}/#{$file}?w=#{$width}');
+}
+
+/* A banner that steps up in resolution on wider and denser screens. */
+@mixin responsive-banner($file, $small: 960, $medium: 1600, $large: 2560) {
+  @include banner-image($file, $small);
+
+  @media (min-width: 700px) {
+    @include banner-image($file, $medium);
+  }
+
+  @media (min-width: 1500px), (min-resolution: 2dppx) {
+    @include banner-image($file, $large);
+  }
+}

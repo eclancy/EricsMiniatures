@@ -1,213 +1,162 @@
-import React, { useLayoutEffect, useState } from 'react';
-import './Gallery.scss'
-import Banner from '../Home/Banner/Banner';
-import Grid from '@material-ui/core/Grid';
-import debounce from 'lodash.debounce';
+import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useHistory, useLocation, useParams } from 'react-router-dom';
 import Pagination from '@material-ui/lab/Pagination';
-import { makeStyles } from '@material-ui/core/styles';
-import ReactBnbGallery from 'react-bnb-gallery';
-import 'react-bnb-gallery/dist/style.css';
+import { Helmet } from 'react-helmet-async';
+import Banner from '../Home/Banner/Banner';
+import MediaImage from '../Shared/MediaImage/MediaImage';
+import Lightbox from '../Shared/Lightbox/Lightbox';
+import { fetchGallery, fetchProject } from '../../api/client';
+import './Gallery.scss';
 
-const MinisBanner = {
-  title: 'Hand Painted Miniatures',
-  description: "Creatures of all shapes and sizes - some are nice, some are not...",
-};
-const TerrainBanner = {
-  title: 'Custom Built Terrain',
-  description: "Every journey begins somewhere",
-};
-const OtherBanner = {
-  title: 'Other Projects',
-  description: "Check out some of the other things I spend time on",
-};
-const ModelKitBanner = {
-  title: 'Model Kits',
-  description: "Robots, laser swords, and tiny parts holding them all together",
-};
-let images = [];
-let bannerInfo = {};
+const PER_PAGE = 10;
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(2),
-      justifyContent: "center",
-      display: 'flex'
-    },
-  },
-}));
+// Two columns above the tablet breakpoint, one below - keep this in sync with
+// the grid in Gallery.scss so the browser picks the right srcset candidate.
+const GRID_SIZES = '(max-width: 960px) 92vw, (max-width: 1480px) 46vw, 700px';
 
-//import all pictures for the given page
-function importAll(r) {
-  return r.keys().map(r);
+function pageFromLocation(location) {
+  const fromState = location.state?.pageNumber;
+  const fromQuery = new URLSearchParams(location.search).get('page');
+  return Math.max(1, Number(fromState || fromQuery) || 1);
 }
 
-//Load all images for a specific exhibit set
-function loadExhibitImages(sectionLabel, exhibitName) {
-  let exhibitImages = [];
-  switch (sectionLabel) {
-    case 'miniatures':
-      exhibitImages = importAll(require.context('../../Images/Miniatures/', true, /\.(png|jpe?g|svg|gif)$/));
-      break;
-    case 'terrain':
-      exhibitImages = importAll(require.context('../../Images/Terrain/', true, /\.(png|jpe?g|svg|gif)$/));
-      break;
-    case 'modelkits':
-      exhibitImages = importAll(require.context('../../Images/ModelKits/', true, /\.(png|jpe?g|svg|gif)$/));
-      break;
-    default:
-      exhibitImages = importAll(require.context('../../Images/Other/', true, /\.(png|jpe?g|svg|gif)$/));
-      break;
-  }
-  return exhibitImages.filter(image => image.includes(exhibitName));
+/** Scroll past the banner, the way the site did before. */
+function scrollBelowBanner() {
+  const banner = document.getElementById('banner');
+  if (!banner) return;
+  window.scrollTo({ top: banner.offsetHeight, behavior: 'smooth' });
 }
 
-//fisher-yates shuffle algorithm for randomizing images on the page
-// function shuffle(a) {
-//   var j, x, i;
-//   for (i = a.length - 1; i > 0; i--) {
-//     j = Math.floor(Math.random() * (i + 1));
-//     x = a[i];
-//     a[i] = a[j];
-//     a[j] = x;
-//   }
-//   return a;
-// }
+export default function Gallery() {
+  const { id: section } = useParams();
+  const location = useLocation();
+  const history = useHistory();
+  const page = pageFromLocation(location);
 
-//load all the images for the given gallery
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [activeProject, setActiveProject] = useState(null);
 
-function loadImages(sectionLabel) {
-  //this a switch because "require.context()" cannot take a variable - it needs to be statically analyzed
-  switch (sectionLabel) {
-    case 'miniatures':
-      bannerInfo = MinisBanner;
-      images = importAll(require.context('../../Images/Miniatures/', true, /1\.(png|jpe?g|svg)$/));
-      break;
-    case 'terrain':
-      bannerInfo = TerrainBanner;
-      images = importAll(require.context('../../Images/Terrain/', true, /1\.(png|jpe?g|svg)$/));
-      break;
-    case 'other':
-      bannerInfo = OtherBanner;
-      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
-      break;
-    case 'modelkits':
-      bannerInfo = ModelKitBanner;
-      images = importAll(require.context('../../Images/ModelKits/', true, /1\.(png|jpe?g|svg)$/));
-      break;
-    default: //default to other if they've somehow ended up with a random url in the gallery
-      bannerInfo = OtherBanner;
-      images = importAll(require.context('../../Images/Other/', true, /1\.(png|jpe?g|svg)$/));
-  }
-  //randomize the images
-  return images; //= shuffle(images);
-}
+  // Gallery metadata for the current page. Image bytes are never part of this.
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setError(null);
 
-//function to listen for window resizing, and limit the rerender calls
-function useWindowSize() {
-  const [size, setSize] = useState([0]);
+    fetchGallery(section, { page, perPage: PER_PAGE })
+      .then((result) => {
+        if (!cancelled) setData(result);
+      })
+      .catch((err) => {
+        if (!cancelled) setError(err);
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [section, page]);
+
+  // Move below the banner when the visitor switches section or page, but not
+  // on first load - arriving at a gallery should show the banner.
+  const isFirstRender = useRef(true);
   useLayoutEffect(() => {
-    const debouncedUpdateSize = debounce(function updateSize() {
-      setSize([window.innerWidth]);
-    }, 10);
-
-    window.addEventListener('resize', debouncedUpdateSize);
-    debouncedUpdateSize();
-    return () => window.removeEventListener('resize', debouncedUpdateSize);
-  }, []);
-  return size;
-}
-
-//loads the images, and 
-function getImagesToRender(props) {
-  if (props.location.state === undefined || !props.location.state.pageNumber) {
-    props.location.state = { pageNumber: 1 };
-  }
-  return images.slice((props.location.state.pageNumber - 1) * 10, props.location.state.pageNumber * 10)
-}
-
-export default function Gallery(props) {
-
-  loadImages(props.match.params.id);
-  const [galleryOpen, setGalleryOpen] = useState(false);
-  const [exhibitPhotos, setExhibitPhotos] = useState([]);
-  const screenWidth = (useWindowSize() > 990 ? 'large' : 'slim');
-  const section = props.match.params.id;
-  const classes = useStyles();
-  const [previousSection, setPreviousSection] = useState(section);
-  const currentPageNumber = props.location.state?.pageNumber || 1;
-
-  // Only scroll to top when navigating to a different section (page change)
-  useLayoutEffect(() => {
-    if (previousSection !== section) {
-      const banner = document.getElementById('banner');
-      if (banner) {
-        const bannerBottom = banner.offsetHeight;
-        window.scrollTo({ top: bannerBottom, behavior: 'smooth' });
-      }
-      setPreviousSection(section);
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
     }
-  }, [section, previousSection]);
+    scrollBelowBanner();
+  }, [section, page]);
 
-  // Scroll to top when page number changes
-  useLayoutEffect(() => {
-    const banner = document.getElementById('banner');
-    if (banner) {
-      const bannerBottom = banner.offsetHeight;
-      window.scrollTo({ top: bannerBottom, behavior: 'smooth' });
-    }
-  }, [currentPageNumber]);
-
-  // on pagination change, loads the next ten images, as well as scrolling to top and pushing the page change to the history
-  const changePage = (props, section, selectedPageNumber) => {
-    props.history.push({
-      pathname: '/gallery/' + section,
-      state: { pageNumber: selectedPageNumber }
+  const changePage = (_event, selectedPage) => {
+    history.push({
+      pathname: `/gallery/${section}`,
+      search: selectedPage > 1 ? `?page=${selectedPage}` : '',
+      state: { pageNumber: selectedPage },
     });
-  }
+  };
 
-  // Opens the gallery modal with images for the selected exhibit
-  const openGallery = (image) => {
-    const exhibitName = image.substring(14, image.lastIndexOf('1.'));
-    const exhibitImages = loadExhibitImages(section, exhibitName);
-    const photos = exhibitImages.map(img => ({ photo: img, thumbnail: img }));
-    setExhibitPhotos(photos);
-    setGalleryOpen(true);
-  }
+  // Full photo list is fetched only when a project is actually opened.
+  const openProject = useCallback(
+    (project) => {
+      fetchProject(section, project.slug)
+        .then((result) => setActiveProject(result.project))
+        .catch(() => setActiveProject({ ...project, photos: [project.cover] }));
+    },
+    [section]
+  );
 
-  let imagesRendered = getImagesToRender(props)
-  //used to pick the ten relevant images to display, based on the user's selected page
-  let renderImages = imagesRendered.map((image, index) => {
-    return <div className="imageContainer" key={image} >
-      <img className="previewLink" alt={image.key} src={image} onClick={() => openGallery(image)}></img>
-    </div>
-  });
+  const bannerInfo = data
+    ? { title: data.section.bannerTitle, description: data.section.bannerDescription }
+    : { title: '', description: '' };
+  const screenClass = typeof window !== 'undefined' && window.innerWidth > 990 ? 'large' : 'slim';
 
   return (
     <main>
-      <Banner bannerInfo={bannerInfo} className={"short " + screenWidth + section} />
-      <Grid className='gridContainer' container spacing={4}>
-        {renderImages}
-      </Grid>
+      {data && (
+        <Helmet>
+          <title>{`${data.section.title} – Eric's Miniatures`}</title>
+          <meta name="description" content={data.section.blurb} />
+        </Helmet>
+      )}
 
-      <div className={classes.root}>
-        <Pagination
-          className={"paginationController"}
-          color="primary"
-          count={images.length % 10 === 0 ? images.length / 10 : Math.floor(images.length / 10) + 1}
-          page={props.location.state.pageNumber}
-          //loads the next ten images, as well as scrolling to top and pushing the page change to the history
-          onChange={(event, selectedPageNumber) => changePage(props, section, selectedPageNumber)}
-        />
+      <Banner bannerInfo={bannerInfo} slot={section} className={`short ${screenClass}${section}`} />
+
+      {error && (
+        <p className="galleryMessage" role="alert">
+          Could not load this gallery. Please try again.
+        </p>
+      )}
+
+      <div className="gridContainer">
+        {loading && !data
+          ? Array.from({ length: PER_PAGE }, (_, i) => <div className="projectCard projectCard--skeleton" key={`skeleton-${i}`} />)
+          : (data?.items || []).map((project, index) => (
+              <article className="projectCard" key={project.id}>
+                <button
+                  type="button"
+                  className="projectCard__button"
+                  onClick={() => openProject(project)}
+                  aria-label={`View ${project.photoCount} photos of ${project.title}`}
+                >
+                  <MediaImage
+                    photo={project.cover}
+                    alt={project.title}
+                    sizes={GRID_SIZES}
+                    // The first row is above the fold on most screens.
+                    eager={index < 2}
+                    className="projectCard__image"
+                  />
+                  {project.photoCount > 1 && (
+                    <span className="projectCard__count">{project.photoCount} photos</span>
+                  )}
+                </button>
+
+                <div className="projectCard__body">
+                  <h2 className="projectCard__title">{project.title}</h2>
+                  {project.description && <p className="projectCard__description">{project.description}</p>}
+                </div>
+              </article>
+            ))}
       </div>
 
-      {galleryOpen && (
-        <ReactBnbGallery 
-          photos={exhibitPhotos}
-          showThumbnails={true}
-          show={galleryOpen}
-          onClose={() => setGalleryOpen(false)}
-        />
+      {data && data.pageCount > 1 && (
+        <div className="paginationWrapper">
+          <Pagination
+            className="paginationController"
+            color="primary"
+            count={data.pageCount}
+            page={data.page}
+            onChange={changePage}
+          />
+        </div>
+      )}
+
+      {activeProject && (
+        <Lightbox project={activeProject} startIndex={0} onClose={() => setActiveProject(null)} />
       )}
     </main>
   );

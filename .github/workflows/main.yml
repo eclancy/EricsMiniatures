@@ -1,25 +1,109 @@
 name: Publish
+
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        
-      - name: Create Build
-        run: npm install && npm run build
+        uses: actions/checkout@v4
+        with:
+          # media/ holds ~1.7 GB of original photos. It changes rarely and is
+          # synced separately (see deploy/sync-media.sh), so CI skips it.
+          sparse-checkout: |
+            /*
+            !/media
+          sparse-checkout-cone-mode: false
 
-      - name: Copy Files 
+      # Refuse to deploy to a host that has not been set up yet. This runs
+      # BEFORE anything is copied: the client bundle expects /api and /media to
+      # exist, so shipping it to an unprepared host would break the live site.
+      # See deploy/README.md and deploy/bootstrap.sh.
+      - name: Preflight
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          script_stop: true
+          script: |
+            set -e
+            fail() { echo "PREFLIGHT FAILED: $1"; echo "Run deploy/bootstrap.sh on the server first - see deploy/README.md"; exit 1; }
+
+            major=$(node --version 2>/dev/null | sed 's/v\([0-9]*\).*/\1/') || fail "node is not installed"
+            [ "${major:-0}" -ge 18 ] || fail "node $major is too old; sharp needs 18+"
+
+            [ -d ~/ericsminiatures.com/media ] || fail "~/ericsminiatures.com/media is missing; run deploy/sync-media.sh"
+            [ -n "$(ls -A ~/ericsminiatures.com/media 2>/dev/null)" ] || fail "~/ericsminiatures.com/media is empty; run deploy/sync-media.sh"
+
+            [ -f /etc/systemd/system/ericsminiatures.service ] || fail "the ericsminiatures systemd unit is not installed"
+            [ -w /var/cache/ericsminiatures ] || fail "/var/cache/ericsminiatures is missing or not writable"
+
+            sudo -n systemctl is-active ericsminiatures >/dev/null 2>&1 \
+              || sudo -n systemctl status ericsminiatures >/dev/null 2>&1 \
+              || fail "passwordless 'sudo systemctl restart ericsminiatures' is not configured"
+
+            grep -rq "proxy_pass http://127.0.0.1:4000" /etc/nginx/sites-enabled/ \
+              || fail "nginx is not proxying /api and /media to port 4000"
+
+            echo "Preflight passed."
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install client dependencies
+        run: npm ci
+
+      - name: Build client
+        run: npm run build
+
+      # Ship the built client, the API server source and the content metadata.
+      # node_modules is installed on the host instead of copied, because sharp
+      # ships platform-specific binaries.
+      - name: Copy files
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          source: "./build"
+          source: "build,server,content,package.json"
           target: "~/ericsminiatures.com"
           overwrite: true
+          rm: false
+
+      - name: Install and restart API
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+          script_stop: true
+          script: |
+            set -e
+            cd ~/ericsminiatures.com/server
+            npm ci --omit=dev
+            # Rebuild the content index in case media changed on the host.
+            npm run scan
+            sudo systemctl restart ericsminiatures
+
+            # Wait for the service to answer before declaring success.
+            for i in $(seq 1 30); do
+              if curl -fsS http://127.0.0.1:4000/api/health >/dev/null 2>&1; then break; fi
+              [ "$i" -eq 30 ] && { echo "API did not come up"; journalctl -u ericsminiatures -n 40 --no-pager; exit 1; }
+              sleep 1
+            done
+            curl -fsS http://127.0.0.1:4000/api/health
+
+            # Warm any derivatives that are new since the last deploy. Already
+            # cached sizes are skipped, so this is quick after the first run.
+            npm run prewarm

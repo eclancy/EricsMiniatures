@@ -1,18 +1,17 @@
-import React, { useEffect } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Helmet } from "react-helmet-async";
 
-// Pages
-import Home from "./Components/Home/Home";
-import Gallery from "./Components/Gallery/Gallery";
-
 import Header from "./Components/Shared/Header/Header";
 import Footer from "./Components/Shared/Footer/Footer";
 
-// Import your sections constants (adjust path if needed)
 import sections from "./Components/Shared/Constants.js";
 
+// Route-level code splitting: the gallery pulls in the pagination and lightbox
+// code, which the home page has no use for.
+const Home = lazy(() => import("./Components/Home/Home"));
+const Gallery = lazy(() => import("./Components/Gallery/Gallery"));
 
 function getTitleForPath(pathname) {
   // exact match
@@ -52,11 +51,13 @@ function App() {
         <Header component={Header} />
 
         {/* Routing for the various pages rendered inside the header and footer */}
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/gallery/:id" component={Gallery} />
-          {/* add other routes here */}
-        </Switch>
+        <Suspense fallback={<div className="routeFallback" aria-busy="true" />}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/gallery/:id" component={Gallery} />
+            {/* add other routes here */}
+          </Switch>
+        </Suspense>
         {/* End of routing */}
 
         <Footer />

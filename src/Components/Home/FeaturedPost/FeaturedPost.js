@@ -6,11 +6,10 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import './FeaturedPost.scss';
-import { Link, useLocation } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import MediaImage from '../../Shared/MediaImage/MediaImage';
 
 const useStyles = makeStyles({
   card: {
@@ -34,15 +33,6 @@ const useStyles = makeStyles({
       padding: '20px',
     },
   },
-  cardMedia: {
-    width: 300,
-    minWidth: 300,
-    '@media (max-width: 760px)': {
-      width: '100%',
-      minWidth: 'auto',
-      height: 240,
-    },
-  },
   ArrowForwardIcon: {
     marginTop: '4px',
   },
@@ -50,32 +40,10 @@ const useStyles = makeStyles({
 
 export default function FeaturedPost(props) {
   const classes = useStyles();
-  const { post } = props;
-  const { pathname } = useLocation();
-
-  const previewImage = post.image || '/images/preview-1200x630.png';
-  const previewTitle = post.title || "Eric's Miniatures";
-  const previewDescription = post.description || "Eric's Miniatures — galleries, models, and painting inspiration.";
-
-  // Only set Helmet metadata when the current path matches this post's url (or is a subpath)
-  const normalizedPostUrl = post.url || '';
-  const isActivePath =
-    pathname === normalizedPostUrl ||
-    (normalizedPostUrl !== '' && pathname.startsWith(normalizedPostUrl + '/'));
+  const { post, eager } = props;
 
   return (
     <Grid item xs={12} md={10} lg={8} className={props.className}>
-      {isActivePath && (
-        <Helmet>
-          <title>{previewTitle}</title>
-          <meta property="og:title" content={previewTitle} />
-          <meta property="og:description" content={previewDescription} />
-          <meta property="og:image" content={previewImage} />
-          <meta property="og:url" content={window.location.href} />
-          <meta name="twitter:card" content="summary_large_image" />
-        </Helmet>
-      )}
-
       <CardActionArea component={Link} to={post.url} className={'featuredCard'}>
         <Card className={classes.card}>
           <div className={classes.cardDetails}>
@@ -88,15 +56,22 @@ export default function FeaturedPost(props) {
                 {post.description}
               </Typography>
               <Typography variant="subtitle1" className={'galleryLink'} color="primary">
-                Check out the gallery <ArrowForwardIcon className={'arrowIcon'} />
+                {post.projectCount ? `Browse ${post.projectCount} projects` : 'Check out the gallery'}
+                <ArrowForwardIcon className={'arrowIcon'} />
               </Typography>
             </CardContent>
           </div>
-          <CardMedia
-            className={classes.cardMedia + " sectionPreviewImage"}
-            image={post.image}
-            title={post.imageTitle}
-          />
+
+          {/* Preview arrives from /api/sections; the card keeps its shape until then. */}
+          <div className="sectionPreviewImage">
+            <MediaImage
+              photo={post.preview}
+              alt={`${post.title} preview`}
+              sizes="(max-width: 760px) 100vw, 300px"
+              eager={eager}
+              className="sectionPreviewImage__media"
+            />
+          </div>
         </Card>
       </CardActionArea>
     </Grid>
@@ -106,4 +81,5 @@ export default function FeaturedPost(props) {
 FeaturedPost.propTypes = {
   post: PropTypes.object,
   className: PropTypes.string,
+  eager: PropTypes.bool,
 };

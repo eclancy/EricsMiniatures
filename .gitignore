@@ -352,3 +352,12 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Generated image derivatives - rebuilt on demand, never committed
+.media-cache/
+
+# Server dependencies (sharp ships platform-specific binaries)
+server/node_modules/
+
+# Host-specific server paths (written by deploy/bootstrap.sh)
+server/.env
