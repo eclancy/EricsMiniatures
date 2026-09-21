@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { useHistory, useLocation, useParams } from 'react-router-dom';
+import { Link, useHistory, useLocation, useParams } from 'react-router-dom';
 import Pagination from '@material-ui/lab/Pagination';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { Helmet } from 'react-helmet-async';
 import Banner from '../Home/Banner/Banner';
 import MediaImage from '../Shared/MediaImage/MediaImage';
@@ -9,6 +10,16 @@ import { fetchGallery, fetchProject } from '../../api/client';
 import './Gallery.scss';
 
 const PER_PAGE = 10;
+
+/** Route back to the home page. Rendered above and below the grid. */
+function BackToHome() {
+  return (
+    <Link to="/" className="backToHome">
+      <ArrowBackIcon className="backToHome__icon" />
+      Back to home
+    </Link>
+  );
+}
 
 // Two columns above the tablet breakpoint, one below - keep this in sync with
 // the grid in Gallery.scss so the browser picks the right srcset candidate.
@@ -105,6 +116,10 @@ export default function Gallery() {
 
       <Banner bannerInfo={bannerInfo} slot={section} className={`short ${screenClass}${section}`} />
 
+      <nav className="galleryNav galleryNav--top">
+        <BackToHome />
+      </nav>
+
       {error && (
         <p className="galleryMessage" role="alert">
           Could not load this gallery. Please try again.
@@ -154,6 +169,10 @@ export default function Gallery() {
           />
         </div>
       )}
+
+      <nav className="galleryNav galleryNav--bottom">
+        <BackToHome />
+      </nav>
 
       {activeProject && (
         <Lightbox project={activeProject} startIndex={0} onClose={() => setActiveProject(null)} />

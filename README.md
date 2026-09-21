@@ -41,6 +41,9 @@ See [server/README.md](server/README.md) for the API, the image parameters and
 the full set of scripts, and [deploy/README.md](deploy/README.md) for server
 setup.
 
+[docs/IDEAS.md](docs/IDEAS.md) collects things we have discussed but not built,
+including automatic cropping of the gallery covers.
+
 ## Why the images are not in the bundle
 
 `src/Images/` used to hold every photo, and `require.context` pulled all of them

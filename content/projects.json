@@ -48,14 +48,15 @@
     },
     "miniatures/blimpy": {
       "title": "Blimpy",
-      "description": "A barbarian in a top hat raising a beer atop a mound of discarded weapons. The orange mohawk is the centerpiece. The beer is a close second.",
+      "description": "A bartender as much as a barbarian, raising a tray of beer and bread over a mound of splintered weapons, orange mohawk and braided beard streaming behind him. His serving hand is kitbashed from the original model so he is carrying drinks instead of swinging steel, which was a fun challenge.",
       "captions": {
         "blimpy-1.jpg": "",
         "blimpy-2.jpg": "",
         "blimpy-3.jpg": "",
         "blimpy-4.jpg": "",
         "blimpy-5.jpg": ""
-      }
+      },
+      "order": 0
     },
     "miniatures/bloody-vampire": {
       "title": "Bloody Vampire",
@@ -188,7 +189,8 @@
         "displacer-beast-mutilated-1.jpg": "",
         "displacer-beast-mutilated-2.jpg": "",
         "displacer-beast-mutilated-3.jpg": ""
-      }
+      },
+      "order": 1
     },
     "miniatures/doppelganger-print": {
       "title": "Doppelganger Print",
@@ -214,7 +216,8 @@
         "dungeon-doggy-monty-1.jpg": "",
         "dungeon-doggy-monty-2.jpg": "",
         "dungeon-doggy-monty-3.jpg": ""
-      }
+      },
+      "order": 4
     },
     "miniatures/dungeon-doggy-tobias": {
       "title": "Dungeon Doggy Tobias",
@@ -240,7 +243,8 @@
         "elf-archer-2.jpg": "",
         "elf-archer-3.jpg": "",
         "elf-archer-4.jpg": ""
-      }
+      },
+      "order": 6
     },
     "miniatures/elf-sniper": {
       "title": "Elf Sniper",
@@ -438,7 +442,8 @@
         "lich-god-7.jpg": "",
         "lich-god-8.jpg": "",
         "lich-god-9.jpg": ""
-      }
+      },
+      "order": 2
     },
     "miniatures/little-imp": {
       "title": "Little Imp",
@@ -610,7 +615,8 @@
         "purple-worm-1.jpg": "",
         "purple-worm-3.jpg": "",
         "purple-worm-full-banner.jpg": ""
-      }
+      },
+      "order": 5
     },
     "miniatures/rainbow-beetles": {
       "title": "Rainbow Beetles",
@@ -721,7 +727,8 @@
         "soul-grinder-3.jpg": "",
         "soul-grinder-4.jpg": "",
         "soul-grinder-5.jpg": ""
-      }
+      },
+      "order": 3
     },
     "miniatures/speedy-car": {
       "title": "Speedy Car",
@@ -751,7 +758,8 @@
         "t-rex-3.jpg": "",
         "t-rex-4.jpg": "",
         "t-rex-5.jpg": ""
-      }
+      },
+      "order": 7
     },
     "miniatures/tentacle-pair": {
       "title": "Tentacle Pair",
@@ -826,7 +834,8 @@
       "captions": {
         "water-ninja-1.jpg": "",
         "water-ninja-2.jpg": ""
-      }
+      },
+      "order": 9
     },
     "miniatures/water-slaad": {
       "title": "Water Slaad",
@@ -839,7 +848,8 @@
         "water-slaad-5.jpg": "",
         "water-slaad-6.jpg": "",
         "water-slaad-7.jpg": ""
-      }
+      },
+      "order": 8
     },
     "miniatures/weaponized-jeep": {
       "title": "Weaponized Jeep",

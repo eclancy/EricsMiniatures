@@ -79,6 +79,10 @@ function build() {
       slug: entry.slug,
       title: (copy.title || '').trim() || titleize(entry.slug),
       description: (copy.description || '').trim() || null,
+      // Manual gallery position. The source folders used to carry numeric
+      // prefixes ("0Blimpy", "1DisplacerBeastMutilated") purely for ordering;
+      // slugging dropped those, so the order lives in projects.json now.
+      order: Number.isFinite(copy.order) ? copy.order : null,
       cover: photos.find((p) => p.file === entry.cover) || photos[0],
       photoCount: photos.length,
       photos,
@@ -140,9 +144,19 @@ function getSection(slug) {
 }
 
 /** Paginated project list, cover photo only - the gallery grid payload. */
+/**
+ * Gallery order: anything with an explicit `order` in projects.json comes
+ * first, lowest first, then everything else alphabetically by slug.
+ */
+function compareProjects(a, b) {
+  const ax = a.order ?? Number.MAX_SAFE_INTEGER;
+  const bx = b.order ?? Number.MAX_SAFE_INTEGER;
+  return ax - bx || a.slug.localeCompare(b.slug);
+}
+
 function getProjects(sectionSlug, { page = 1, perPage = 10 } = {}) {
   const { projects } = load();
-  const all = [...projects.values()].filter((p) => p.section === sectionSlug);
+  const all = [...projects.values()].filter((p) => p.section === sectionSlug).sort(compareProjects);
   const total = all.length;
   const pageCount = Math.max(1, Math.ceil(total / perPage));
   const current = Math.min(Math.max(1, page), pageCount);

@@ -48,6 +48,11 @@ for (const [key, fields] of Object.entries(batch)) {
 
   if (fields.title !== undefined) entry.title = fields.title;
   if (fields.description !== undefined) entry.description = fields.description;
+  // null clears a manual position and returns the project to alphabetical order.
+  if (fields.order !== undefined) {
+    if (fields.order === null) delete entry.order;
+    else entry.order = fields.order;
+  }
 
   if (fields.captions) {
     const known = new Set(index.projects[key].photos.map((p) => p.file));

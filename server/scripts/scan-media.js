@@ -132,6 +132,9 @@ async function main() {
       projectsDoc.projects[key] = {
         title: existing.title || titleize(slug),
         description: existing.description ?? '',
+        // Optional manual position in the gallery. Projects with an order come
+        // first, lowest first; everything else follows alphabetically.
+        ...(existing.order !== undefined ? { order: existing.order } : {}),
         captions: photos.reduce((acc, photo) => {
           acc[photo.file] = existing.captions?.[photo.file] ?? '';
           return acc;
