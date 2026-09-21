@@ -48,7 +48,7 @@ jobs:
               || sudo -n systemctl status ericsminiatures >/dev/null 2>&1 \
               || fail "passwordless 'sudo systemctl restart ericsminiatures' is not configured"
 
-            grep -rq "proxy_pass http://127.0.0.1:4000" /etc/nginx/sites-enabled/ \
+            grep -Rq "proxy_pass http://127.0.0.1:4000" /etc/nginx/sites-enabled/ \
               || fail "nginx is not proxying /api and /media to port 4000"
 
             echo "Preflight passed."

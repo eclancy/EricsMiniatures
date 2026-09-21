@@ -5,7 +5,8 @@ anything to a host that is not ready — the client bundle expects `/api` and
 `/media` to exist, so shipping it to an unprepared server would leave the site
 broken. The Preflight step checks for Node 18+, the photos, the systemd unit,
 a writable cache directory, passwordless `systemctl restart`, and an nginx
-config that proxies to port 4000, and fails the run before touching the live
+config that proxies to port 4000 (following symlinks, since sites-enabled
+holds them), and fails the run before touching the live
 files if any are missing.
 
 ## The quick path
