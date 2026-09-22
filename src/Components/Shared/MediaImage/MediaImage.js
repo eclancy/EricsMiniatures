@@ -17,6 +17,7 @@ const FULL_WIDTHS = [640, 960, 1280, 1600, 1920, 2560];
  */
 export default function MediaImage({ photo, alt, sizes, variant, eager, playAnimation, className, onClick }) {
   const [loaded, setLoaded] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   if (!photo) return null;
 
@@ -52,7 +53,9 @@ export default function MediaImage({ photo, alt, sizes, variant, eager, playAnim
 
   return (
     <div
-      className={`mediaImage__frame ${loaded ? 'is-loaded' : ''} ${contain ? 'is-contain' : ''} ${className || ''}`}
+      className={`mediaImage__frame ${loaded ? 'is-loaded' : ''} ${contain ? 'is-contain' : ''} ${
+        failed ? 'is-failed' : ''
+      } ${className || ''}`}
       style={{
         aspectRatio: ratio,
         backgroundImage: photo.blur && !contain ? `url(${photo.blur})` : undefined,
@@ -70,8 +73,22 @@ export default function MediaImage({ photo, alt, sizes, variant, eager, playAnim
         decoding="async"
         fetchpriority={eager ? 'high' : undefined}
         onLoad={() => setLoaded(true)}
+        onError={() => setFailed(true)}
         onClick={onClick}
       />
+
+      {/* A cold derivative is resized on first request, which takes a couple of
+          seconds. The spinner fades in only after a short delay, so an image
+          served from cache never flashes one. */}
+      {!loaded && !failed && (
+        <span className="mediaImage__spinner" role="status" aria-label="Loading image" />
+      )}
+
+      {failed && (
+        <span className="mediaImage__failed" role="status">
+          Image unavailable
+        </span>
+      )}
     </div>
   );
 }

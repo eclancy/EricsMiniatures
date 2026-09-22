@@ -33,13 +33,71 @@
   &.is-loaded .mediaImage {
     opacity: 1;
   }
+
+  /* Loading indicator.
+     Images are resized on first request, and a cold one takes a couple of
+     seconds on the server. The spinner is delayed so a cached image - which
+     arrives in a few hundred milliseconds - never flashes one on screen. */
+  /* A dark disc behind a light ring, so it reads over a pale photo, a dark
+     one, and the lightbox backdrop alike - the blur placeholder underneath
+     can be any colour. */
+  .mediaImage__spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 38px;
+    height: 38px;
+    margin: -19px 0 0 -19px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    opacity: 0;
+    animation: mediaImageSpin 0.8s linear infinite, mediaImageSpinnerIn 0.2s ease 0.35s forwards;
+  }
+
+  .mediaImage__failed {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+  }
+
+  &.is-contain .mediaImage__failed {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.7);
+  }
 }
 
-// Users who prefer reduced motion get the image immediately, no cross-fade.
+@keyframes mediaImageSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mediaImageSpinnerIn {
+  to {
+    opacity: 1;
+  }
+}
+
+// Users who prefer reduced motion get the image immediately, no cross-fade,
+// and a steady ring rather than a spinning one.
 @media (prefers-reduced-motion: reduce) {
   .mediaImage__frame .mediaImage {
     transition: none;
     opacity: 1;
+  }
+
+  .mediaImage__frame .mediaImage__spinner {
+    animation: mediaImageSpinnerIn 0.2s ease 0.35s forwards;
   }
 }
 
