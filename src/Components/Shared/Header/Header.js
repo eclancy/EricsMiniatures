@@ -8,6 +8,10 @@ import Brightness7Icon from '@material-ui/icons/Brightness7';
 import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 import BigLogoColor from '../../../Images/Logos/BigLogoColor.png';
+// The standard logo draws the pupil in dark ink with nothing behind it, so on
+// a dark header the eye disappears into the background. This variant sets a
+// white orb behind it.
+import BigLogoColorWhiteEye from '../../../Images/Logos/BigLogoColorWhiteEye.png';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import * as Constants from "../Constants.js";
@@ -31,7 +35,11 @@ export default function Header(props) {
     <React.Fragment>
       <Toolbar className="navbar" disableGutters>
         <Link className="HomeNav" to={"/"}>
-          <img src={BigLogoColor} alt="Eric's Miniatures Home" width={160}></img>
+          <img
+            src={isDark ? BigLogoColorWhiteEye : BigLogoColor}
+            alt="Eric's Miniatures Home"
+            width={160}
+          ></img>
         </Link>
 
         <Tooltip title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
