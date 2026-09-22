@@ -2,7 +2,7 @@
 
 .footer {
     //will always be on bottom because main wrapper fills in all available space
-    background-color: rgb(59, 64, 69);
+    background-color: var(--surface-footer);
     width: 100%;
     text-align: center;
     display: flex;
@@ -22,12 +22,12 @@
 
             .icon {
                 margin-right: 4px;
-                color: white;
+                color: var(--text-on-footer);
             }
 
             .text {
                 margin: 0px;
-                color: white;
+                color: var(--text-on-footer);
                 font-size: 14px;
             }
 

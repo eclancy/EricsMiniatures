@@ -2,13 +2,27 @@
 
 .navbar {
     padding: 0px 20px 0px 20px;
-    background-color: white;
+    background-color: var(--surface-header);
+    color: var(--text-primary);
     height: $header-height;
     
     .menuIcon {
         position: absolute;
         right: 10px;
         top: 10px;
+    }
+
+    /* Sits to the left of the menu button, which is absolutely positioned at
+       the right edge. */
+    .themeToggle {
+        position: absolute;
+        right: 58px;
+        top: 10px;
+        color: var(--text-primary);
+
+        svg {
+            font-size: 22px;
+        }
     }
 }
 

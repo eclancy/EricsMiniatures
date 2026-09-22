@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Brightness4Icon from '@material-ui/icons/Brightness4';
+import Brightness7Icon from '@material-ui/icons/Brightness7';
+import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 import BigLogoColor from '../../../Images/Logos/BigLogoColor.png';
 import Menu from '@material-ui/core/Menu';
@@ -12,6 +15,7 @@ import './Header.scss';
 import { Link } from 'react-router-dom';
 
 export default function Header(props) {
+  const { isDark, onToggleTheme } = props;
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -29,6 +33,17 @@ export default function Header(props) {
         <Link className="HomeNav" to={"/"}>
           <img src={BigLogoColor} alt="Eric's Miniatures Home" width={160}></img>
         </Link>
+
+        <Tooltip title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
+          <IconButton
+            className={'themeToggle'}
+            onClick={onToggleTheme}
+            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            aria-pressed={isDark}
+          >
+            {isDark ? <Brightness7Icon /> : <Brightness4Icon />}
+          </IconButton>
+        </Tooltip>
 
         <IconButton className={'menuIcon'} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
           <MenuIcon />
@@ -62,4 +77,6 @@ export default function Header(props) {
 Header.propTypes = {
   sections: PropTypes.array,
   title: PropTypes.string,
+  isDark: PropTypes.bool,
+  onToggleTheme: PropTypes.func,
 };

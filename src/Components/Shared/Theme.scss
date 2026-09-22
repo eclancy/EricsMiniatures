@@ -7,6 +7,93 @@ $header-height: 72px;
 $logo-primary: #9bc63d;
 $logo-secondary: #e65a34;
 
+/* ---------------------------------------------------------------------------
+   Theme tokens
+   ---------------------------------------------------------------------------
+   Every surface, text and border colour on the site resolves through these, so
+   a theme change is one attribute on <html> rather than a rule per component.
+   useTheme sets data-theme; it defaults to the operating system setting and
+   remembers an explicit choice.
+--------------------------------------------------------------------------- */
+:root {
+  --surface-page: #{$background-color};
+  --surface-raised: #ffffff;
+  --surface-sunken: #f6f7f9;
+  --surface-header: #ffffff;
+  --surface-footer: rgb(59, 64, 69);
+
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.68);
+  --text-muted: rgba(0, 0, 0, 0.55);
+  --text-on-footer: #ffffff;
+
+  --border-subtle: rgba(0, 0, 0, 0.14);
+  --accent: #0d47a1;
+  --accent-bright: #1976d2;
+
+  --shadow-card: 0 18px 45px rgba(0, 0, 0, 0.14);
+  --shadow-tile: 0 18px 60px rgba(0, 0, 0, 0.22);
+  --shadow-tile-hover: 0 24px 80px rgba(0, 0, 0, 0.3);
+
+  --skeleton-base: #ececec;
+  --skeleton-sheen: #f6f6f6;
+
+  --card-gradient: linear-gradient(135deg, #ffffff 0%, #fafbfc 100%);
+  /* The home card headings are gradient-clipped text, so they need a token of
+     their own rather than a flat colour. */
+  --heading-gradient: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+}
+
+:root[data-theme='dark'] {
+  --surface-page: #16181c;
+  --surface-raised: #1f2228;
+  --surface-sunken: #121417;
+  --surface-header: #1f2228;
+  --surface-footer: #101216;
+
+  --text-primary: rgba(255, 255, 255, 0.92);
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.55);
+  --text-on-footer: rgba(255, 255, 255, 0.92);
+
+  --border-subtle: rgba(255, 255, 255, 0.14);
+  /* The light-mode blue fails contrast on a dark surface. */
+  --accent: #7fb2ff;
+  --accent-bright: #9ac4ff;
+
+  --shadow-card: 0 18px 45px rgba(0, 0, 0, 0.55);
+  --shadow-tile: 0 18px 60px rgba(0, 0, 0, 0.6);
+  --shadow-tile-hover: 0 24px 80px rgba(0, 0, 0, 0.7);
+
+  --skeleton-base: #24272e;
+  --skeleton-sheen: #2c3038;
+
+  --card-gradient: linear-gradient(135deg, #232730 0%, #1c1f25 100%);
+  --heading-gradient: linear-gradient(135deg, #ffffff 0%, #c7ccd6 100%);
+}
+
+/* Surfaces and text cross-fade; images and shadows are left alone so the
+   gallery does not shimmer when the theme changes. */
+body,
+#main-wrapper,
+.navbar,
+.footer,
+.featuredCard,
+.MuiCard-root {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  #main-wrapper,
+  .navbar,
+  .footer,
+  .featuredCard,
+  .MuiCard-root {
+    transition: none;
+  }
+}
+
 
 html,
 body,
@@ -27,7 +114,8 @@ body,
   padding: 0;
 
   #main-wrapper {
-    background-color: rgb(234, 237, 237);
+    background-color: var(--surface-page);
+    color: var(--text-primary);
 
     /* will at least cover the rest of the screen minus the header and footer */
     min-height: calc(100vh - #{$header-height} - 38px);

@@ -1,10 +1,12 @@
-import React, { Suspense, lazy, useEffect } from "react";
+import React, { Suspense, lazy, useEffect, useMemo } from "react";
 import { Route, Switch, useLocation } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 import { Helmet } from "react-helmet-async";
 
 import Header from "./Components/Shared/Header/Header";
 import Footer from "./Components/Shared/Footer/Footer";
+import useTheme from "./Components/Shared/useTheme";
 
 import sections from "./Components/Shared/Constants.js";
 
@@ -29,13 +31,33 @@ function getTitleForPath(pathname) {
 function App() {
   const { pathname } = useLocation();
   const title = getTitleForPath(pathname);
+  const { theme, toggleTheme, isDark } = useTheme();
+
+  // Material-UI components (pagination, cards, the menu) read their colours
+  // from here rather than from the CSS tokens, so the palette has to follow
+  // the same switch.
+  const muiTheme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          type: isDark ? 'dark' : 'light',
+          primary: { main: isDark ? '#7fb2ff' : '#0d47a1' },
+          background: {
+            default: isDark ? '#16181c' : '#eaeded',
+            paper: isDark ? '#1f2228' : '#ffffff',
+          },
+        },
+      }),
+    [isDark]
+  );
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [pathname]);
 
   return (
-    <React.Fragment>
+    <ThemeProvider theme={muiTheme}>
+      {/* CssBaseline paints the page background from the palette above. */}
       <CssBaseline />
 
       {/* Centralized Helmet so title/meta update on every route change */}
@@ -45,10 +67,13 @@ function App() {
           name="description"
           content="Eric's Miniatures — galleries, models, and painting inspiration."
         />
+        {/* Tells the browser to theme its own UI (address bar, form controls). */}
+        <meta name="color-scheme" content={theme} />
+        <meta name="theme-color" content={isDark ? '#16181c' : '#ffffff'} />
       </Helmet>
 
       <div id="main-wrapper">
-        <Header component={Header} />
+        <Header isDark={isDark} onToggleTheme={toggleTheme} />
 
         {/* Routing for the various pages rendered inside the header and footer */}
         <Suspense fallback={<div className="routeFallback" aria-busy="true" />}>
@@ -62,7 +87,7 @@ function App() {
 
         <Footer />
       </div>
-    </React.Fragment>
+    </ThemeProvider>
   );
 }
 
