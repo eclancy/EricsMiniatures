@@ -16,6 +16,20 @@
     transition: opacity 0.4s ease;
   }
 
+  /* Never crop: the whole photo fits inside the frame whatever its shape.
+     Used wherever the point is to look at the picture rather than to fill a
+     tile - the lightbox, at any window size. The extra class keeps this above
+     the cover rule on specificity instead of relying on source order. */
+  &.is-contain .mediaImage {
+    object-fit: contain;
+  }
+
+  /* With contain, the blurred placeholder would show as bars either side of
+     the photo. Fine behind a cropped tile, distracting behind a full view. */
+  &.is-contain {
+    background-image: none !important;
+  }
+
   &.is-loaded .mediaImage {
     opacity: 1;
   }

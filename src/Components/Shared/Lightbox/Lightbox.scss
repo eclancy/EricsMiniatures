@@ -14,6 +14,9 @@
   gap: 8px;
   outline: none;
 
+  /* The stage is a column: the photo takes every pixel the caption does not,
+     so nothing has to be cropped to make room. min-height: 0 lets the image
+     row actually shrink inside the grid rather than overflowing it. */
   &__stage {
     grid-area: stage;
     margin: 0;
@@ -23,18 +26,24 @@
     justify-content: center;
     gap: 16px;
     min-height: 0;
+    height: 100%;
     max-height: 100%;
+    overflow: hidden;
   }
 
+  /* The photo fills whatever space the stage leaves, and object-fit: contain
+     guarantees the whole of it is visible whatever the window shape. Portrait
+     windows constrain by width, landscape ones by height; both work without
+     cutting anything off. */
   &__media {
-    max-height: 68vh;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
     border-radius: 8px;
-    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
 
     img,
     video {
-      max-height: 68vh;
-      object-fit: contain;
+      border-radius: 8px;
     }
   }
 
@@ -178,11 +187,8 @@
       &--next { right: 10px; }
     }
 
-    &__media,
-    &__media img,
-    &__media video {
-      max-height: 52vh;
-    }
+    /* The stage still hands the photo whatever height is left, so no
+       max-height is needed here - one would only reintroduce cropping. */
 
     &__thumbs {
       justify-content: flex-start;

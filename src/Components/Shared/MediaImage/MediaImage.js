@@ -46,12 +46,16 @@ export default function MediaImage({ photo, alt, sizes, variant, eager, playAnim
   // (the home page section cards, which used to be animated CSS backgrounds).
   const animated = photo.animated && (variant === 'full' || playAnimation);
 
+  // A full view exists to show the picture, so it is never cropped. Grid tiles
+  // fill their box instead, which keeps rows tidy.
+  const contain = variant === 'full';
+
   return (
     <div
-      className={`mediaImage__frame ${loaded ? 'is-loaded' : ''} ${className || ''}`}
+      className={`mediaImage__frame ${loaded ? 'is-loaded' : ''} ${contain ? 'is-contain' : ''} ${className || ''}`}
       style={{
         aspectRatio: ratio,
-        backgroundImage: photo.blur ? `url(${photo.blur})` : undefined,
+        backgroundImage: photo.blur && !contain ? `url(${photo.blur})` : undefined,
       }}
     >
       <img
