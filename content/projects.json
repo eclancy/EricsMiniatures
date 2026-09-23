@@ -56,7 +56,8 @@
         "blimpy-4.jpg": "",
         "blimpy-5.jpg": ""
       },
-      "order": 0
+      "order": 0,
+      "reviewed": true
     },
     "miniatures/bloody-vampire": {
       "title": "Bloody Vampire",
@@ -190,7 +191,8 @@
         "displacer-beast-mutilated-2.jpg": "",
         "displacer-beast-mutilated-3.jpg": ""
       },
-      "order": 1
+      "order": 1,
+      "reviewed": true
     },
     "miniatures/doppelganger-print": {
       "title": "Doppelganger Print",
@@ -211,13 +213,14 @@
     },
     "miniatures/dungeon-doggy-monty": {
       "title": "Dungeon Doggy Monty",
-      "description": "A beagle kitted out with saddlebags and an adventuring pack, standing in static grass. Every good party needs a dog carrying the gear.",
+      "description": "A beagle in a red harness with a blue bedroll strapped across his back and wraps on his legs, standing in static grass. Every good party needs a dog carrying the gear.",
       "captions": {
         "dungeon-doggy-monty-1.jpg": "",
         "dungeon-doggy-monty-2.jpg": "",
         "dungeon-doggy-monty-3.jpg": ""
       },
-      "order": 4
+      "order": 4,
+      "reviewed": true
     },
     "miniatures/dungeon-doggy-tobias": {
       "title": "Dungeon Doggy Tobias",
@@ -237,14 +240,15 @@
     },
     "miniatures/elf-archer": {
       "title": "Elf Archer",
-      "description": "An elf archer drawing back at full extension, almost entirely hidden inside a tan cloak. The cloak does most of the storytelling.",
+      "description": "An elf drawing a bow at full extension, seen from behind and almost entirely swallowed by a hooded cloak, every fold highlighted down its length. She's braced on broken flagstones, but the cloak does all the storytelling.",
       "captions": {
         "elf-archer-1.jpg": "",
         "elf-archer-2.jpg": "",
         "elf-archer-3.jpg": "",
         "elf-archer-4.jpg": ""
       },
-      "order": 6
+      "order": 6,
+      "reviewed": true
     },
     "miniatures/elf-sniper": {
       "title": "Elf Sniper",
@@ -431,7 +435,7 @@
     },
     "miniatures/lich-god": {
       "title": "Lich God",
-      "description": "A lich enthroned in dark armor, wreathed in pale green necrotic energy on a tiled floor. Nine photos, because this one earned them.",
+      "description": "Nagash, crowned in bone and gold with grimoires chained to his robes, rising above a hex-tiled floor. The necrotic energy pouring off him resolves into a swarm of ghosts, hollow-eyed and open-mouthed, each faded toward white at the edges so they read as translucent.",
       "captions": {
         "lich-god-1.jpg": "",
         "lich-god-2.jpg": "",
@@ -443,7 +447,8 @@
         "lich-god-8.jpg": "",
         "lich-god-9.jpg": ""
       },
-      "order": 2
+      "order": 2,
+      "reviewed": true
     },
     "miniatures/little-imp": {
       "title": "Little Imp",
@@ -610,13 +615,14 @@
     },
     "miniatures/purple-worm": {
       "title": "Purple Worm",
-      "description": "A purple worm erupting from a grass base, segmented plates blended violet to bone with a ring of teeth around a very red throat. It also makes a good banner image.",
+      "description": "A purple worm bursting up through broken earth, plates blended violet into bone, its mouth ringed with teeth around a glossy red throat. Strands of saliva still stretch across the opening, which is the detail that makes it.",
       "captions": {
         "purple-worm-1.jpg": "",
         "purple-worm-3.jpg": "",
         "purple-worm-full-banner.jpg": ""
       },
-      "order": 5
+      "order": 5,
+      "reviewed": true
     },
     "miniatures/rainbow-beetles": {
       "title": "Rainbow Beetles",
@@ -720,7 +726,7 @@
     },
     "miniatures/soul-grinder": {
       "title": "Soul Grinder",
-      "description": "A daemon engine on six bladed brass legs, violet torso rising from the chassis with an energy blade in each claw. Big enough to need its own footprint on the table.",
+      "description": "A daemon torso in blue fading to magenta, bolted at the waist into a brass walker that stalks on four bladed legs. The arms end in toothed pincers instead of hands, and every foot is its own cluster of blades - this one needs its own footprint on the table.",
       "captions": {
         "soul-grinder-1.jpg": "",
         "soul-grinder-2.jpg": "",
@@ -728,7 +734,8 @@
         "soul-grinder-4.jpg": "",
         "soul-grinder-5.jpg": ""
       },
-      "order": 3
+      "order": 3,
+      "reviewed": true
     },
     "miniatures/speedy-car": {
       "title": "Speedy Car",
@@ -750,8 +757,8 @@
       }
     },
     "miniatures/t-rex": {
-      "title": "T Rex",
-      "description": "A full-size T-Rex striding through jungle undergrowth, green along the back fading to pale underneath. The base is thick with real foliage.",
+      "title": "T-Rex",
+      "description": "A T-Rex mid-stride through jungle undergrowth, green darkening to near-black along the spine and fading to pale underneath. Blood is still on the jaws, arms and legs, with saliva stretched between the teeth - this one has just eaten.",
       "captions": {
         "t-rex-1.jpg": "",
         "t-rex-2.jpg": "",
@@ -759,7 +766,8 @@
         "t-rex-4.jpg": "",
         "t-rex-5.jpg": ""
       },
-      "order": 7
+      "order": 7,
+      "reviewed": true
     },
     "miniatures/tentacle-pair": {
       "title": "Tentacle Pair",
@@ -835,11 +843,12 @@
         "water-ninja-1.jpg": "",
         "water-ninja-2.jpg": ""
       },
-      "order": 9
+      "order": 9,
+      "reviewed": true
     },
     "miniatures/water-slaad": {
       "title": "Water Slaad",
-      "description": "A blue slaad with a magenta mouth and throat, claws out, standing on a wet stone base. The hot pink interior against all that cold blue is the entire trick.",
+      "description": "A slaad in cold blue with magenta running down its throat, belly and the inside of every limb, tongue lolling out over a mouth full of teeth. It's holding a bone in one hand, and the hot pink against all that blue is the entire trick.",
       "captions": {
         "water-slaad-1.jpg": "",
         "water-slaad-2.jpg": "",
@@ -849,7 +858,8 @@
         "water-slaad-6.jpg": "",
         "water-slaad-7.jpg": ""
       },
-      "order": 8
+      "order": 8,
+      "reviewed": true
     },
     "miniatures/weaponized-jeep": {
       "title": "Weaponized Jeep",

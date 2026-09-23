@@ -48,6 +48,13 @@ for (const [key, fields] of Object.entries(batch)) {
 
   if (fields.title !== undefined) entry.title = fields.title;
   if (fields.description !== undefined) entry.description = fields.description;
+  // Marks copy that has been checked against the real photos. The descriptions
+  // were first drafted from small contact sheets, so this records which ones
+  // have since been confirmed.
+  if (fields.reviewed !== undefined) {
+    if (fields.reviewed) entry.reviewed = true;
+    else delete entry.reviewed;
+  }
   // null clears a manual position and returns the project to alphabetical order.
   if (fields.order !== undefined) {
     if (fields.order === null) delete entry.order;
