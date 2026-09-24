@@ -25,7 +25,8 @@
       "captions": {
         "artificer-1.jpg": "",
         "artificer-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/ballista": {
       "title": "Ballista",
@@ -111,7 +112,8 @@
       "captions": {
         "bush-sneaky-man-1.jpg": "",
         "bush-sneaky-man-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/cassan": {
       "title": "Cassan",
@@ -311,10 +313,11 @@
     },
     "miniatures/first-pixie": {
       "title": "First Pixie",
-      "description": "An early pixie on a toadstool, hands over her mouth mid-giggle. The wings are thin enough that the light comes through them, which was the whole experiment.",
+      "description": "An early pixie caught mid-giggle with both hands over her mouth, standing among pink flowers with her wings picked out in flat silver. Small, cheerful, and from very near the beginning.",
       "captions": {
         "first-pixie-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/fox-samurai": {
       "title": "Fox Samurai",
@@ -352,14 +355,15 @@
     },
     "miniatures/garren-bromson": {
       "title": "Garren Bromson",
-      "description": "A fighter in deep red armor with a shield and raised blade, cloak swept back. Built as a character, and painted in his own colors throughout.",
+      "description": "Built as a character: deep red and gold armour, shield up, blade raised, cloak swept back behind him. An hourglass sits on the flagstones at his feet.",
       "captions": {
         "garren-bromson-1.jpg": "",
         "garren-bromson-2.jpg": "",
         "garren-bromson-3.jpg": "",
         "garren-bromson-4.jpg": "",
         "garren-bromson-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/gelatinous-cube": {
       "title": "Gelatinous Cube",
@@ -424,7 +428,7 @@
     },
     "miniatures/le-monte-claire": {
       "title": "Le Monte Claire",
-      "description": "A bard mid-flourish in wine-red and gold, one hand raised, standing on a broken stone plinth. Built as a character and posed like he knows it.",
+      "description": "A bard mid-flourish in wine-red and gold, holding up a mirror with a face caught in it. He stands on a stone slab set over water with something red submerged beneath it, and he is posed like he knows it.",
       "captions": {
         "le-monte-claire-1.jpg": "",
         "le-monte-claire-2.jpg": "",
@@ -432,7 +436,8 @@
         "le-monte-claire-4.jpg": "",
         "le-monte-claire-5.jpg": "",
         "le-monte-claire-6.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/lich-god": {
       "title": "Lich God",
@@ -796,11 +801,12 @@
     },
     "miniatures/tormin-mahaloom": {
       "title": "Tormin Mahaloom",
-      "description": "A horned fighter with sword and shield braced in a wide stance, on an earth base with a skull at his feet. Built as a character, and painted in muted, practical colors.",
+      "description": "A loxodon fighter in gold armour, curved sword held low and shield up, a quiver slung across his back. He stands on cracked earth with a skull by his feet.",
       "captions": {
         "tormin-mahaloom-1.jpg": "",
         "tormin-mahaloom-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/triple-grell": {
       "title": "Triple Grell",
