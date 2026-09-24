@@ -757,7 +757,8 @@
       "captions": {
         "skeleton-archers-1.jpg": "",
         "skeleton-archers-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/slagfist": {
       "title": "Slagfist",
@@ -767,7 +768,8 @@
         "slagfist-2.jpg": "",
         "slagfist-3.jpg": "",
         "slagfist-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/sludge-monster": {
       "title": "Sludge Monster",
@@ -776,14 +778,16 @@
         "sludge-monster-1.jpg": "",
         "sludge-monster-2.jpg": "",
         "sludge-monster-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/small-beetle": {
       "title": "Small Beetle",
       "description": "One dark beetle on a mossy green base, glossy and unbothered. Small enough that the base is most of what you see.",
       "captions": {
         "small-beetle-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/snowy-owlbear": {
       "title": "Snowy Owlbear",
@@ -792,7 +796,8 @@
         "snowy-owlbear-1.jpg": "",
         "snowy-owlbear-2.jpg": "",
         "snowy-owlbear-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/soul-grinder": {
       "title": "Soul Grinder",
@@ -814,17 +819,19 @@
         "speedy-car-1.jpg": "",
         "speedy-car-2.jpg": "",
         "speedy-car-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/swamp-monster": {
       "title": "Swamp Monster",
-      "description": "A bloated swamp creature in teal and sickly green, arms out, standing among moss clumps. The palette is all cold, which makes it read as damp.",
+      "description": "A bloated swamp creature in teal and sickly green with fins down its back and a mouth opening in its torso, studded with magenta growths. Cold everywhere except those berries.",
       "captions": {
         "swamp-monster-1.jpg": "",
         "swamp-monster-2.jpg": "",
         "swamp-monster-3.jpg": "",
         "swamp-monster-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/t-rex": {
       "title": "T-Rex",
@@ -841,10 +848,11 @@
     },
     "miniatures/tentacle-pair": {
       "title": "Tentacle Pair",
-      "description": "Two tentacles bursting up through sculpted whitewater, one dark purple and one violet, each on its own base. Sold separately, encountered together.",
+      "description": "Two tentacles bursting up through sculpted whitewater, one dark red with pink suckers and the other purple with green barnacles, each on its own base. Sold separately, encountered together.",
       "captions": {
         "tentacle-pair-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/thought-devourer": {
       "title": "Thought Devourer",
@@ -853,7 +861,8 @@
         "thought-devourer-1.jpg": "",
         "thought-devourer-2.jpg": "",
         "thought-devourer-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/tiefling-sorceror-green-dress": {
       "title": "Tiefling Sorceror Green Dress",
@@ -861,7 +870,8 @@
       "captions": {
         "tiefling-sorceror-green-dress-1.jpg": "",
         "tiefling-sorceror-green-dress-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/tormin-mahaloom": {
       "title": "Tormin Mahaloom",
@@ -878,7 +888,8 @@
       "captions": {
         "triple-grell-1.jpg": "",
         "triple-grell-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/twilight-imperium-prints": {
       "title": "Twilight Imperium Prints",
@@ -889,7 +900,8 @@
         "twilight-imperium-prints-3.jpg": "",
         "twilight-imperium-prints-4.jpg": "",
         "twilight-imperium-prints-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/twin-statues": {
       "title": "Twin Statues",
@@ -897,7 +909,8 @@
       "captions": {
         "twin-statues-1.jpg": "",
         "twin-statues-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/water-elemental": {
       "title": "Water Elemental",
@@ -905,7 +918,8 @@
       "captions": {
         "water-elemental-1.jpg": "",
         "water-elemental-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/water-ninja": {
       "title": "Water Ninja",
@@ -934,12 +948,13 @@
     },
     "miniatures/weaponized-jeep": {
       "title": "Weaponized Jeep",
-      "description": "A red jeep armored in bolted plate and mounted skulls, with a spotlight rig on the roof. Every panel is chipped down to bare metal.",
+      "description": "A red jeep armoured in bolted plate with skulls on the bonnet, twin guns on the flank and a spotlight rig on the roof. Every panel is chipped down to bare metal.",
       "captions": {
         "weaponized-jeep-1.jpg": "",
         "weaponized-jeep-2.jpg": "",
         "weaponized-jeep-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/white-spectator": {
       "title": "White Spectator",
@@ -947,7 +962,8 @@
       "captions": {
         "white-spectator-1.jpg": "",
         "white-spectator-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/wraith-couple": {
       "title": "Wraith Couple",
@@ -955,7 +971,8 @@
       "captions": {
         "wraith-couple-1.jpg": "",
         "wraith-couple-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/zombicorn": {
       "title": "Zombicorn",
@@ -964,14 +981,16 @@
         "zombicorn-1.jpg": "",
         "zombicorn-2.jpg": "",
         "zombicorn-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/coals": {
       "title": "Coals",
       "description": "A bed of banked coals sculpted across a round base, each lump glazed orange in the cracks and left charred on top. Built to drop under something that is about to be on fire.",
       "captions": {
         "coals-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/destroyed-castle": {
       "title": "Destroyed Castle",
@@ -982,7 +1001,8 @@
         "destroyed-castle-3.jpg": "",
         "destroyed-castle-4.jpg": "",
         "destroyed-castle-6.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/destroyed-column": {
       "title": "Destroyed Column",
@@ -990,7 +1010,8 @@
       "captions": {
         "destroyed-column-1.jpg": "",
         "destroyed-column-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/docks": {
       "title": "Docks",
@@ -1000,7 +1021,8 @@
         "docks-2.jpg": "",
         "docks-3.jpg": "",
         "docks-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/egg-pit": {
       "title": "Egg Pit",
@@ -1014,7 +1036,8 @@
         "egg-pit-6.jpg": "",
         "egg-pit-7.jpg": "",
         "egg-pit-8.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/firestacks": {
       "title": "Firestacks",
@@ -1023,14 +1046,16 @@
         "firestacks-1.jpg": "",
         "firestacks-2.jpg": "",
         "firestacks-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/floating-crystal": {
       "title": "Floating Crystal",
-      "description": "A huge pink crystal suspended above a mossy outcrop by chains, angled so it looks tethered rather than resting. The faceting is cut, not sculpted.",
+      "description": "A huge pink crystal suspended above a mossy outcrop on chains, angled so it looks tethered rather than resting. The chains do the work of making it float.",
       "captions": {
         "floating-crystal-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/golden-portal": {
       "title": "Golden Portal",
@@ -1039,36 +1064,41 @@
         "golden-portal-1.jpg": "",
         "golden-portal-2.jpg": "",
         "golden-portal-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/golden-scales": {
       "title": "Golden Scales",
-      "description": "A working set of balance scales built from wire and thin discs, with pans that actually hang level. Small enough to sit on a single base.",
+      "description": "A set of balance scales built from wire and thin beaten discs, the pans hanging free from a brass beam on a stone base.",
       "captions": {
         "golden-scales-1.jpg": "",
         "golden-scales-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/ice-disc-base": {
       "title": "Ice Disc Base",
       "description": "A frozen pool with a crack star bursting from the center, poured in translucent blue over a textured disc. Something recently went through it.",
       "captions": {
         "ice-disc-base-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/ice-pillars-base": {
       "title": "Ice Pillars Base",
-      "description": "A cluster of grey ice shards pushing up through snow, kept almost colorless so it reads as cold rather than blue.",
+      "description": "A cluster of dark shards furred over with white frost crystals, kept almost colourless so it reads as cold rather than blue.",
       "captions": {
         "ice-pillars-base-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/infinity-portal": {
       "title": "Infinity Portal",
       "description": "An infinity mirror portal rigged with LEDs, so the ring of lights recedes into what looks like a bottomless shaft. Best appreciated with the lights off.",
       "captions": {
         "infinity-portal-1.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/insect-eggs": {
       "title": "Insect Eggs",
@@ -1080,18 +1110,20 @@
         "insect-eggs-4.jpg": "",
         "insect-eggs-5.jpg": "",
         "insect-eggs-6.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/lavaplatform": {
       "title": "Lavaplatform",
-      "description": "A rock platform balanced on a column of pouring lava, blended white-hot at the core to deep orange at the edges. The lava is the support, structurally and visually.",
+      "description": "A rock platform balanced on a column of pouring lava, blended yellow at the core out to deep orange at the edges. The lava is the support, structurally and visually.",
       "captions": {
         "lavaplatform-1.jpg": "",
         "lavaplatform-2.jpg": "",
         "lavaplatform-3.jpg": "",
         "lavaplatform-4.jpg": "",
         "lavaplatform-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/magic-rune-tile": {
       "title": "Magic Rune Tile",
@@ -1101,7 +1133,8 @@
         "magic-rune-tile-2.jpg": "",
         "magic-rune-tile-3.jpg": "",
         "magic-rune-tile-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/mutated-trees": {
       "title": "Mutated Trees",
@@ -1111,23 +1144,26 @@
         "mutated-trees-2.jpg": "",
         "mutated-trees-3.jpg": "",
         "mutated-trees-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/oblex-well": {
       "title": "Oblex Well",
-      "description": "A stone well glowing orange from somewhere deep below the rim. Whatever is down there is lit, awake, and not water.",
+      "description": "A stone well glowing orange from somewhere deep below the rim, with blood smeared across the stonework. Whatever is down there is lit, awake, and not water.",
       "captions": {
         "oblex-well-1.jpg": "",
         "oblex-well-2.jpg": "",
         "oblex-well-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/ocean-rock": {
       "title": "Ocean Rock",
       "description": "A flat grey rock rising out of deep blue water, with sculpted foam breaking white around its base. Built as a display plinth as much as terrain.",
       "captions": {
         "ocean-rock-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/oiltank": {
       "title": "Oiltank",
@@ -1135,7 +1171,8 @@
       "captions": {
         "oiltank-1.jpg": "",
         "oiltank-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/prisma-wall": {
       "title": "Prisma Wall",
@@ -1143,18 +1180,20 @@
       "captions": {
         "prisma-wall-1.jpg": "",
         "prisma-wall-other-side-gif.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/puke-fountain": {
       "title": "Puke Fountain",
       "description": "An ornate fountain producing something that is emphatically not water. The sculpture is elegant; the output is not.",
       "captions": {
         "puke-fountain-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/river": {
       "title": "River",
-      "description": "A full gaming board with a river cut through it, banks built up in layers of flock and gravel, poplars along the far side. The water is poured resin with the bed painted before it went in.",
+      "description": "A full gaming board with a river cut through it, banks built up in layers of flock and gravel, poplars along the far side. The riverbed is painted to fade from shallow edges into deeper water.",
       "captions": {
         "river-1.jpg": "",
         "river-2.jpg": "",
@@ -1162,7 +1201,8 @@
         "river-4.jpg": "",
         "river-5.jpg": "",
         "river-6.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/ruined-windmill": {
       "title": "Ruined Windmill",
@@ -1174,26 +1214,29 @@
         "ruined-windmill-4.jpg": "",
         "ruined-windmill-5.jpg": "",
         "ruined-windmill-6.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/shed-on-the-hill": {
       "title": "Shed On The Hill",
-      "description": "A tile-roofed shed sitting on a grassy rise with rock faces carved down the sides. The whole hill is the model, not just the building.",
+      "description": "A shed with a red shingled roof sitting on a grassy rise, rock faces carved down every side. The whole hill is the model, not just the building.",
       "captions": {
         "shed-on-the-hill-1.jpg": "",
         "shed-on-the-hill-2.jpg": "",
         "shed-on-the-hill-3.jpg": "",
         "shed-on-the-hill-4.jpg": "",
         "shed-on-the-hill-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/sludge-crater": {
       "title": "Sludge Crater",
-      "description": "A crater of green sludge draining out through a breach in the rim, poured glossy so it still looks wet. Something toxic happened here.",
+      "description": "A crater of green sludge with yellow bubbles surfacing in it, draining out through a breach in the rim and poured glossy so it still looks wet. Something toxic happened here.",
       "captions": {
         "sludge-crater-1.jpg": "",
         "sludge-crater-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/snowy-crater": {
       "title": "Snowy Crater",
@@ -1202,7 +1245,8 @@
         "snowy-crater-1.jpg": "",
         "snowy-crater-2.jpg": "",
         "snowy-crater-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/temple-interior": {
       "title": "Temple Interior",
@@ -1219,17 +1263,19 @@
         "temple-interior-9.jpg": "",
         "temple-interior-99.jpg": "",
         "temple-interior-999.png": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/tilled-farmland": {
       "title": "Tilled Farmland",
-      "description": "A field of ploughed furrows with crops coming up in rows, every ridge scored by hand. Unglamorous, and exactly what a village board needs.",
+      "description": "A field of ploughed furrows with cabbages and carrots coming up in rows, every ridge scored by hand. Unglamorous, and exactly what a village board needs.",
       "captions": {
         "tilled-farmland-1.jpg": "",
         "tilled-farmland-2.jpg": "",
         "tilled-farmland-3.jpg": "",
         "tilled-farmland-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/trashed-terrain": {
       "title": "Trashed Terrain",
@@ -1237,7 +1283,8 @@
       "captions": {
         "trashed-terrain-1.jpg": "",
         "trashed-terrain-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/two-level-simple-house": {
       "title": "Two Level Simple House",
@@ -1246,7 +1293,8 @@
         "two-level-simple-house-1.jpg": "",
         "two-level-simple-house-2.jpg": "",
         "two-level-simple-house-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/underdark-rock-pillars": {
       "title": "Underdark Rock Pillars",
@@ -1254,7 +1302,8 @@
       "captions": {
         "underdark-rock-pillars-1.jpg": "",
         "underdark-rock-pillars-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/water-fall": {
       "title": "Water Fall",
@@ -1262,7 +1311,8 @@
       "captions": {
         "water-fall-1.jpg": "",
         "water-fall-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "terrain/waystone": {
       "title": "Waystone",
@@ -1271,7 +1321,8 @@
         "waystone-1.jpg": "",
         "waystone-2.jpg": "",
         "waystone-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/chibi-dragon-gundam": {
       "title": "Chibi Dragon Gundam",
@@ -1279,14 +1330,16 @@
       "captions": {
         "chibi-dragon-gundam-1.jpg": "",
         "chibi-dragon-gundam-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/garchomp": {
       "title": "Garchomp",
       "description": "A Garchomp model kit snapped together in navy and red, fins out and posed low. Built clean out of the box, no paint needed.",
       "captions": {
         "garchomp-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/gold-unicorn": {
       "title": "Gold Unicorn",
@@ -1297,7 +1350,8 @@
         "gold-unicorn-3.jpg": "",
         "gold-unicorn-4.jpg": "",
         "gold-unicorn-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/gundam-centaur": {
       "title": "Gundam Centaur",
@@ -1308,7 +1362,8 @@
         "gundam-centaur-3.jpg": "",
         "gundam-centaur-4.jpg": "",
         "gundam-centaur-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/gundam-chibi": {
       "title": "Gundam Chibi",
@@ -1317,21 +1372,23 @@
         "gundam-chibi-1.jpg": "",
         "gundam-chibi-2.jpg": "",
         "gundam-chibi-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/gundam-submarine": {
       "title": "Gundam Submarine",
-      "description": "A pale blue aquatic mobile suit standing on four clawed legs. Built straight from the kit, with the leg articulation doing all the character work.",
+      "description": "A pale blue aquatic mobile suit with long clawed arms reaching to the ground and wing-like fins spread behind. Built straight from the kit, with the articulation doing all the character work.",
       "captions": {
         "gundam-submarine-1.jpg": "",
         "gundam-submarine-2.jpg": "",
         "gundam-submarine-3.jpg": "",
         "gundam-submarine-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/gundam-transforming": {
       "title": "Gundam Transforming",
-      "description": "A white transforming Gundam with beam sabre drawn and wings deployed. It converts between modes, which means every joint has to hold in two different configurations.",
+      "description": "A white and violet transforming Gundam with a long blade drawn and wings deployed. It converts between modes, which means every joint has to hold in two different configurations.",
       "captions": {
         "gundam-transforming-1.jpg": "",
         "gundam-transforming-2.jpg": "",
@@ -1339,7 +1396,8 @@
         "gundam-transforming-4.jpg": "",
         "gundam-transforming-5.jpg": "",
         "gundam-transforming-6.mp4": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/lego-bonsai": {
       "title": "Lego Bonsai",
@@ -1347,7 +1405,8 @@
       "captions": {
         "lego-bonsai-1.jpg": "",
         "lego-bonsai-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/lego-flowers": {
       "title": "Lego Flowers",
@@ -1363,23 +1422,26 @@
         "lego-flowers-8.jpg": "",
         "lego-flowers-9.jpg": "",
         "lego-flowers-10.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/lego-insects": {
       "title": "Lego Insects",
-      "description": "The LEGO insect collection posed together on a clear stand with mushrooms and foliage, built as one display rather than three separate models.",
+      "description": "A LEGO rhinoceros beetle mounted over mushrooms and foliage on a clear stand, one of the insect set. Built as a display piece rather than a shelf model.",
       "captions": {
         "lego-insects-1.jpg": "",
         "lego-insects-2.jpg": "",
         "lego-insects-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/little-arm-gundam": {
       "title": "Little Arm Gundam",
-      "description": "A compact olive-green mobile suit built out of the box, squat and heavily armored. Not every kit needs to be a centerpiece.",
+      "description": "A compact olive and tan mobile suit built out of the box, slim-limbed with a crested head. Not every kit needs to be a centrepiece.",
       "captions": {
         "little-arm-gundam-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/metagross": {
       "title": "Metagross",
@@ -1387,11 +1449,12 @@
       "captions": {
         "metagross-1.jpg": "",
         "metagross-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/paladinmon": {
       "title": "Paladinmon",
-      "description": "A Digimon knight in red and gold with a lance and shield, cape hanging behind. The plated armor and the cloth cape are separate materials in the kit, and both had to sit right.",
+      "description": "A Digimon knight in white, red and gold with a lance and a broad shield, cape sweeping behind. Posed like the box art, which is the whole point of a kit like this.",
       "captions": {
         "paladinmon-1.jpg": "",
         "paladinmon-2.jpg": "",
@@ -1399,18 +1462,20 @@
         "paladinmon-4.jpg": "",
         "paladinmon-5.jpg": "",
         "paladinmon-6.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/rayquaza": {
       "title": "Rayquaza",
       "description": "Rayquaza built in segments so the whole body coils, mounted on a cloud stand. The segmented spine is what lets it hold a pose at all.",
       "captions": {
         "rayquaza-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "modelkits/steampunk-beetles": {
       "title": "Steampunk Beetles",
-      "description": "Two clockwork insects in brass and red, wings spread on turned display bases with brass plaques. Mechanical kits built to be furniture, not toys.",
+      "description": "Two clockwork insects on turned display bases with brass nameplates, one in red with lamp-like eyes and the other in steel and brass. Mechanical kits built to be furniture, not toys.",
       "captions": {
         "steampunk-beetles-1.jpg": "",
         "steampunk-beetles-2.jpg": "",
@@ -1419,17 +1484,19 @@
         "steampunk-beetles-5.jpg": "",
         "steampunk-beetles-6.gif": "",
         "steampunk-beetles-7.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "other/axolotl": {
       "title": "Axolotl",
-      "description": "A print-in-place articulated axolotl in pink, with gills and limbs that flex straight off the print bed. No assembly, no glue, just support removal.",
+      "description": "An axolotl in soft pink with magenta gills and fins, painted to fade from a pale body into deeper colour at the frills.",
       "captions": {
         "axolotl-1.jpg": "",
         "axolotl-2.jpg": "",
         "axolotl-3.jpg": "",
         "axolotl-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/bulbasaur": {
       "title": "Bulbasaur",
@@ -1440,15 +1507,17 @@
         "bulbasaur-4.jpg": "",
         "bulbasaur-5.jpg": "",
         "bulbasaur-6.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/candle-bowl": {
       "title": "Candle Bowl",
-      "description": "A d12 candle sitting in a printed bowl holder, numbers picked out in white against blue. A natural twenty was structurally unavailable.",
+      "description": "A d12 candle sitting in a printed bowl holder, numbers picked out in gold against blue. A natural twenty was structurally unavailable.",
       "captions": {
         "candle-bowl-1.jpg": "",
         "candle-bowl-2.png": ""
-      }
+      },
+      "reviewed": true
     },
     "other/clancy-dinner-ornament": {
       "title": "Clancy Dinner Ornament",
@@ -1462,16 +1531,18 @@
         "clancy-dinner-ornament-6.jpg": "",
         "clancy-dinner-ornament-7.jpg": "",
         "clancy-dinner-ornament-8.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "other/currency": {
       "title": "Currency",
-      "description": "A set of fantasy coins and tokens, each with its own sculpted face and finished in a different metal. Printed as a batch so the whole set matches in scale.",
+      "description": "A set of fantasy currency tokens, each square-cut with its own sculpted face and finished in a different metal. Printed as a batch so the whole set matches in scale.",
       "captions": {
         "currency-1.jpg": "",
         "currency-2.jpg": "",
         "currency-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/daycare-railing-fix": {
       "title": "Daycare Railing Fix",
@@ -1480,24 +1551,27 @@
         "daycare-railing-fix-1.jpg": "",
         "daycare-railing-fix-2.webp": "",
         "daycare-railing-fix-3.png": ""
-      }
+      },
+      "reviewed": true
     },
     "other/dino-skull": {
       "title": "Dino Skull",
-      "description": "A large T-Rex skull printed and finished with a bone wash, teeth left bright against the aged surface. Printed hollow, because otherwise it would be unliftable.",
+      "description": "A large T-Rex skull printed and finished with a bone wash, the teeth left bright against all that aged surface.",
       "captions": {
         "dino-skull-1.jpg": "",
         "dino-skull-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/door-fix": {
       "title": "Door Fix",
-      "description": "A printed replacement for a broken door stop, fitted straight into the existing hole in the floor. Ten minutes of modeling instead of a trip to the hardware store.",
+      "description": "A printed replacement for a broken door stop, fitted straight in where the old one failed - the original is lying on the carpet beside it. Ten minutes of modelling instead of a trip to the hardware store.",
       "captions": {
         "door-fix-1.jpg": "",
         "door-fix-2.jpg": "",
         "door-fix-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/doug-firefighter-lightbar": {
       "title": "Doug Firefighter Lightbar",
@@ -1509,7 +1583,8 @@
         "doug-firefighter-lightbar-4.jpg": "",
         "doug-firefighter-lightbar-5.jpg": "",
         "doug-firefighter-lightbar-6.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "other/earrings": {
       "title": "Earrings",
@@ -1519,7 +1594,8 @@
         "earrings-2.jpg": "",
         "earrings-3.jpg": "",
         "earrings-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/fence-coat-hangar": {
       "title": "Fence Coat Hangar",
@@ -1527,14 +1603,16 @@
       "captions": {
         "fence-coat-hangar-1.jpg": "",
         "fence-coat-hangar-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/first-date-map-print": {
       "title": "First Date Map Print",
-      "description": "A framed street map with a heart marking one intersection, rendered flat in blocked color. A specific place, kept for a specific reason.",
+      "description": "A framed street map printed in layered colour with the buildings standing proud of the ground, and a red heart marking one intersection. A specific place, kept for a specific reason.",
       "captions": {
         "first-date-map-print-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/flower-petal-bookmarks": {
       "title": "Flower Petal Bookmarks",
@@ -1542,7 +1620,8 @@
       "captions": {
         "flower-petal-bookmarks-1.jpg": "",
         "flower-petal-bookmarks-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/hades-charon-coin": {
       "title": "Hades Charon Coin",
@@ -1550,21 +1629,24 @@
       "captions": {
         "hades-charon-coin-1.jpg": "",
         "hades-charon-coin-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/inspiration-coin": {
       "title": "Inspiration Coin",
-      "description": "A printed table caddy holding an inspiration token and a d20, stacked so both sit within reach of whoever needs them next.",
+      "description": "A printed table caddy stacking an inspiration coin, a d20 and a miniature, so all three sit within reach of whoever needs them next.",
       "captions": {
         "inspiration-coin-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/isolation": {
       "title": "Isolation",
-      "description": "A split diorama with a snowbound peak on one side and a green cliff on the other, one lone figure at the top. Built during a period that the title explains.",
+      "description": "A split diorama with a snowbound peak on one side and a blossoming clifftop garden on the other, a ladder reaching between them and one lone figure at the top of the snow. Built during a period that the title explains.",
       "captions": {
         "isolation-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/manatee": {
       "title": "Manatee",
@@ -1575,7 +1657,8 @@
         "manatee-3.jpg": "",
         "manatee-4.jpg": "",
         "manatee-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/mareep": {
       "title": "Mareep",
@@ -1585,7 +1668,8 @@
         "mareep-2.jpg": "",
         "mareep-3.jpg": "",
         "mareep-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/mario-kart-trophies": {
       "title": "Mario Kart Trophies",
@@ -1597,14 +1681,16 @@
         "mario-kart-trophies-4.jpg": "",
         "mario-kart-trophies-5.jpg": "",
         "mario-kart-trophies-6.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/mothers-day-diorama": {
       "title": "Mothers Day Diorama",
-      "description": "A garden island with two blossoming trees, a stream, a statue and flowers scattered through the grass, set on carved rock. Built as a gift, and it has served as a site banner since.",
+      "description": "A garden island with two blossoming trees flanking a stone statue, flowers scattered through the grass and the whole thing set on carved rock. Built as a gift, and it has served as a site banner since.",
       "captions": {
         "mothers-day-diorama-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/ocean-turtle": {
       "title": "Ocean Turtle",
@@ -1615,11 +1701,12 @@
         "ocean-turtle-3.png": "",
         "ocean-turtle-4.png": "",
         "ocean-turtle-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/oil-rain-lamp": {
       "title": "Oil Rain Lamp",
-      "description": "A restored oil rain lamp, with the oil running down fine lines around a central figure. The hardest part of these is getting them flowing evenly again.",
+      "description": "A restored oil rain lamp, threads of oil running down fine lines around a central figure. Lit from above so the oil catches the light on the way down.",
       "captions": {
         "oil-rain-lamp-1.jpg": "",
         "oil-rain-lamp-2.jpg": "",
@@ -1630,35 +1717,39 @@
         "oil-rain-lamp-7.jpg": "",
         "oil-rain-lamp-8.jpg": "",
         "oil-rain-lamp-9.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/paint-setup": {
       "title": "Paint Setup",
       "description": "The paint rack, fully stocked and sorted by color family, with wet palettes and brushes within reach. Every other project on this site came off this bench.",
       "captions": {
         "paint-setup-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/planters": {
       "title": "Planters",
-      "description": "Ribbed planters printed in deep red and filled with succulents. The vertical fluting hides the layer lines completely, which is the whole reason for the shape.",
+      "description": "A ribbed planter printed in deep red with a pale succulent settled into the top. The vertical fluting turns the print texture into part of the design.",
       "captions": {
         "planters-1.jpg": "",
         "planters-3.jpg": "",
         "planters-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/pokedex": {
       "title": "Pokedex",
-      "description": "A Pokedex printed in red with the shell detail modeled in, closed and roughly palm sized. Printed as a prop, not a working device.",
+      "description": "A Pokedex printed in red with the blue lens and its row of indicator lights inset into the shell, closed and roughly palm sized.",
       "captions": {
         "pokedex-1.jpg": "",
         "pokedex-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/pressed-flowers": {
       "title": "Pressed Flowers",
-      "description": "Real flowers pressed and set into resin panels over colored backings, each arrangement built around a single stem. The blue backings let the dried stems read as silhouettes.",
+      "description": "Real flowers pressed and sealed over coloured backings, each panel built around a stem or two. The blue grounds let the dried stems read as silhouettes.",
       "captions": {
         "pressed-flowers-1.png": "",
         "pressed-flowers-2.jpg": "",
@@ -1667,29 +1758,33 @@
         "pressed-flowers-5.jpg": "",
         "pressed-flowers-6.jpg": "",
         "pressed-flowers-7.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/printed-fancy-wallet": {
       "title": "Printed Fancy Wallet",
-      "description": "A printed wallet with a hinged cover, holding cards and folded bills in a body thin enough to pocket. The hinge is printed as part of the shell rather than assembled.",
+      "description": "A printed wallet with a pivoting cover, holding cards and folded bills in a body thin enough to pocket. The cover swings clear rather than lifting off.",
       "captions": {
         "printed-fancy-wallet-1.png": "",
         "printed-fancy-wallet-2.mp4": ""
-      }
+      },
+      "reviewed": true
     },
     "other/real-potions": {
       "title": "Real Potions",
       "description": "Cork-stoppered bottles filled with colored liquid in red, green and blue, in three different vessel shapes. Real glass, real liquid, effects unverified.",
       "captions": {
         "real-potions-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/refurbished-shelf": {
       "title": "Refurbished Shelf",
       "description": "A rebuilt display shelf holding the plant and insect builds together, each on its own level with the terrariums at the bottom. The shelf was the project; the contents moved in afterward.",
       "captions": {
         "refurbished-shelf-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/rocket-league-diorama": {
       "title": "Rocket League Diorama",
@@ -1698,25 +1793,28 @@
         "rocket-league-diorama-1.jpg": "",
         "rocket-league-diorama-2.jpg": "",
         "rocket-league-diorama-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/scarearium": {
       "title": "Scarearium",
-      "description": "A graveyard terrarium in a glass cube, with a bare wire tree, headstones, a tomb and scattered bone over dark soil. A terrarium that cannot die, which is thematically correct.",
+      "description": "A graveyard terrarium in a glass cube, with a bare tree, headstones, a tomb and a raven picking over the leaf litter. A terrarium that cannot die, which is thematically correct.",
       "captions": {
         "scarearium-1.jpg": "",
         "scarearium-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/spice-rack": {
       "title": "Spice Rack",
-      "description": "Rotating bottle holders that pull five jars out of the dead space at the back of the cabinet, turning a shelf you had to dig through into one you can read at a glance.",
+      "description": "Printed cradles holding five spice jars in a row, each with a window cut so the label shows. Turns a shelf you had to dig through into one you can read at a glance.",
       "captions": {
         "spice-rack-1.jpg": "",
         "spice-rack-2.gif": "",
         "spice-rack-3.jpg": "",
         "spice-rack-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "other/uss-congress": {
       "title": "USS Congress",
@@ -1730,27 +1828,30 @@
         "uss-congress-6.jpg": "",
         "uss-congress-7.png": "",
         "uss-congress-8.png": ""
-      }
+      },
+      "reviewed": true
     },
     "other/witchlight-carnival-tickets": {
       "title": "Witchlight Carnival Tickets",
-      "description": "Holographic carnival tickets printed and cut as table handouts, each one listing its own attraction. Props that get passed to players rather than looked at on a shelf.",
+      "description": "Holographic Witchlight Carnival tickets printed and cut as table handouts, complete with terms and conditions on the back. Props that get passed to players rather than looked at on a shelf.",
       "captions": {
         "witchlight-carnival-tickets-1.jpg": "",
         "witchlight-carnival-tickets-2.jpg": "",
         "witchlight-carnival-tickets-3.jpg": "",
         "witchlight-carnival-tickets-4.mp4": "",
         "witchlight-carnival-tickets-5.mp4": ""
-      }
+      },
+      "reviewed": true
     },
     "other/wizard-wars": {
       "title": "Wizard Wars",
-      "description": "An original wizard duelling game, complete with a spellbook board, illustrated casters and a start token. Designed, drawn and built from scratch.",
+      "description": "An original wizard duelling game, its title screen built around an open spellbook with four casters spilling off the page and a START orb below. Designed, drawn and built from scratch.",
       "captions": {
         "wizard-wars-1.png": "",
         "wizard-wars-demo-gif.gif": "",
         "wizard-wars-fire-gif.gif": ""
-      }
+      },
+      "reviewed": true
     },
     "banners/site": {
       "title": "Site",
