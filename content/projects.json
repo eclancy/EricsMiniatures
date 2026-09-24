@@ -13,11 +13,12 @@
     },
     "miniatures/armored-jeep": {
       "title": "Armored Jeep",
-      "description": "A scrap-plated gun truck, weathered with rust and chipping down to bare metal. The hand-painted smiley on the hood clears up any confusion about whose side it is on.",
+      "description": "A jeep plated in scrap with a corrugated ram on the front and a twin-barrelled turret bolted to the bed, rusted and chipped down to bare metal. The hand-painted smiley on the ram plate clears up any confusion about whose side it is on.",
       "captions": {
         "armored-jeep-1.jpg": "",
         "armored-jeep-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/artificer": {
       "title": "Artificer",
@@ -35,7 +36,8 @@
         "ballista-1.jpg": "",
         "ballista-2.jpg": "",
         "ballista-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/big-kraken": {
       "title": "Big Kraken",
@@ -46,7 +48,8 @@
         "big-kraken-3.jpg": "",
         "big-kraken-4.jpg": "",
         "big-kraken-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/blimpy": {
       "title": "Blimpy",
@@ -63,48 +66,53 @@
     },
     "miniatures/bloody-vampire": {
       "title": "Bloody Vampire",
-      "description": "A vampire mid-gloat over a fresh kill, cape lined in deep blue, standing on cobblestones that took more red than was strictly necessary.",
+      "description": "A vampire mid-gloat with bat wings spread and a sword in hand, standing over a dismembered body on bloodied cobblestones. That base took more red than was strictly necessary.",
       "captions": {
         "bloody-vampire-1.jpg": "",
         "bloody-vampire-2.jpg": "",
         "bloody-vampire-3.jpg": "",
         "bloody-vampire-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/blue-cloaker": {
       "title": "Blue Cloaker",
-      "description": "A cloaker drifting on a clear flight stand, blue across the back and pale underneath, with a mouth full of teeth you notice slightly too late.",
+      "description": "A cloaker drifting on a clear flight stand, deep blue with a row of amber eyes down its edge and long pale fangs curving out of the dark. You notice the teeth slightly too late.",
       "captions": {
         "blue-cloaker-1.jpg": "",
         "blue-cloaker-2.jpg": "",
         "blue-cloaker-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/blue-dragonborn-paladin": {
       "title": "Blue Dragonborn Paladin",
-      "description": "A dragonborn paladin caught mid-stride, red cloak streaming behind and a flaming sword raised. The cloak and the flame were painted to read as the same gust of motion.",
+      "description": "A blue-scaled dragonborn paladin in gold armour, red cloak streaming behind and a translucent flame blade raised overhead. The cloak and the flame carry the same sweep of motion.",
       "captions": {
         "blue-dragonborn-paladin-1.jpg": "",
         "blue-dragonborn-paladin-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/brain-collector": {
       "title": "Brain Collector",
-      "description": "A neothelid bristling with eyes and grasping claws, its dome studded with pale brains under teal and acid-green glazes. Nothing about it is reassuring.",
+      "description": "A dome of pale brain sacs carried on a crab-like body in teal and acid green, studded with pink eyes and grasping claws. Nothing about it is reassuring.",
       "captions": {
         "brain-collector-1.jpg": "",
         "brain-collector-2.jpg": "",
         "brain-collector-3.jpg": "",
         "brain-collector-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/brutal-gnoll": {
       "title": "Brutal Gnoll",
-      "description": "A gnoll warlord mid-swing with axe and shield, standing on flagstones. The golden armor plates catch the light against all that matted fur.",
+      "description": "A gnoll mid-swing with a bloodied axe and a small round shield, standing on cobblestones. The gold armour plates catch the light against all that matted fur.",
       "captions": {
         "brutal-gnoll-1.jpg": "",
         "brutal-gnoll-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/bush-sneaky-man": {
       "title": "Bush Sneaky Man",
@@ -121,7 +129,8 @@
       "captions": {
         "cassan-1.jpg": "",
         "cassan-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/clockwork-dragon": {
       "title": "Clockwork Dragon",
@@ -132,23 +141,26 @@
         "clockwork-dragon-3.jpg": "",
         "clockwork-dragon-4.jpg": "",
         "clockwork-dragon-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/cloud-of-daggers": {
       "title": "Cloud Of Daggers",
       "description": "A spell effect made physical: a fan of blades suspended over a single base, hovering in formation and waiting for someone to walk through.",
       "captions": {
         "cloud-of-daggers-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/corgi-armored": {
       "title": "Corgi Armored",
-      "description": "A corgi in full barding on a cobblestone base. Stubby legs, plate armor, complete confidence.",
+      "description": "A corgi in full plate barding on a cobblestone base, with a tiny blade clamped in its mouth. Stubby legs, complete confidence.",
       "captions": {
         "corgi-armored-1.jpg": "",
         "corgi-armored-2.jpg": "",
         "corgi-armored-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/dark-raven": {
       "title": "Dark Raven",
@@ -156,27 +168,30 @@
       "captions": {
         "dark-raven-1.jpg": "",
         "dark-raven-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/death-tyrant": {
       "title": "Death Tyrant",
-      "description": "A beholder skull with its eyestalks rebuilt from pale pink nerve and a single violet central eye. Death did not noticeably improve its attitude.",
+      "description": "A beholder reduced to a bone skull, its eyestalks regrown as pink nerve tipped with glowing amber, around a single violet central eye. Death did not noticeably improve its attitude.",
       "captions": {
         "death-tyrant-1.jpg": "",
         "death-tyrant-2.jpg": "",
         "death-tyrant-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/devil-lady": {
       "title": "Devil Lady",
-      "description": "A winged devil standing with both wings thrown wide, the membranes glazed red over a lighter underpaint so they read as translucent. The armor is kept hot red to match.",
+      "description": "A horned devil with both wings thrown wide, red along every rib and fading to pale violet across the membranes. The armour is kept hot red to match.",
       "captions": {
         "devil-lady-1.jpg": "",
         "devil-lady-2.jpg": "",
         "devil-lady-3.jpg": "",
         "devil-lady-4.jpg": "",
         "devil-lady-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/displacer-beast": {
       "title": "Displacer Beast",
@@ -184,7 +199,8 @@
       "captions": {
         "displacer-beast-1.jpg": "",
         "displacer-beast-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/displacer-beast-mutilated": {
       "title": "Displacer Beast Mutilated",
@@ -199,20 +215,22 @@
     },
     "miniatures/doppelganger-print": {
       "title": "Doppelganger Print",
-      "description": "A doppelganger printed and painted in flat featureless blue, left deliberately without detail. That blankness is the whole point of the creature.",
+      "description": "A doppelganger printed and painted in featureless blue, the face left completely blank. That blankness is the whole point of the creature.",
       "captions": {
         "doppelganger-print-1.jpg": "",
         "doppelganger-print-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/dragonborn-with-crows": {
       "title": "Dragonborn With Crows",
-      "description": "A dragonborn in blue and gold with a serrated blade, wreathed in wire smoke. The smoke is teased steel wool, which behaves about as well as you would expect.",
+      "description": "A dragonborn in silver armour with a blue sash, a serrated blade in hand and a column of steel-wool smoke rising behind with crows breaking out of it. The steel wool behaves about as well as you would expect.",
       "captions": {
         "dragonborn-with-crows-1.jpg": "",
         "dragonborn-with-crows-2.jpg": "",
         "dragonborn-with-crows-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/dungeon-doggy-monty": {
       "title": "Dungeon Doggy Monty",
@@ -232,14 +250,16 @@
         "dungeon-doggy-tobias-1.jpg": "",
         "dungeon-doggy-tobias-2.jpg": "",
         "dungeon-doggy-tobias-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/early-orc-warrior": {
       "title": "Early Orc Warrior",
-      "description": "An orc mid-swing with a curved blade and a battered shield. Early work, and the mottled green skin shows where the technique was still being figured out.",
+      "description": "An orc mid-swing with a bloodied curved blade and a battered shield. Early work, and the mottled green skin shows where the technique was still being figured out.",
       "captions": {
         "early-orc-warrior-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/elf-archer": {
       "title": "Elf Archer",
@@ -255,11 +275,12 @@
     },
     "miniatures/elf-sniper": {
       "title": "Elf Sniper",
-      "description": "An elf braced low over a long rifle on a scrubby tuft of ground. The pose is all weight and patience.",
+      "description": "An elf advancing with a long rifle levelled, in a green tunic with grey hair, crossing a patch of scrub and dried grass. The pose is all forward weight.",
       "captions": {
         "elf-sniper-1.jpg": "",
         "elf-sniper-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/eric-albright": {
       "title": "Eric Albright",
@@ -267,7 +288,8 @@
       "captions": {
         "eric-albright-1.jpg": "",
         "eric-albright-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/fairy-flies": {
       "title": "Fairy Flies",
@@ -275,24 +297,27 @@
       "captions": {
         "fairy-flies-1.jpg": "",
         "fairy-flies-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/familiar-fish": {
       "title": "Familiar Fish",
-      "description": "A small blue fish familiar surfacing on a sandy base scattered with coral. Tiny, wide-eyed, and entirely out of its depth.",
+      "description": "A small blue fish familiar with a red eye and a mouth full of yellow teeth, mounted over a sandy base scattered with coral. Tiny, toothy, and entirely out of its depth.",
       "captions": {
         "familiar-fish-1.jpg": "",
         "familiar-fish-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/fiery-martial-arts-robot": {
       "title": "Fiery Martial Arts Robot",
-      "description": "A robot mid-kata with flames breaking from its fists and feet, the fire built from wire and blended orange to yellow. The chrome body was kept cold so the flames carry the heat.",
+      "description": "A robot mid-kata with fire breaking from both fists and feet, teased out of steel wool and blended orange into yellow. The body is painted in the same heat, so the whole figure reads as burning.",
       "captions": {
         "fiery-martial-arts-robot-1.jpg": "",
         "fiery-martial-arts-robot-2.jpg": "",
         "fiery-martial-arts-robot-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/fire-truck-war-wagon": {
       "title": "Fire Truck War Wagon",
@@ -302,14 +327,16 @@
         "fire-truck-war-wagon-2.jpg": "",
         "fire-truck-war-wagon-3.jpg": "",
         "fire-truck-war-wagon-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/first-orc": {
       "title": "First Orc",
       "description": "The first orc, arms raised in triumph. Chunky, cheerful, and kept exactly as painted, because everyone should be able to see where they started.",
       "captions": {
         "first-orc-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/first-pixie": {
       "title": "First Pixie",
@@ -326,16 +353,18 @@
         "fox-samurai-1.jpg": "",
         "fox-samurai-2.jpg": "",
         "fox-samurai-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/francis-the-corgi": {
       "title": "Francis The Corgi",
-      "description": "A corgi hauling a strapped-on jetpack rig, tongue out, entirely unbothered by the payload. Named, and clearly beloved.",
+      "description": "A corgi in a strapped-on jetpack rig with the exhaust blooming pink underneath, entirely unbothered by the payload. Named, and clearly beloved.",
       "captions": {
         "francis-the-corgi-1.jpg": "",
         "francis-the-corgi-2.jpg": "",
         "francis-the-corgi-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/frog-demon": {
       "title": "Frog Demon",
@@ -344,14 +373,16 @@
         "frog-demon-1.jpg": "",
         "frog-demon-2.jpg": "",
         "frog-demon-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/gargoyles": {
       "title": "Gargoyles",
-      "description": "A rank of gargoyles lined up wing to wing, still in bare metal. Assembled and ready for primer, waiting their turn.",
+      "description": "A rank of gargoyles lined up wing to wing, still unpainted. Six identical snarls, all waiting their turn.",
       "captions": {
         "gargoyles-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/garren-bromson": {
       "title": "Garren Bromson",
@@ -374,7 +405,8 @@
         "gelatinous-cube-3.jpg": "",
         "gelatinous-cube-4.jpg": "",
         "gelatinous-cube-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/gibbering-mouthers": {
       "title": "Gibbering Mouthers",
@@ -382,7 +414,8 @@
       "captions": {
         "gibbering-mouthers-1.jpg": "",
         "gibbering-mouthers-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/girl-on-beach": {
       "title": "Girl On Beach",
@@ -391,15 +424,17 @@
         "girl-on-beach-1.jpg": "",
         "girl-on-beach-2.jpg": "",
         "girl-on-beach-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/hellhound": {
       "title": "Hellhound",
-      "description": "A hellhound stalking across cracked magma, its coat blended from dark brown at the shoulders to glowing orange along the spine and tail. The base glows to match.",
+      "description": "A hellhound stalking across cracked magma, its coat blended orange into yellow with smoke curling off its paws. The base glows to match.",
       "captions": {
         "hellhound-1.jpg": "",
         "hellhound-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/ice-elemental": {
       "title": "Ice Elemental",
@@ -407,15 +442,17 @@
       "captions": {
         "ice-elemental-1.jpg": "",
         "ice-elemental-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/jergal-angels": {
       "title": "Jergal Angels",
-      "description": "A matched pair of grey-winged angels in dark robes, each holding a blade and a green flame, standing in snow. Identical twins, down to the freehand on the robes.",
+      "description": "A matched pair of grey-winged angels in dark robes, each holding a blade and a green flame over a snow base. Identical down to the red sigil freehanded on both robes.",
       "captions": {
         "jergal-angels-1.jpg": "",
         "jergal-angels-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/laser-car": {
       "title": "Laser Car",
@@ -424,7 +461,8 @@
         "laser-car-1.jpg": "",
         "laser-car-2.jpg": "",
         "laser-car-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/le-monte-claire": {
       "title": "Le Monte Claire",
@@ -463,14 +501,16 @@
         "little-imp-1.jpg": "",
         "little-imp-2.jpg": "",
         "little-imp-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/little-lime-octopus": {
       "title": "Little Lime Octopus",
       "description": "A tiny octopus in lime green with its arms curled under, painted with a wash that pools in the suckers. No base, no context, just a good octopus.",
       "captions": {
         "little-lime-octopus-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/lord-of-bones": {
       "title": "Lord Of Bones",
@@ -480,7 +520,8 @@
         "lord-of-bones-2.jpg": "",
         "lord-of-bones-3.jpg": "",
         "lord-of-bones-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/lord-of-murder": {
       "title": "Lord Of Murder",
@@ -490,7 +531,8 @@
         "lord-of-murder-2.jpg": "",
         "lord-of-murder-3.jpg": "",
         "lord-of-murder-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/lord-of-war": {
       "title": "Lord Of War",
@@ -498,24 +540,27 @@
       "captions": {
         "lord-of-war-1.jpg": "",
         "lord-of-war-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/machine-gun-buggy": {
       "title": "Machine Gun Buggy",
-      "description": "A skeletal dune buggy with a gunner standing at an exposed mount, built from open tube framing. There is no bodywork anywhere on it, which feels like a choice.",
+      "description": "A skeletal dune buggy of open tube framing with a gunner standing at an exposed mount. Almost no bodywork anywhere on it, which feels like a choice.",
       "captions": {
         "machine-gun-buggy-1.jpg": "",
         "machine-gun-buggy-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/marelle-usinee": {
       "title": "Marelle Usinee",
-      "description": "A character in segmented blue armor with an oversized mechanical arm, standing on planking. Painted cool throughout so the one warm face stands out.",
+      "description": "A character in segmented blue armour with an oversized mechanical arm, conjuring a blue flame in the other hand, standing on planking. Painted cool throughout so the one warm face stands out.",
       "captions": {
         "marelle-usinee-1.jpg": "",
         "marelle-usinee-2.jpg": "",
         "marelle-usinee-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/master-lich": {
       "title": "Master Lich",
@@ -524,22 +569,25 @@
         "master-lich-1.jpg": "",
         "master-lich-2.jpg": "",
         "master-lich-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/mega-arcanine": {
       "title": "Mega Arcanine",
       "description": "A repainted Arcanine bulked up into its mega form, orange coat streaked with black tiger striping, shown next to the original figure and a Funko for scale.",
       "captions": {
         "mega-arcanine-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/mimics": {
       "title": "Mimics",
-      "description": "Two chests caught mid-transformation, lids peeled back into rings of teeth with tongues lolling out. Never trust furniture.",
+      "description": "A barrel and a chest caught mid-transformation, both peeled open into rings of teeth with tongues lolling out. Never trust furniture.",
       "captions": {
         "mimics-1.jpg": "",
         "mimics-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/mind-flayers": {
       "title": "Mind Flayers",
@@ -547,23 +595,26 @@
       "captions": {
         "mind-flayers-1.jpg": "",
         "mind-flayers-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/missle-junker": {
       "title": "Missle Junker",
       "description": "A battered sedan in faded blue with a missile strapped across the roof and mesh over the windows. Rust weathering over most of the panels.",
       "captions": {
         "missle-junker-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/mutated-abomination": {
       "title": "Mutated Abomination",
-      "description": "A pale spined horror with one central eye, torn tendrils, and a whipping tail, standing on flat green. The raw red on the tendril ends is the only warm color on it.",
+      "description": "A pale spined horror with a red-ringed central eye over two amber ones, dragging a whipping tail and clutching a scrap of raw flesh. The red is the only warm colour anywhere on it.",
       "captions": {
         "mutated-abomination-1.jpg": "",
         "mutated-abomination-2.jpg": "",
         "mutated-abomination-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/new-owlbear": {
       "title": "New Owlbear",
@@ -574,7 +625,8 @@
         "new-owlbear-3.jpg": "",
         "new-owlbear-4.jpg": "",
         "new-owlbear-5.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/oarfish": {
       "title": "Oarfish",
@@ -583,7 +635,8 @@
         "oarfish-1.jpg": "",
         "oarfish-2.jpg": "",
         "oarfish-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/orange-warrior": {
       "title": "Orange Warrior",
@@ -591,14 +644,16 @@
       "captions": {
         "orange-warrior-1.jpg": "",
         "orange-warrior-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/orc-carnival-master": {
       "title": "Orc Carnival Master",
-      "description": "An orc ringmaster in a purple tailcoat and top hat, leaning on a cane. The carnival is presumably not a safe one.",
+      "description": "An orc ringmaster in a purple tailcoat and top hat, holding a cane with an orange knob. The carnival is presumably not a safe one.",
       "captions": {
         "orc-carnival-master-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/organ-monstrosity": {
       "title": "Organ Monstrosity",
@@ -608,7 +663,8 @@
         "organ-monstrosity-2.jpg": "",
         "organ-monstrosity-3.jpg": "",
         "organ-monstrosity-4.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/otyugh-lava": {
       "title": "Otyugh Lava",
@@ -617,7 +673,8 @@
         "otyugh-lava-1.jpg": "",
         "otyugh-lava-2.jpg": "",
         "otyugh-lava-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/purple-worm": {
       "title": "Purple Worm",
@@ -632,19 +689,21 @@
     },
     "miniatures/rainbow-beetles": {
       "title": "Rainbow Beetles",
-      "description": "Two beetles with iridescent shells, shifting blue to violet depending on the angle, on cracked earth bases. The shimmer is layered glaze, not a single color.",
+      "description": "Two beetles on cracked earth bases, one shelled in iridescent blue-violet and the other in warm brown. The shimmer on the first is layered glaze rather than a single colour.",
       "captions": {
         "rainbow-beetles-1.jpg": "",
         "rainbow-beetles-2.jpg": "",
         "rainbow-beetles-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/ritual-circle": {
       "title": "Ritual Circle",
       "description": "A ring of standing stones set with skulls and candles, built as a free-standing scatter piece. Drop it on the table and everyone immediately knows what is about to happen.",
       "captions": {
         "ritual-circle-1.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/ritual-cultist": {
       "title": "Ritual Cultist",
@@ -652,15 +711,17 @@
       "captions": {
         "ritual-cultist-1.jpg": "",
         "ritual-cultist-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/rot-fountain": {
       "title": "Rot Fountain",
-      "description": "A carved stone fountain with a basin of stagnant yellow-green sludge, rendered thick and glossy. Nobody is drinking from this one.",
+      "description": "A carved stone fountain pouring something dark red into a basin of stagnant yellow-green sludge, both rendered thick and glossy. Nobody is drinking from this one.",
       "captions": {
         "rot-fountain-1.jpg": "",
         "rot-fountain-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/rust-monster": {
       "title": "Rust Monster",
@@ -669,7 +730,8 @@
         "rust-monster-1.jpg": "",
         "rust-monster-2.jpg": "",
         "rust-monster-3.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/rusted-frames": {
       "title": "Rusted Frames",
@@ -677,7 +739,8 @@
       "captions": {
         "rusted-frames-1.jpg": "",
         "rusted-frames-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/sahuaghin-trident": {
       "title": "Sahuaghin Trident",
@@ -685,7 +748,8 @@
       "captions": {
         "sahuaghin-trident-1.jpg": "",
         "sahuaghin-trident-2.jpg": ""
-      }
+      },
+      "reviewed": true
     },
     "miniatures/skeleton-archers": {
       "title": "Skeleton Archers",
