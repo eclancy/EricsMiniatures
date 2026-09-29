@@ -135,6 +135,9 @@ async function main() {
         // Optional manual position in the gallery. Projects with an order come
         // first, lowest first; everything else follows alphabetically.
         ...(existing.order !== undefined ? { order: existing.order } : {}),
+        // Whether the copy has been checked against the real photos. Must be
+        // carried across, or a rescan silently discards the whole review.
+        ...(existing.reviewed ? { reviewed: true } : {}),
         captions: photos.reduce((acc, photo) => {
           acc[photo.file] = existing.captions?.[photo.file] ?? '';
           return acc;

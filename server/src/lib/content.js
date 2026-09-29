@@ -38,9 +38,10 @@ const SECTION_META = {
     blurb: "Other projects I've worked on, including 3d printing, creating games, and anything else I think is cool enough to share.",
     bannerTitle: 'Other Projects',
     bannerDescription: 'Check out some of the other things I spend time on',
-    // An animated GIF. The home page used to set it as a CSS background, where
-    // it played; the card requests the animated derivative to keep that.
-    preview: { project: 'wizard-wars', file: 'wizard-wars-fire-gif.gif' },
+    // Was the Wizard Wars fire GIF, matching the original site. That project
+    // was a video game rather than a build, so it was removed and the card
+    // moved to the scarearium.
+    preview: { project: 'scarearium', file: 'scarearium-1.jpg' },
   },
 };
 

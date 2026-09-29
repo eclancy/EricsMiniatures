@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T04:49:26.222Z",
+  "generatedAt": "2026-09-29T03:39:08.912Z",
   "sections": {
     "banners": {
       "slug": "banners",
@@ -205,8 +205,7 @@
         "scarearium",
         "spice-rack",
         "uss-congress",
-        "witchlight-carnival-tickets",
-        "wizard-wars"
+        "witchlight-carnival-tickets"
       ]
     }
   },
@@ -7275,45 +7274,6 @@
           "bytes": 6037370,
           "order": 5,
           "kind": "video"
-        }
-      ]
-    },
-    "other/wizard-wars": {
-      "section": "other",
-      "slug": "wizard-wars",
-      "cover": "wizard-wars-1.png",
-      "photos": [
-        {
-          "file": "wizard-wars-1.png",
-          "bytes": 961027,
-          "order": 1,
-          "kind": "image",
-          "width": 1093,
-          "height": 785,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABwAgCdASoQAAsABABsJYgCdAYsjvuO7wFFxOMAAP6t6XxAR7iV5O9pswwxONlV0EnwMikvkmM7WL2NQ8sjWKGGoH82IGJqImk+ZD6rHkhRnzLn6zVsfQO2EFikSS8KEGAAAA=="
-        },
-        {
-          "file": "wizard-wars-demo-gif.gif",
-          "bytes": 10721729,
-          "order": 9007199254740991,
-          "kind": "animated",
-          "width": 1482,
-          "height": 926,
-          "frames": 569,
-          "animatable": true,
-          "blur": "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoQAAoABABsJaQAA3AA/vLjAAA="
-        },
-        {
-          "file": "wizard-wars-fire-gif.gif",
-          "bytes": 976559,
-          "order": 9007199254740991,
-          "kind": "animated",
-          "width": 598,
-          "height": 429,
-          "frames": 129,
-          "animatable": true,
-          "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQAAsABABsJbACdADWNtYAAMfHtkp0gxHcoNn1Udjd9wiU4ZS0x0+AJa76YuAA"
         }
       ]
     }
