@@ -134,7 +134,7 @@
     },
     "miniatures/clockwork-dragon": {
       "title": "Clockwork Dragon",
-      "description": "A brass clockwork dragon with exposed gearwork and patchwork stained-glass wings. The wing panels are painted individually, which is why it took as long as it did.",
+      "description": "A brass clockwork dragon with exposed gearwork, its wings patched together from different coloured pieces of cloth. Each panel was painted individually, which is why it took as long as it did.",
       "reviewed": true,
       "captions": {
         "clockwork-dragon-1.jpg": "",
@@ -215,7 +215,7 @@
     },
     "miniatures/doppelganger-print": {
       "title": "Doppelganger Print",
-      "description": "A doppelganger printed and painted in featureless blue, the face left completely blank. That blankness is the whole point of the creature.",
+      "description": "A doppelganger resin printed and painted in featureless blue, carrying almost no detail anywhere on the body. Nothing about its shape is settled, which is the whole point of the creature.",
       "reviewed": true,
       "captions": {
         "doppelganger-print-1.jpg": "",
@@ -224,7 +224,7 @@
     },
     "miniatures/dragonborn-with-crows": {
       "title": "Dragonborn With Crows",
-      "description": "A dragonborn in silver armour with a blue sash, a serrated blade in hand and a column of steel-wool smoke rising behind with crows breaking out of it. The steel wool behaves about as well as you would expect.",
+      "description": "A dragonborn in silver armour and a blue sash, quietly smoking a pipe with two crows perched on him and a serrated blade still in hand. The smoke is stuffing, teased out and painted.",
       "reviewed": true,
       "captions": {
         "dragonborn-with-crows-1.jpg": "",
@@ -311,7 +311,7 @@
     },
     "miniatures/fiery-martial-arts-robot": {
       "title": "Fiery Martial Arts Robot",
-      "description": "A robot mid-kata with fire breaking from both fists and feet, teased out of steel wool and blended orange into yellow. The body is painted in the same heat, so the whole figure reads as burning.",
+      "description": "A robot mid-kata, training in lava with flame breaking off his hands and feet, teased out of painted stuffing. The orange and yellow across his body is object source lighting - the glow of the lava thrown back up onto him.",
       "reviewed": true,
       "captions": {
         "fiery-martial-arts-robot-1.jpg": "",
@@ -398,7 +398,7 @@
     },
     "miniatures/gelatinous-cube": {
       "title": "Gelatinous Cube",
-      "description": "A translucent cube of digestive jelly, cast clear and tinted from acid yellow at the top down to a murky green at the floor. Whatever it ate is long gone.",
+      "description": "A clear cube glazed to blend from acid yellow at the top down into murky green, translucent the whole way through. A miniature fits inside it, though this one is currently between meals.",
       "reviewed": true,
       "captions": {
         "gelatinous-cube-1.jpg": "",
@@ -438,7 +438,7 @@
     },
     "miniatures/ice-elemental": {
       "title": "Ice Elemental",
-      "description": "An elemental cast in translucent blue with a shard of ice erupting beside it, left mostly unpainted so the light travels through the resin.",
+      "description": "A translucent blue elemental with white drybrushed along every edge and facet, a crystal cluster erupting beside it. The blue is the miniature itself; the white is all that was added.",
       "reviewed": true,
       "captions": {
         "ice-elemental-1.jpg": "",
@@ -446,8 +446,8 @@
       }
     },
     "miniatures/jergal-angels": {
-      "title": "Jergal Angels",
-      "description": "A matched pair of grey-winged angels in dark robes, each holding a blade and a green flame over a snow base. Identical down to the red sigil freehanded on both robes.",
+      "title": "Jergal's Angels",
+      "description": "A matched pair of grey-winged angels in dark robes edged with sharp white trim, each holding a blade and a green flame over a snow base. Identical down to the red sigil freehanded on both robes.",
       "reviewed": true,
       "captions": {
         "jergal-angels-1.jpg": "",
@@ -506,7 +506,7 @@
     },
     "miniatures/little-lime-octopus": {
       "title": "Little Lime Octopus",
-      "description": "A tiny octopus in lime green with its arms curled under, painted with a wash that pools in the suckers. No base, no context, just a good octopus.",
+      "description": "A tiny octopus in lime green with its arms curled under, the colour layered up by hand rather than washed on. No base, no context, just a good octopus.",
       "reviewed": true,
       "captions": {
         "little-lime-octopus-1.jpg": ""
@@ -564,7 +564,7 @@
     },
     "miniatures/master-lich": {
       "title": "Master Lich",
-      "description": "A lich standing beneath a ribbed stone arch, holding an open spellbook glowing green, on a checkered floor. The freehand tiles were the real project.",
+      "description": "A resin-printed lich beneath a ribbed stone arch, holding an open spellbook that glows green. The checkered floor came with the print rather than being freehanded on - it only needed painting to read as tile.",
       "reviewed": true,
       "captions": {
         "master-lich-1.jpg": "",
@@ -689,7 +689,7 @@
     },
     "miniatures/rainbow-beetles": {
       "title": "Rainbow Beetles",
-      "description": "Two beetles with iridescent shells on cracked earth bases, the colour shifting depending on the angle you catch them at. The shimmer is layered glaze rather than a single colour.",
+      "description": "Two beetles with iridescent shells on cracked earth bases, the colour shifting depending on the angle you catch them at. The shimmer comes out of an iridescent airbrush paint rather than layered glazing.",
       "reviewed": true,
       "captions": {
         "rainbow-beetles-1.jpg": "",
@@ -742,15 +742,6 @@
         "rusted-frames-2.jpg": ""
       }
     },
-    "miniatures/sahuaghin-trident": {
-      "title": "Sahuaghin Trident",
-      "description": "A sahuagin lunging with trident in hand, painted in mottled green over a lighter belly. The skin is stippled rather than blended, so it reads as scaly from a distance.",
-      "reviewed": true,
-      "captions": {
-        "sahuaghin-trident-1.jpg": "",
-        "sahuaghin-trident-2.jpg": ""
-      }
-    },
     "miniatures/skeleton-archers": {
       "title": "Skeleton Archers",
       "description": "Two skeletons drawing longbows on bright green bases, ribs and joints picked out in bone and shadow. Cheap troops, endlessly reusable.",
@@ -762,7 +753,7 @@
     },
     "miniatures/slagfist": {
       "title": "Slagfist",
-      "description": "An armored fighter flanked by two dome-shelled drones on articulated legs. The freehand gold filigree on the central base is the detail worth looking for.",
+      "description": "An armoured fighter flanked by two dome-shelled drones on articulated legs. The gold on the central base is a crackle paint, doing the work of texture on its own.",
       "reviewed": true,
       "captions": {
         "slagfist-1.jpg": "",
@@ -773,7 +764,7 @@
     },
     "miniatures/sludge-monster": {
       "title": "Sludge Monster",
-      "description": "A pale bloated giant dragging chains, hide stretched over a gaping torso cavity, standing on toxic green. The chains are real chain, which is why they hang right.",
+      "description": "A pale bloated giant dragging real jeweller's chain, hide stretched over a gaping torso cavity and dried foliage bursting from its back. The green sludge running off it is translucent and glows under ultraviolet light.",
       "reviewed": true,
       "captions": {
         "sludge-monster-1.jpg": "",
@@ -914,7 +905,7 @@
     },
     "miniatures/water-elemental": {
       "title": "Water Elemental",
-      "description": "An elemental of curling translucent water, left largely unpainted so the light passes straight through the resin. Only the shadows are painted in.",
+      "description": "An elemental of curling water in translucent blue, with white drybrushed onto every crest and spray. The blue is the miniature itself; the white is what makes it read as moving.",
       "reviewed": true,
       "captions": {
         "water-elemental-1.jpg": "",
@@ -1041,7 +1032,7 @@
     },
     "terrain/firestacks": {
       "title": "Firestacks",
-      "description": "Four fire markers lit from inside, with smoke columns teased out of wool above each flame. The glow is real, which is why they photograph so well in the dark.",
+      "description": "Four fire markers lit from inside, with smoke columns teased out of painted stuffing above each flame. The glow is real, which is why they photograph so well in the dark.",
       "reviewed": true,
       "captions": {
         "firestacks-1.jpg": "",
@@ -1616,7 +1607,7 @@
     },
     "other/flower-petal-bookmarks": {
       "title": "Flower Petal Bookmarks",
-      "description": "Pressed petals sealed into bookmark strips, arranged so the autumn tones run in sequence along each one. The flowers are real and preserved flat.",
+      "description": "Pressed petals laminated into bookmark strips, arranged so the autumn tones run in sequence along each one. The flowers are real and preserved flat.",
       "reviewed": true,
       "captions": {
         "flower-petal-bookmarks-1.jpg": "",
@@ -1749,7 +1740,7 @@
     },
     "other/pressed-flowers": {
       "title": "Pressed Flowers",
-      "description": "Real flowers pressed and sealed over coloured backings, each panel built around a stem or two. The blue grounds let the dried stems read as silhouettes.",
+      "description": "Real flowers pressed and laminated over coloured backings, each panel built around a stem or two. The blue grounds let the dried stems read as silhouettes.",
       "reviewed": true,
       "captions": {
         "pressed-flowers-1.png": "",
@@ -1788,7 +1779,7 @@
     },
     "other/rocket-league-diorama": {
       "title": "Rocket League Diorama",
-      "description": "A Rocket League goal moment frozen in place, with the car airborne and a wool smoke trail behind it. The smoke is teased out by hand so it holds the arc.",
+      "description": "A Rocket League goal moment frozen in place, with the car airborne and a smoke trail of painted stuffing behind it. The smoke is teased out by hand so it holds the arc.",
       "reviewed": true,
       "captions": {
         "rocket-league-diorama-1.jpg": "",

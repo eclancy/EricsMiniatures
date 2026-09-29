@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T03:39:08.912Z",
+  "generatedAt": "2026-09-29T05:00:35.277Z",
   "sections": {
     "banners": {
       "slug": "banners",
@@ -85,7 +85,6 @@
         "rot-fountain",
         "rust-monster",
         "rusted-frames",
-        "sahuaghin-trident",
         "skeleton-archers",
         "slagfist",
         "sludge-monster",
@@ -2989,33 +2988,6 @@
           "height": 3024,
           "frames": 1,
           "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAwABABsJZwC7ADweS+oteKAAP7D8bt4ZGJzo/7xG8rPHuIstw/lYmskHxZJHiD2fWyTGRfDPZPcWrAAAA=="
-        }
-      ]
-    },
-    "miniatures/sahuaghin-trident": {
-      "section": "miniatures",
-      "slug": "sahuaghin-trident",
-      "cover": "sahuaghin-trident-1.jpg",
-      "photos": [
-        {
-          "file": "sahuaghin-trident-1.jpg",
-          "bytes": 1936188,
-          "order": 1,
-          "kind": "image",
-          "width": 4032,
-          "height": 3024,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAwABABsJaQAAhdJDZAAAP5UTia1VZlyUv56FkT+YtKzZv4vunTluLnzrxJ2mzF/1jTH8Nc3kIAA"
-        },
-        {
-          "file": "sahuaghin-trident-2.jpg",
-          "bytes": 2092171,
-          "order": 2,
-          "kind": "image",
-          "width": 4032,
-          "height": 3024,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAwABABsJaQAD4MQ6307Y+CAAP5gDGc+F2c3amtPRc+R6bNONblHwl53XfFF90EACxrQDlhF5UI138dgpOzAgAA="
         }
       ]
     },
