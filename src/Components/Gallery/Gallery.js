@@ -25,6 +25,11 @@ function BackToHome() {
 // the grid in Gallery.scss so the browser picks the right srcset candidate.
 const GRID_SIZES = '(max-width: 960px) 92vw, (max-width: 1480px) 46vw, 700px';
 
+// Every tile is the same shape so the grid reads as a grid. 4:3 is the
+// commonest shape in the collection, so most covers lose nothing; the handful
+// of portrait shots are cropped to their centre.
+const TILE_RATIO = '4 / 3';
+
 function pageFromLocation(location) {
   const fromState = location.state?.pageNumber;
   const fromQuery = new URLSearchParams(location.search).get('page');
@@ -141,6 +146,7 @@ export default function Gallery() {
                     photo={project.cover}
                     alt={project.title}
                     sizes={GRID_SIZES}
+                    ratio={TILE_RATIO}
                     // The first row is above the fold on most screens.
                     eager={index < 2}
                     className="projectCard__image"

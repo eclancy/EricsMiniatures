@@ -37,7 +37,7 @@ main {
         }
 
         &__image {
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 4 / 3;
             border-radius: 8px;
             box-shadow: var(--shadow-tile);
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -83,7 +83,7 @@ main {
 
         // Placeholder shown while the first page of metadata loads.
         &--skeleton {
-            aspect-ratio: 16 / 9;
+            aspect-ratio: 4 / 3;
             border-radius: 8px;
             background: linear-gradient(90deg, var(--skeleton-base) 25%, var(--skeleton-sheen) 37%, var(--skeleton-base) 63%);
             background-size: 400% 100%;

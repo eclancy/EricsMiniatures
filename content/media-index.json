@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T05:00:35.277Z",
+  "generatedAt": "2026-09-29T12:36:41.774Z",
   "sections": {
     "banners": {
       "slug": "banners",
@@ -173,12 +173,10 @@
       "projects": [
         "axolotl",
         "bulbasaur",
-        "candle-bowl",
         "clancy-dinner-ornament",
         "currency",
         "daycare-railing-fix",
         "dino-skull",
-        "door-fix",
         "doug-firefighter-lightbar",
         "earrings",
         "fence-coat-hangar",
@@ -5944,33 +5942,6 @@
         }
       ]
     },
-    "other/candle-bowl": {
-      "section": "other",
-      "slug": "candle-bowl",
-      "cover": "candle-bowl-1.jpg",
-      "photos": [
-        {
-          "file": "candle-bowl-1.jpg",
-          "bytes": 7336542,
-          "order": 1,
-          "kind": "image",
-          "width": 4000,
-          "height": 3000,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAwABABsJYwCdAC4KT0LKUAAyW7aA3DPCbIqgPLs5IJVhwyM6b/sXQ+HKWGlDc7MxdsCAvhnD8RZueYTvPfhzCrP/AKuTz85wAAA"
-        },
-        {
-          "file": "candle-bowl-2.png",
-          "bytes": 951371,
-          "order": 2,
-          "kind": "image",
-          "width": 1392,
-          "height": 791,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAkABABsJYwCw7DhhD/wEAAA/u/XSGetOPnSPWCFofvbyZboMA+XoD6zW2s9gFSil5r8gAA="
-        }
-      ]
-    },
     "other/clancy-dinner-ornament": {
       "section": "other",
       "slug": "clancy-dinner-ornament",
@@ -6157,43 +6128,6 @@
           "height": 3072,
           "frames": 1,
           "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAwABABsJZwCdAEOQor+ILAA/VPgFrbVPwZjdw50la5Zd5A0do2b8wvKqkPLh8kpAnfw342pKRlME6Y3W7/5IgAAAA=="
-        }
-      ]
-    },
-    "other/door-fix": {
-      "section": "other",
-      "slug": "door-fix",
-      "cover": "door-fix-1.jpg",
-      "photos": [
-        {
-          "file": "door-fix-1.jpg",
-          "bytes": 3367961,
-          "order": 1,
-          "kind": "image",
-          "width": 4032,
-          "height": 3024,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAwABABsJYwC7AD0mX0gHCuAAPwWhGi6DrEqay/92r0+w/8KZPFvWOloN8Up/R4Fdk/ILz1AAA=="
-        },
-        {
-          "file": "door-fix-2.jpg",
-          "bytes": 3811571,
-          "order": 2,
-          "kind": "image",
-          "width": 4032,
-          "height": 3024,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAwABABsJZwAAi7U/Go5AAD2qz7T5vzAiW+jW7LxlV9YbnZXhHGfaaTUt9DdusRol1xxKgPSWYezDi1wFz8NKhFgQAAA"
-        },
-        {
-          "file": "door-fix-3.jpg",
-          "bytes": 2983484,
-          "order": 3,
-          "kind": "image",
-          "width": 4032,
-          "height": 3024,
-          "frames": 1,
-          "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAABQAQCdASoQAAwABABsJZwAAAAAAJ+gjDfjrLILsNo6B9Md5C8X7TbArVsne+hQAAA="
         }
       ]
     },

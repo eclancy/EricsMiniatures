@@ -15,7 +15,17 @@ const FULL_WIDTHS = [640, 960, 1280, 1600, 1920, 2560];
  * load, shows the inline blur placeholder from the index until the real file
  * arrives, and leaves format selection to the server via content negotiation.
  */
-export default function MediaImage({ photo, alt, sizes, variant, eager, playAnimation, className, onClick }) {
+export default function MediaImage({
+  photo,
+  alt,
+  sizes,
+  variant,
+  eager,
+  playAnimation,
+  ratio: fixedRatio,
+  className,
+  onClick,
+}) {
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
 
@@ -23,7 +33,12 @@ export default function MediaImage({ photo, alt, sizes, variant, eager, playAnim
 
   const widths = variant === 'full' ? FULL_WIDTHS : GRID_WIDTHS;
   const fallbackWidth = variant === 'full' ? 1280 : 640;
-  const ratio = photo.width && photo.height ? `${photo.width} / ${photo.height}` : undefined;
+
+  // A grid of tiles reads better when every tile is the same shape, so callers
+  // can pin one and let the photo be cropped to it. Without a fixed ratio the
+  // frame takes the photo's own, which is what the lightbox wants.
+  const naturalRatio = photo.width && photo.height ? `${photo.width} / ${photo.height}` : undefined;
+  const ratio = fixedRatio || naturalRatio;
 
   // Video has no still derivative; play it inline instead.
   if (photo.kind === 'video') {
