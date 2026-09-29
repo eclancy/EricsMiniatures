@@ -4,8 +4,13 @@
  *
  * Colour, pose and composition are visible. How a piece was made is not: a
  * smooth pink model could be printed, cast or sculpted, and a glow could be an
- * LED or paint. Those claims came from the drafts and need the maker to
- * confirm or correct them.
+ * LED or paint.
+ *
+ * Every claim currently in content/projects.json has been checked with Eric,
+ * so a hit here is no longer a warning - it is a record of what he confirmed
+ * (FDM versus resin, desiccant beads, Woodland Scenics water, jeweller's
+ * chain, painted stuffing rather than steel wool). Run it after adding new
+ * descriptions, where a hit means "ask before publishing this".
  *
  *   node scripts/list-guesses.js          grouped summary
  *   node scripts/list-guesses.js --full   every match with its description

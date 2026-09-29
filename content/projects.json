@@ -839,7 +839,7 @@
     },
     "miniatures/tentacle-pair": {
       "title": "Tentacle Pair",
-      "description": "Two tentacles bursting up through sculpted whitewater, one dark red with pink suckers and the other purple with green barnacles, each on its own base. Sold separately, encountered together.",
+      "description": "Two tentacles bursting up through whitewater, one dark red with pink suckers and the other purple with green barnacles, each on its own base. Sold separately, encountered together.",
       "reviewed": true,
       "captions": {
         "tentacle-pair-1.jpg": ""
@@ -884,7 +884,7 @@
     },
     "miniatures/twilight-imperium-prints": {
       "title": "Twilight Imperium Prints",
-      "description": "A full set of Twilight Imperium fleets printed and painted by faction, laid out across the kitchen table and sorted by color. Every ship in the box, replaced.",
+      "description": "A full set of Twilight Imperium fleets resin printed and painted by faction, laid out across the kitchen table and sorted by colour. Every ship in the box, replaced.",
       "reviewed": true,
       "captions": {
         "twilight-imperium-prints-1.jpg": "",
@@ -977,7 +977,7 @@
     },
     "terrain/coals": {
       "title": "Coals",
-      "description": "A bed of banked coals sculpted across a round base, each lump glazed orange in the cracks and left charred on top. Built to drop under something that is about to be on fire.",
+      "description": "A bed of banked coals on a bought textured base, each lump glazed orange in the cracks and left charred on top. Built to drop under something that is about to be on fire.",
       "reviewed": true,
       "captions": {
         "coals-1.jpg": ""
@@ -1006,7 +1006,7 @@
     },
     "terrain/docks": {
       "title": "Docks",
-      "description": "Modular boardwalk sections on pilings, planked individually and weathered to look waterlogged. They connect in different arrangements so the harbor changes shape.",
+      "description": "Boardwalk sections built from scratch out of wooden dowels, planked individually and weathered to look waterlogged. They are separate pieces, so the harbour changes shape depending on how you lay them out.",
       "reviewed": true,
       "captions": {
         "docks-1.jpg": "",
@@ -1017,7 +1017,7 @@
     },
     "terrain/egg-pit": {
       "title": "Egg Pit",
-      "description": "A nest of glassy orange eggs packed into a dark rock hollow, built up in clusters so the light catches unevenly across the mass.",
+      "description": "A nest of glassy orange eggs packed into a foam rock hollow. The eggs are desiccant beads, built up in clusters so the light catches unevenly across the mass.",
       "reviewed": true,
       "captions": {
         "egg-pit-1.jpg": "",
@@ -1060,7 +1060,7 @@
     },
     "terrain/golden-scales": {
       "title": "Golden Scales",
-      "description": "A set of balance scales built from wire and thin beaten discs, the pans hanging free from a brass beam on a stone base.",
+      "description": "A set of balance scales, resin printed, the pans hanging free from a slender beam on a stone base.",
       "reviewed": true,
       "captions": {
         "golden-scales-1.jpg": "",
@@ -1150,7 +1150,7 @@
     },
     "terrain/ocean-rock": {
       "title": "Ocean Rock",
-      "description": "A flat grey rock rising out of deep blue water, with sculpted foam breaking white around its base. Built as a display plinth as much as terrain.",
+      "description": "A flat slab of pinboard standing in for rock, rising out of deep blue water with the foam sculpted by hand around its base. Built as a display plinth as much as terrain.",
       "reviewed": true,
       "captions": {
         "ocean-rock-1.jpg": ""
@@ -1176,7 +1176,7 @@
     },
     "terrain/puke-fountain": {
       "title": "Puke Fountain",
-      "description": "An ornate fountain producing something that is emphatically not water. The sculpture is elegant; the output is not.",
+      "description": "A bought fountain model with all of the liquid added by hand, the falling stream sculpted out of dried Elmer's glue. The sculpture is elegant; the output is not.",
       "reviewed": true,
       "captions": {
         "puke-fountain-1.jpg": ""
@@ -1298,7 +1298,7 @@
     },
     "terrain/water-fall": {
       "title": "Water Fall",
-      "description": "A waterfall pouring into a rock pool, the falling water sculpted clear and whipped white where it lands. Moss and scree built up the banks around it.",
+      "description": "A waterfall pouring into a rock pool, the falling water built up from Woodland Scenics water effects and whipped white where it lands. Moss and scree built up the banks around it.",
       "reviewed": true,
       "captions": {
         "water-fall-1.jpg": "",
@@ -1466,7 +1466,7 @@
     },
     "modelkits/steampunk-beetles": {
       "title": "Steampunk Beetles",
-      "description": "Two clockwork insects on turned display bases with brass nameplates, one in red with lamp-like eyes and the other in steel and brass. Mechanical kits built to be furniture, not toys.",
+      "description": "Two clockwork insects built from kits and left in their own metal finishes, one in red with lamp-like eyes and the other in steel and brass, mounted on turned bases with brass nameplates. Assembly only, no paint anywhere on them.",
       "reviewed": true,
       "captions": {
         "steampunk-beetles-1.jpg": "",
@@ -1512,7 +1512,7 @@
     },
     "other/clancy-dinner-ornament": {
       "title": "Clancy Dinner Ornament",
-      "description": "A family gathered around the dinner table, printed and hand painted figure by figure on a wood-grain base. Made as an ornament, which is why everyone is recognizable.",
+      "description": "A family gathered around the dinner table, the figures resin printed and hand painted while the table and the food were built from wood and clay, the whole scene set into a styrofoam ornament. Made as a gift, which is why everyone is recognisable.",
       "reviewed": true,
       "captions": {
         "clancy-dinner-ornament-1.jpg": "",
@@ -1527,7 +1527,7 @@
     },
     "other/currency": {
       "title": "Currency",
-      "description": "A set of fantasy currency tokens, each square-cut with its own sculpted face and finished in a different metal. Printed as a batch so the whole set matches in scale.",
+      "description": "A set of fantasy currency tokens, each square-cut with its own sculpted face and finished in a different metal. Resin printed as a batch so the whole set matches in scale.",
       "reviewed": true,
       "captions": {
         "currency-1.jpg": "",
@@ -1547,7 +1547,7 @@
     },
     "other/dino-skull": {
       "title": "Dino Skull",
-      "description": "A large T-Rex skull printed and finished with a bone wash, the teeth left bright against all that aged surface.",
+      "description": "A large T-Rex skull FDM printed and finished with a bone wash, the teeth left bright against all that aged surface.",
       "reviewed": true,
       "captions": {
         "dino-skull-1.jpg": "",
@@ -1641,7 +1641,7 @@
     },
     "other/manatee": {
       "title": "Manatee",
-      "description": "A manatee printed smooth and finished in soft grey, rolled onto its back mid-float. No base, no scene, just a very content sea cow.",
+      "description": "A manatee FDM printed and finished in soft grey, rolled onto its back mid-float. No base, no scene, just a very content sea cow.",
       "reviewed": true,
       "captions": {
         "manatee-1.jpg": "",
@@ -1653,7 +1653,7 @@
     },
     "other/mareep": {
       "title": "Mareep",
-      "description": "A Mareep with a fleece textured rough against smooth blue limbs, tail orb painted to look lit. The contrast in surface finish is what sells the wool.",
+      "description": "A Mareep printed with the fleece texture built into the model, rough wool against smooth blue limbs and a striped tail ending in an orange orb. The contrast in surface finish is what sells it.",
       "reviewed": true,
       "captions": {
         "mareep-1.jpg": "",
@@ -1664,7 +1664,7 @@
     },
     "other/mario-kart-trophies": {
       "title": "Mario Kart Trophies",
-      "description": "A set of Mario Kart trophies printed for a birthday tournament, complete with a plinth reading Happy Birthday. Awarded, presumably, with appropriate ceremony.",
+      "description": "A set of Mario Kart trophies FDM printed for a birthday tournament, complete with a plinth reading Happy Birthday. Awarded, presumably, with appropriate ceremony.",
       "reviewed": true,
       "captions": {
         "mario-kart-trophies-1.jpg": "",
@@ -1763,7 +1763,7 @@
     },
     "other/real-potions": {
       "title": "Real Potions",
-      "description": "Cork-stoppered bottles filled with colored liquid in red, green and blue, in three different vessel shapes. Real glass, real liquid, effects unverified.",
+      "description": "Cork-stoppered glass bottles filled with coloured water in red, green and blue, in three different vessel shapes. Real glass, real liquid, effects unverified.",
       "reviewed": true,
       "captions": {
         "real-potions-1.jpg": ""
@@ -1824,7 +1824,7 @@
     },
     "other/witchlight-carnival-tickets": {
       "title": "Witchlight Carnival Tickets",
-      "description": "Holographic Witchlight Carnival tickets printed and cut as table handouts, complete with terms and conditions on the back. Props that get passed to players rather than looked at on a shelf.",
+      "description": "Witchlight Carnival tickets printed on cardstock with glitter sticker paper laid over the top for texture, then cut as table handouts. Props that get passed to players rather than looked at on a shelf.",
       "reviewed": true,
       "captions": {
         "witchlight-carnival-tickets-1.jpg": "",
