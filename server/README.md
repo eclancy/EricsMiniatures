@@ -85,6 +85,26 @@ dimensions and blur placeholder instead of being re-read.
 3. Write the description and any per-photo captions in `content/projects.json`.
 4. `npm run prewarm`, then restart the service.
 
+## Removing a project
+
+Deleting `media/<section>/<project>/` locally and pushing is **not enough**.
+CI deliberately does not deploy `media/`, and the deploy then runs `npm run
+scan` on the host, which rebuilds the index from whatever photos are still
+there - putting the project straight back.
+
+Remove the photos on the host as well:
+
+```bash
+ssh user@host 'rm -rf ~/ericsminiatures.com/media/<section>/<project>'
+ssh user@host 'cd ~/ericsminiatures.com/server && npm run scan && sudo systemctl restart ericsminiatures'
+```
+
+`deploy/sync-media.sh` does this too, since it rsyncs with `--delete`.
+
+Check first whether the project supplies a section's home-page preview:
+`preview` in `SECTION_META` in `src/lib/content.js` names a project and a
+file, and removing that project leaves the card with no image.
+
 ## Configuration
 
 All settings live in `src/config.js` and can be overridden by environment
