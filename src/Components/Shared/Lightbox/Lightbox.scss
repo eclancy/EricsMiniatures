@@ -47,31 +47,87 @@
     }
   }
 
+  /* flex-shrink: 0 so the caption keeps its own height and the photo above it
+     absorbs the squeeze. Folding the text away therefore hands those pixels
+     straight back to the image, which is the point of the toggle. */
   &__caption {
+    flex: 0 0 auto;
     max-width: 760px;
     text-align: center;
     color: #f2f2f4;
   }
 
+  /* One line, always visible: which project, where you are in the set, and the
+     control that folds the description away. */
+  &__captionHead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 6px 14px;
+  }
+
   &__title {
     font-size: 1.35rem;
     font-weight: 600;
-    margin: 0 0 6px;
+    margin: 0;
   }
 
   &__text {
-    margin: 0;
+    margin: 8px 0 0;
     font-size: 1rem;
     line-height: 1.6;
     color: rgba(242, 242, 244, 0.82);
   }
 
+  &__caption.is-collapsed &__text {
+    display: none;
+  }
+
   &__counter {
-    margin: 8px 0 0;
+    margin: 0;
     font-size: 0.85rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: rgba(242, 242, 244, 0.55);
+  }
+
+  &__captionToggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px 4px 10px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(242, 242, 244, 0.72);
+    font: inherit;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.18);
+      color: #fff;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+  }
+
+  /* Points up while the text is showing - press it and the text folds upward.
+     Flipped when collapsed, so it reads as "bring the text back". */
+  &__captionChevron {
+    font-size: 0.6rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  &__caption.is-collapsed &__captionChevron {
+    transform: rotate(180deg);
   }
 
   &__close,
@@ -199,7 +255,9 @@
 @media (prefers-reduced-motion: reduce) {
   .lightbox__close,
   .lightbox__nav,
-  .lightbox__thumb {
+  .lightbox__thumb,
+  .lightbox__captionToggle,
+  .lightbox__captionChevron {
     transition: none;
   }
 }

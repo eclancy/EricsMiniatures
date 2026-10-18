@@ -4,6 +4,18 @@ import MediaImage from '../MediaImage/MediaImage';
 import { mediaUrl } from '../../../api/client';
 import './Lightbox.scss';
 
+const CAPTION_KEY = 'ericsminiatures:lightbox-caption';
+
+/** Whether the visitor last chose to minimise the caption. */
+function storedCollapsed() {
+  try {
+    return window.localStorage.getItem(CAPTION_KEY) === 'collapsed';
+  } catch {
+    // Private browsing and blocked site data both throw here.
+    return false;
+  }
+}
+
 /**
  * Full-screen photo viewer for a single project.
  *
@@ -12,6 +24,10 @@ import './Lightbox.scss';
  */
 export default function Lightbox({ project, startIndex, onClose }) {
   const [index, setIndex] = useState(startIndex || 0);
+  // Reading a description is a one-off; looking at the photo is the point. The
+  // visitor can fold the text away, and the stage hands the freed height
+  // straight to the image.
+  const [captionOpen, setCaptionOpen] = useState(() => !storedCollapsed());
   const containerRef = useRef(null);
   const previouslyFocused = useRef(null);
 
@@ -23,6 +39,18 @@ export default function Lightbox({ project, startIndex, onClose }) {
     (delta) => setIndex((current) => (count ? (current + delta + count) % count : 0)),
     [count]
   );
+
+  const toggleCaption = useCallback(() => {
+    setCaptionOpen((open) => {
+      const next = !open;
+      try {
+        window.localStorage.setItem(CAPTION_KEY, next ? 'open' : 'collapsed');
+      } catch {
+        // Not being able to remember the choice should not break the toggle.
+      }
+      return next;
+    });
+  }, []);
 
   useEffect(() => setIndex(startIndex || 0), [startIndex, project]);
 
@@ -96,12 +124,37 @@ export default function Lightbox({ project, startIndex, onClose }) {
           className="lightbox__media"
         />
 
-        <figcaption className="lightbox__caption">
-          <h2 className="lightbox__title">{project.title}</h2>
-          {caption && <p className="lightbox__text">{caption}</p>}
-          {count > 1 && (
-            <p className="lightbox__counter">
-              {index + 1} / {count}
+        <figcaption className={`lightbox__caption ${captionOpen ? 'is-open' : 'is-collapsed'}`}>
+          {/* Always one line: title, position in the set, and the fold control.
+              Everything below it is what folds away. */}
+          <div className="lightbox__captionHead">
+            <h2 className="lightbox__title">{project.title}</h2>
+
+            {count > 1 && (
+              <span className="lightbox__counter">
+                {index + 1} / {count}
+              </span>
+            )}
+
+            {caption && (
+              <button
+                type="button"
+                className="lightbox__captionToggle"
+                onClick={toggleCaption}
+                aria-expanded={captionOpen}
+                aria-controls="lightboxCaptionText"
+              >
+                <span className="lightbox__captionChevron" aria-hidden="true">
+                  &#9650;
+                </span>
+                {captionOpen ? 'Hide text' : 'Show text'}
+              </button>
+            )}
+          </div>
+
+          {caption && (
+            <p className="lightbox__text" id="lightboxCaptionText">
+              {caption}
             </p>
           )}
         </figcaption>
