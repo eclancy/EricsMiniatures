@@ -21,14 +21,17 @@ say() { printf '\n==> %s\n' "$1"; }
 
 say "Checking Node"
 if ! command -v node >/dev/null 2>&1 || [ "$(node --version | sed 's/v\([0-9]*\).*/\1/')" -lt 18 ]; then
-  echo "Node 18+ is required (sharp will not build without it). Installing Node 20..."
-  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+  echo "Node 18+ is required (sharp will not build without it). Installing Node 24 LTS..."
+  curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash -
   sudo apt-get install -y nodejs
 fi
 echo "node $(node --version)"
 
 say "Creating directories"
-mkdir -p "$SITE_DIR"
+mkdir -p "$SITE_DIR/server"
+# nginx (www-data) serves the build from inside the home directory. Ubuntu
+# 24.04 creates homes as 750, which makes every page a 500; let it through.
+chmod o+x "$HOME"
 sudo mkdir -p "$CACHE_DIR"
 sudo chown "$USER" "$CACHE_DIR"
 echo "  $SITE_DIR"
@@ -56,7 +59,12 @@ sudo systemctl daemon-reload
 sudo systemctl enable "$SERVICE"
 
 say "Allowing CI to restart the service without a password"
-echo "$USER ALL=(ALL) NOPASSWD: /bin/systemctl restart $SERVICE, /bin/systemctl status $SERVICE, /bin/systemctl is-active $SERVICE" \
+# Both paths: older Ubuntu has systemctl in /bin, 24.04 in /usr/bin.
+rule=""
+for bin in /usr/bin/systemctl /bin/systemctl; do
+  rule="$rule${rule:+, }$bin restart $SERVICE, $bin status $SERVICE, $bin is-active $SERVICE"
+done
+echo "$USER ALL=(ALL) NOPASSWD: $rule" \
   | sudo tee "/etc/sudoers.d/$SERVICE" >/dev/null
 sudo chmod 440 "/etc/sudoers.d/$SERVICE"
 

@@ -154,13 +154,13 @@ included with the smallest droplet is plenty.
 
 ## Requirements
 
-- **Ubuntu 22.04 or 24.04.** sharp ships prebuilt binaries that need glibc 2.28+;
+- **Ubuntu 24.04** (22.04 works too). sharp ships prebuilt binaries that need glibc 2.28+;
   on older images it falls back to compiling libvips from source.
 - **Node 18 or newer.** DigitalOcean's default Ubuntu images ship an older Node,
   so install a current one first:
 
   ```bash
-  curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+  curl -fsSL https://deb.nodesource.com/setup_24.x | sudo -E bash -
   sudo apt-get install -y nodejs
   node --version
   ```
