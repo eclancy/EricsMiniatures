@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           # media/ holds ~1.7 GB of original photos. It changes rarely and is
           # synced separately (see deploy/sync-media.sh), so CI skips it.
@@ -53,7 +53,7 @@ jobs:
             echo "Preflight passed."
 
       - name: Use Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 20
           cache: npm
