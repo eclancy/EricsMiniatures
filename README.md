@@ -2,6 +2,8 @@
 
 Personal website for my arts and crafts, as well as some other projects.
 
+Live at [ericsminiatures.com](https://ericsminiatures.com).
+
 React + Material-UI + SASS on the front end, with a small Node/Express service
 that stores the photos and serves resized, format-negotiated derivatives of
 them.
